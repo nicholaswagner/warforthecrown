@@ -1,0 +1,2 @@
+I bet you thought this campaign was about you
+- [[Landgrave Ogval Jarlbjorn]] mentioned that she prefers mens with beards.  In fact there was a period of time in the [[Glorian Empire]] where beards were for nobility only but it was later overturned because she mentioned her preference.

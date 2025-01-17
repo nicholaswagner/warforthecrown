@@ -1,0 +1,2 @@
+- fashionable / we first see her holding some champagne and wearing a slinky revealing dress
+- 

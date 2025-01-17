@@ -1,0 +1,15 @@
+{
+	"nodes":[
+		{"id":"1a32e05473b855ce","type":"file","file":"War for the Crown/images/portraits/MadeiraZespire.png","x":-456,"y":-1914,"width":400,"height":400},
+		{"id":"adf9e9893d01e8fd","type":"file","file":"War for the Crown/images/portraits/ViceCountReneMalbecDuValle.png","x":-920,"y":-1914,"width":400,"height":400},
+		{"id":"edca4788666cfa30","type":"file","file":"War for the Crown/images/portraits/CountOrlundoZespire.png","x":-456,"y":-2400,"width":400,"height":400},
+		{"id":"73ebf997c718ef2b","type":"file","file":"War for the Crown/images/portraits/CaritasZespireFront.jpg","x":-656,"y":-1320,"width":400,"height":400},
+		{"id":"e1a97cad81c15d31","type":"text","text":"Duke Felinax Zespire","x":-656,"y":-2800,"width":250,"height":240}
+	],
+	"edges":[
+		{"id":"ea9d554241137504","fromNode":"edca4788666cfa30","fromSide":"bottom","toNode":"1a32e05473b855ce","toSide":"top"},
+		{"id":"2c55ea8b04e4b2e3","fromNode":"1a32e05473b855ce","fromSide":"bottom","toNode":"73ebf997c718ef2b","toSide":"top"},
+		{"id":"d0d23cf0a548a552","fromNode":"adf9e9893d01e8fd","fromSide":"bottom","toNode":"73ebf997c718ef2b","toSide":"top"},
+		{"id":"9b31842671c425b7","fromNode":"e1a97cad81c15d31","fromSide":"bottom","toNode":"edca4788666cfa30","toSide":"top"}
+	]
+}

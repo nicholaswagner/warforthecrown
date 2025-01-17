@@ -1,0 +1,4 @@
+- Is proxy for his father in the senate
+- a Florophile, spends his time in the courtyard when not voting on the senate floor
+- flirted shamelessly with [[Viscountess Tirri Kastner-Caleo]]
+- from [[Zimar]]

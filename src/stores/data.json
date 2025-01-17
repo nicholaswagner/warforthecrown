@@ -1,1 +1,9 @@
-{}
+{
+  "sourceDir": "War for the Crown",
+  "repositoryUrl": "https://github.com/nicholaswagner/warforthecrown",
+  "isActivated": true,
+  "version": "0.0.6",
+  "isEnableComments": false,
+  "repo": "",
+  "theme": ""
+}
