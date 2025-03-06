@@ -1,0 +1,72 @@
+[
+  {
+    "type": "folder",
+    "label": "images",
+    "slug": "images",
+    "path": "images",
+    "pathSlug": "images",
+    "children": [
+      {
+        "type": "png",
+        "label": "arturo.png",
+        "slug": "arturo_png",
+        "path": "images/arturo.png",
+        "pathSlug": "images/arturo_png",
+        "id": "2vopkw"
+      },
+      {
+        "type": "png",
+        "label": "castle.png",
+        "slug": "castle_png",
+        "path": "images/castle.png",
+        "pathSlug": "images/castle_png",
+        "id": "jcpnmy"
+      }
+    ],
+    "id": "3hqep6"
+  },
+  {
+    "type": "md",
+    "label": "readme",
+    "slug": "readme",
+    "path": "readme.md",
+    "pathSlug": "readme",
+    "id": "1daehoq"
+  },
+  {
+    "type": "folder",
+    "label": "top level folder",
+    "slug": "top_level_folder",
+    "path": "top level folder",
+    "pathSlug": "top_level_folder",
+    "children": [
+      {
+        "type": "folder",
+        "label": "second level folder",
+        "slug": "second_level_folder",
+        "path": "top level folder/second level folder",
+        "pathSlug": "top_level_folder/second_level_folder",
+        "children": [
+          {
+            "type": "md",
+            "label": "block_level_elements",
+            "slug": "block_level_elements",
+            "path": "top level folder/second level folder/block_level_elements.md",
+            "pathSlug": "top_level_folder/second_level_folder/block_level_elements",
+            "id": "d2fmt6"
+          }
+        ],
+        "id": "3t5tom"
+      },
+      {
+        "type": "md",
+        "label": "tables",
+        "slug": "tables",
+        "path": "top level folder/tables.md",
+        "pathSlug": "top_level_folder/tables",
+        "id": "1ygif1o"
+      }
+    ],
+    "id": "q9g4s9"
+  }
+]
