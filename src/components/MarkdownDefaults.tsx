@@ -1,8 +1,8 @@
 import { Divider, styled, Table, TableCell, TableContainer, TableHead, TableRow, Typography } from '@mui/material';
 import { ReactNode } from 'react';
 
-import { slugify } from '../lib/slugifyString';
-import { Blockquote, Callout } from './md/Blockquote';
+import slugify from '../lib/slugify'
+import { Blockquote } from './md/Blockquote';
 import CodeBlock from './md/CodeBlock';
 import { MarkdownImage } from './md/MarkdownEmbed';
 import CalloutTitle from './md/CalloutTitle';

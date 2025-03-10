@@ -1,4 +1,4 @@
-import { slugify } from "../lib/slugifyString";
+import slugify from '../lib/slugify'
 
 
 const extractMarkdownHeaderContent = (

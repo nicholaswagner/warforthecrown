@@ -7,7 +7,7 @@
     "prebuild": "mv docs/vault .vault.bkup",
     "build": "tsc -b && vite build && cp docs/index.html docs/404.html",
     "postbuild": "mv .vault.bkup docs/vault",
-    "build:static": "tsx scripts/getFileTree.ts docs/vault && cp docs/vault/files.json src/assets/files.json",
+    "build:static": "tsx scripts/buildFileTree.ts --vault docs/vault --output src/assets/files.json",
     "dev": "vite",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
@@ -43,6 +43,7 @@
     "@types/node": "^22.12.0",
     "@types/react": "latest",
     "@types/react-dom": "latest",
+    "@types/yargs": "^17.0.33",
     "@typescript-eslint/parser": "^8.22.0",
     "@vitejs/plugin-react": "latest",
     "dotenv": "^16.4.7",
@@ -71,6 +72,7 @@
     "unist-util-visit": "^5.0.0",
     "vite": "latest",
     "vite-plugin-browser-sync": "^4.0.0",
-    "vite-tsconfig-paths": "^5.1.4"
+    "vite-tsconfig-paths": "^5.1.4",
+    "yargs": "^17.7.2"
   }
 }

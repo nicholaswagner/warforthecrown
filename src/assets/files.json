@@ -1,72 +1,77 @@
 [
   {
-    "type": "folder",
-    "label": "images",
-    "slug": "images",
-    "path": "images",
-    "pathSlug": "images",
     "children": [
       {
-        "type": "png",
+        "extension": "png",
+        "filepath": "images/arturo.png",
+        "fileType": "file",
+        "id": "2vopkw",
         "label": "arturo.png",
-        "slug": "arturo_png",
-        "path": "images/arturo.png",
-        "pathSlug": "images/arturo_png",
-        "id": "2vopkw"
+        "labelSlug": "arturo_png",
+        "webPath": "images/arturo_png"
       },
       {
-        "type": "png",
+        "extension": "png",
+        "filepath": "images/castle.png",
+        "fileType": "file",
+        "id": "jcpnmy",
         "label": "castle.png",
-        "slug": "castle_png",
-        "path": "images/castle.png",
-        "pathSlug": "images/castle_png",
-        "id": "jcpnmy"
+        "labelSlug": "castle_png",
+        "webPath": "images/castle_png"
       }
     ],
-    "id": "3hqep6"
+    "filepath": "images",
+    "fileType": "folder",
+    "id": "3hqep6",
+    "label": "images",
+    "labelSlug": "images",
+    "webPath": "images"
   },
   {
-    "type": "md",
+    "extension": "md",
+    "filepath": "readme.md",
+    "fileType": "file",
+    "id": "1daehoq",
     "label": "readme",
-    "slug": "readme",
-    "path": "readme.md",
-    "pathSlug": "readme",
-    "id": "1daehoq"
+    "labelSlug": "readme",
+    "webPath": "readme"
   },
   {
-    "type": "folder",
-    "label": "top level folder",
-    "slug": "top_level_folder",
-    "path": "top level folder",
-    "pathSlug": "top_level_folder",
     "children": [
       {
-        "type": "folder",
-        "label": "second level folder",
-        "slug": "second_level_folder",
-        "path": "top level folder/second level folder",
-        "pathSlug": "top_level_folder/second_level_folder",
         "children": [
           {
-            "type": "md",
+            "extension": "md",
+            "filepath": "top level folder/second level folder/block_level_elements.md",
+            "fileType": "file",
+            "id": "d2fmt6",
             "label": "block_level_elements",
-            "slug": "block_level_elements",
-            "path": "top level folder/second level folder/block_level_elements.md",
-            "pathSlug": "top_level_folder/second_level_folder/block_level_elements",
-            "id": "d2fmt6"
+            "labelSlug": "block_level_elements",
+            "webPath": "top_level_folder/second_level_folder/block_level_elements"
           }
         ],
-        "id": "3t5tom"
+        "filepath": "top level folder/second level folder",
+        "fileType": "folder",
+        "id": "3t5tom",
+        "label": "second level folder",
+        "labelSlug": "second_level_folder",
+        "webPath": "top_level_folder/second_level_folder"
       },
       {
-        "type": "md",
+        "extension": "md",
+        "filepath": "top level folder/tables.md",
+        "fileType": "file",
+        "id": "1ygif1o",
         "label": "tables",
-        "slug": "tables",
-        "path": "top level folder/tables.md",
-        "pathSlug": "top_level_folder/tables",
-        "id": "1ygif1o"
+        "labelSlug": "tables",
+        "webPath": "top_level_folder/tables"
       }
     ],
-    "id": "q9g4s9"
+    "filepath": "top level folder",
+    "fileType": "folder",
+    "id": "q9g4s9",
+    "label": "top level folder",
+    "labelSlug": "top_level_folder",
+    "webPath": "top_level_folder"
   }
 ]

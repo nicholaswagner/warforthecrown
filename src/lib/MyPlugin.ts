@@ -11,7 +11,7 @@ import { h } from 'hastscript';
 export type PluginOptions = {
     fileMeta: FileTreeNode[];
     hrefTemplate?: (path: string) => string;
-    vaultPathPrefix?: string; // while the UX should give the illusion that mirrors your vault, the actual files might be stored in a different location (like a CDN)
+    filePathPrefix?: string; // while the UX should give the illusion that mirrors your vault, the actual files might be stored in a different location (like a CDN)
 }
 
 

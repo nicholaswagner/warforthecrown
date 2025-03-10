@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 
 import { SIDEBAR_WIDTH } from '../AppConstants';
 import useActiveHeading from '../hooks/useActiveHeading';
-import { slugify } from '../lib/slugifyString';
+import slugify from '../lib/slugify'
 import { buildToc, TocData } from '../utils/buildToc';
 import { MarkdownLink } from './md/MarkdownLink';
 

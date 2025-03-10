@@ -8,7 +8,8 @@ import { useState } from 'react';
 
 import { SIDEBAR_WIDTH } from '../AppConstants';
 import data from '../assets/files.json';
-import { slugify } from '../lib/slugifyString';
+import slugify from '../lib/slugify'
+// import { slugify } from '../lib/slugifyString';
 import { FileTreeNode } from '../types/FileTreeNode';
 import { getAllFileMeta } from '../utils/getAllFiles';
 

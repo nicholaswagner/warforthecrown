@@ -41,13 +41,17 @@ export const Markdown = (props: MarkdownProps) => {
         remarkPlugins={[
           remarkGfm,
           remarkFrontmatter,
-          obsidianPlugin,
+          [obsidianPlugin,{
+            fileMeta,
+              vaultPathPrefix: CDN_PREFIX, // prefix any media src with this
+              hrefTemplate: (path: string) => `${path}`,
+          }]
           // [
           //   MyPlugin,
           //   {
-          //     fileMeta,
-          //     vaultPathPrefix: CDN_PREFIX, // prefix any media src with this
-          //     // hrefTemplate: (path: string) => `${path}`,
+              // fileMeta,
+              // vaultPathPrefix: CDN_PREFIX, // prefix any media src with this
+              // hrefTemplate: (path: string) => `${path}`,
           //   },
           // ],
         ]}

@@ -4,10 +4,11 @@ import fs, { Dirent, readFileSync } from 'fs';
 import path from 'path';
 
 import hash from '../src/lib/hash';
-import { slugify } from '../src/lib/slugifyString';
+import slugify from '../src/lib/slugify'
 import { FileTreeNode } from '../src/types/FileTreeNode';
 
 const targetDir = process.argv[2];
+
 const list: Dirent[] = [];
 
 export const getGitIgnorables = (filePath: string): string[] => {

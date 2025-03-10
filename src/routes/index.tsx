@@ -76,7 +76,7 @@ Quisque accumsan quis felis quis posuere. Cras vel leo interdum, vulputate velit
 > > >    
 > > > The Warning callout has no title.
 > Here is an embeddedd image of Arturo
-> ![[arturo_basri.png]]
+> ![[arturo.png]]
 > ^ It should be right here.   
 >
 
@@ -91,7 +91,7 @@ Quisque accumsan quis felis quis posuere. Cras vel leo interdum, vulputate velit
 > > >    
 > > > The Warning callout has no title.
 > Here is an embeddedd image of Arturo
-> ![[arturo_basri.png]]
+> ![[arturo.png]]
 > ^ It should be right here.   
 >
 
@@ -99,7 +99,7 @@ Quisque accumsan quis felis quis posuere. Cras vel leo interdum, vulputate velit
 
 # One last callout
 
-> [!info]- Info
+> [!info]+ Info
 > ==Whatever else you want to say== goes on the following lines.
 > **Bold** _Italics_ and ~~strikethrough~~ should also work,
 > And you should be able to embed images

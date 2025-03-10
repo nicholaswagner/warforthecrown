@@ -2,7 +2,7 @@ import { Literal, PhrasingContent } from 'mdast';
 import { Parent } from 'unist';
 
 import { PluginOptions } from './MyPlugin';
-import { slugify } from './slugifyString';
+import slugify from '../lib/slugify'
 
 const obsidianEmbed = /!?\[\[[^\]]+\]\]/g; // Matches all the ![[...]] in the markdown
 const obsidianEmbedParams = /!?\[\[([^\|\]]+)(?:\s*\|\s*([^\|\]]+))?\]\]/; // Captures the link and optional alias
@@ -12,7 +12,7 @@ export const visitObsidianEmbeds = (options: PluginOptions, node: Literal, index
     if (!parent || node.type !== 'text') return;
     if (!node.value?.match(obsidianEmbed)?.length) return;
 
-    const { fileMeta, hrefTemplate = defaultHrefTemplate, vaultPathPrefix } = options;
+    const { fileMeta, hrefTemplate = defaultHrefTemplate } = options;
 
     const getFileByObsidianLabel = (label: string) => {
         const slug = slugify(label.split('#')[0]);
