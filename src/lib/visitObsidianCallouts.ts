@@ -1,28 +1,42 @@
-import { Literal, Parent } from 'unist';
-import { PluginOptions } from './MyPlugin';
-const calloutRegex = /\[\!\s*([\S]+)+\s*\](.*)/;
+const calloutRegex = /^\[\!\s*([\w-]+)\s*\]([-+]?)/;
 
-export const visitObsidianCallout = (_options: PluginOptions, node: Parent, _index: number | undefined, _parent: Parent | null) => {
-    if (!node.children || node.children.length === 0) return;
+import type { Blockquote, Paragraph, Text } from 'mdast';
 
-    const firstChild = node.children[0] as Parent;
-    if (firstChild.type !== 'paragraph' || !(firstChild as Parent).children || (firstChild as Parent).children.length === 0) return;
+const visitObsidianCallouts: import('unist-util-visit').Visitor<Blockquote> = (blockquoteNode) => {
+    if (!Array.isArray(blockquoteNode.children) || blockquoteNode.children.length === 0) return;
 
-    const textNode = firstChild.children[0] as Literal;
-    if (textNode.type !== 'text') return;
+    const firstParagraph = blockquoteNode.children.find((child) => child.type === 'paragraph') as Paragraph | undefined;
+    if (!firstParagraph || firstParagraph.children.length === 0) return;
 
-    const match = (textNode.value as string).match(calloutRegex);
+    const firstTextNode = firstParagraph.children.find((child) => child.type === 'text') as Text | undefined;
+    if (!firstTextNode || typeof firstTextNode.value !== 'string' || firstTextNode.value.trim() === '') return;
+
+    const match = calloutRegex.exec(firstTextNode.value);
     if (!match) return;
 
-    const calloutType = match[1].slice(); // Remove '!'
-    const calloutTitle = match[2].trim();
+    const calloutType = match[1].toLowerCase();
+    const foldableModifier = match[2] || '';
+    const foldable = foldableModifier !== '';
+    const initialFolded = foldableModifier === '-';
 
-    node.data = {
-        hName: 'blockquote',
-        hProperties: { 'data-title': calloutTitle, 'data-callout': calloutType, className: 'obsidian-callout' }
+    firstTextNode.value = firstTextNode.value.replace(calloutRegex, '').trim();
+    const titleText = firstTextNode.value || calloutType;
+
+    blockquoteNode.data ??= {};
+    blockquoteNode.data.hProperties = {
+        ...blockquoteNode.data.hProperties,
+        'data-callout': calloutType,
+        'data-initial-folded': String(initialFolded),
+        'data-title': titleText,
+        className: ['callout', foldable ? 'foldable' : '']
     };
 
-    textNode.value = (textNode.value as string).replace(calloutRegex, '');
+    firstParagraph.data ??= {};
+    firstParagraph.data.hProperties = {
+        ...firstParagraph.data.hProperties,
+        className: ['callout-title'],
+        'data-callout': calloutType,
+        'data-title': titleText
+    };
 };
-
-export default visitObsidianCallout;
+export default visitObsidianCallouts;
