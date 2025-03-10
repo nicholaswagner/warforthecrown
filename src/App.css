@@ -1,0 +1,111 @@
+html {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+/* 
+a {
+  word-wrap: normal;
+  word-break: break-all;
+} */
+
+/* blockquote {
+  margin: 0;
+  padding: 0.5em 1em;
+  border-left: 4px solid var(--palette-primary-main);
+} */
+
+/* .markdown-image {
+  &[data-options='jumbo'] {
+    object-fit: cover;
+    object-position: center;
+    height: 300px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  &[data-options='header'] {
+    object-fit: contain;
+    object-position: center;
+    height: 300px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  &[data-options='fill'] {
+    object-fit: cover;
+    object-position: 50% 50%;
+    height: 300px;
+    width: 100%;
+    min-width: 300px;
+  }
+  &[data-options='50'] {
+    object-fit: cover;
+    object-position: 50% 50%;
+    height: 300px;
+    min-width: 50%;
+  }
+  &[data-options='lax'] {
+    object-fit: cover;
+    object-position: 50% var(--scroll_offset);
+    height: 300px;
+    min-width: 50%;
+  }
+} */
+
+/* a {
+  color: var(--palette-text-primary);
+  text-decoration: underline;
+  &:hover {
+    text-decoration: underline;
+    color: var(--palette-primary-main);
+  }
+  &:visited {
+    color: var(--palette-text-primary);
+  }
+} */
+
+td > code,
+code:not(:has(.shiki) code) {
+  padding: 0.2em 0.4em;
+  margin: 0;
+  font-size: 85%;
+  font-weight: 800;
+  color: var(--palette-background-paper);
+  background-color: var(--palette-primary-main);
+  padding-inline-start: 0.5rem;
+  padding-inline-end: 0.5rem;
+  padding-block: 0.1rem;
+  border-radius: 3px;
+}
+
+pre {
+  word-wrap: break-word;
+}
+
+span.obsidian-md-error {
+  border-radius: 0.5rem;
+  margin: 3rem;
+  text-align: center;
+  display: block;
+  padding: 1.5rem;
+  color: var(--palette-error-contrastText);
+  background-color: var(--palette-Alert-errorFilledBg);
+  /* opacity: 0.25; */
+}
+
+span.obsidian-hilight {
+  font-weight: 800;
+  color: var(--palette-common-black);
+  padding-inline-start: 0.5rem;
+  padding-inline-end: 0.5rem;
+  padding-block: 0.25rem;
+  background-color: gold;
+}
+
+/* .callout-title {
+  background-color:chocolate;
+} */

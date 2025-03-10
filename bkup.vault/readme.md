@@ -13,7 +13,7 @@ Text right above a divider with ==hilighted text==.
 
 ---
 
-> [!gem]- Yo Dawg, I hear you like obsidian embeds, 
+> [!gem] Yo Dawg, I hear you like obsidian embeds, 
 > so i put your embed inside of an embed so you can read while you read
 > ![[castle.png]]
 
@@ -28,7 +28,7 @@ Links to internal files:
 
 ---
 
-> [!bug]- custom link names not working this push
+> [!bug] custom link names not working this push
 > ~~[[block_level_elements | I Can't Believe Its Not Block Elements!]]~~ - Should be the same link but with a custom name 
 
 ---

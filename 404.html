@@ -1,0 +1,6 @@
+<script>
+    var redirectTo = window.location.pathname;
+    if (redirectTo !== '/' && redirectTo !== '/index.html') {
+      window.location.replace('/index.html?redirect=' + encodeURIComponent(redirectTo));
+    }
+  </script>

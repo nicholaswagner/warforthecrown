@@ -2,12 +2,6 @@
 _a visual guide_
 
 
-> [!magic]- This should be folded by default!
-> Still not sure how i want to implement these, ==so don't make heavy== use of these for now
-> I'm adding a list of some of the supported icon types below.
-
-
-
 ---
 
 
@@ -36,7 +30,7 @@ _a visual guide_
 ```
 
 
-> [!book]- Each blockquote supports a title
+> [!book] Each blockquote supports a title
 >
 > Which is then followed by normal phrasing content. 
 > Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -52,14 +46,14 @@ _a visual guide_
 
 #### Available Callouts
 
-> [!warning]- Warning, callouts may change at any time
+> [!warning] Warning, callouts may change at any time
 > Still not sure how i want to implement these, so don't make heavy use of these for now
 > I'm adding a list of some of the supported icon types below.
 
 
 ```md
  ## To use a callout type the following:
-> [!calloutName]+ Generic Title
+> [!calloutName] Title Goes Here
 > Whatever else you want to say goes on the following lines.
 > **Bold** __Italics__ and ~~strikethrough~~ should also work,
 > And you should be able to embed images
@@ -67,14 +61,9 @@ _a visual guide_
 ```
 
 
-> [!info] Info
 
----
-
-> [!info]
-> 
-> ---
-> ==Whatever else you want to say== goes on the following lines.
+> [!wip] Title Goes Here
+> Whatever else you want to say goes on the following lines.
 > **Bold** _Italics_ and ~~strikethrough~~ should also work,
 > And you should be able to embed images
 > ![[castle.png]]
@@ -82,13 +71,13 @@ _a visual guide_
 
 
 
-> [!danger]+ Its bad in here!
+> [!danger] Its bad in here!
 
-> [!bug]- Its not a bug, its a feature
+> [!bug] Its not a bug, its a feature
 
-> [!book]-  Book
+> [!book]  Book
 
-> [!star]+ Star
+> [!star] Star
 
 > [!wip] WIP
 

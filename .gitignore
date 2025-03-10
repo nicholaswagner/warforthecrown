@@ -1,0 +1,18 @@
+# Editor directories and files
+.env
+
+# dependencies
+node_modules
+package-lock.json
+yarn.lock
+
+# builds
+build
+coverage
+
+# misc
+.DS_Store
+
+# Logs
+logs
+*.log
