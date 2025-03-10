@@ -7,7 +7,7 @@
     "prebuild": "mv docs/vault .vault.bkup",
     "build": "tsc -b && vite build && cp docs/index.html docs/404.html",
     "postbuild": "mv .vault.bkup docs/vault",
-    "build:static": "tsx scripts/buildFileTree.ts --vault docs/vault --output src/assets/files.json",
+    "build:static": "tsx scripts/buildFileTree.ts --in docs/vault --out src/assets",
     "dev": "vite",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",

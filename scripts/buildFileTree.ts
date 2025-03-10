@@ -1,13 +1,11 @@
 #!/usr/bin/env -S npx tsx
 
 import yargs from 'yargs';
-
 import fs, { Dirent, readFileSync } from 'fs';
 import path from 'path';
 import hash from '../src/lib/hash'; // TODO - dont forget to include copyright and license notice for emotion-js for this
-import slugify from '../src/lib/slugify';
-
-
+import slugify from '../src/lib/slugify'; // this creates a url safe slug from a string, its used by the webapp, filetree, and filehash
+// import { printTable } from './printTable'; // just a silly little table printer for the metrics
 
 
 type FileTreeNode = {
@@ -19,24 +17,39 @@ type FileTreeNode = {
     label: string; // the raw file/folder name that the user uses on their local filesystem
     labelSlug: string; // slugified version of the label
     webPath: string;
+}
 
+type FileTree = {
+    tree: FileTreeNode[];
+    metrics: Record<string, number>;
 }
 
 const argv = await yargs(process.argv.slice(2))
-    .option('vault', { type: 'string', demandOption: true, describe: 'path to obsidian vault' })
-    .option('output', { type: 'string', demandOption: true, describe: 'output path' })
+    .option('in', { type: 'string', demandOption: true, describe: 'The is the directory where we begin walking the file tree' })
+    .option('out', { type: 'string', demandOption: true, describe: 'This is the directory where the filetree and filehash files will be created' })
+    .option('nameTree', { type: 'string', demandOption: false, describe: 'Use a custom name for the resulting filetree.json' })
+    .option('nameHash', { type: 'string', demandOption: false, describe: 'Use a custom name for the resulting filehash.json' })
     .option('ignore', { type: 'string', describe: 'path to gitignore which will filter the vault' })
     .help()
     .argv;
 
-
+// We dont want to try to capture any hidden .dotfiles or try to process any files that are in the gitignore
 const gitignorePath = argv.ignore || `${argv.vault}/.gitignore`;
 const gitignoreExists = fs.existsSync(gitignorePath)
 const mask = gitignoreExists ? fs.readFileSync(gitignorePath, 'utf8').split('\n').map(line => line.trim()).filter(line => line && !line.startsWith('#')).join(' ').trim() : '';
 
-// console.log('gitignorePath:', gitignorePath);
-// console.log('gitignoreExists:', gitignoreExists);
-console.log('[✎ note]: ', gitignoreExists ? '.gitignore will be used for vault files' : 'no .gitignore found will only ignore dotfiles this run.');
+// 🐍_case is best case for files, if you don't agree you can override it ... but you're still wrong 🤪
+const treeFilepath = path.join(argv.out, argv.nameTree || 'files_tree.json');
+const hashFilepath = path.join(argv.out, argv.nameHash || 'files_hash.json');
+
+
+if (gitignoreExists) {
+    console.log('[ info ]: In addition to ignoring .dotfiles, the following .gitignore rules will be applied (if supported)');
+    console.log(mask.split(' '));
+}
+else {
+    console.log('[ info ]: no .gitignore found. will only ignore dotfiles this run.');
+}
 
 const filterIgnored = (files: Dirent[]) => {
     return files.filter((file) => {
@@ -46,33 +59,23 @@ const filterIgnored = (files: Dirent[]) => {
     });
 };
 
-
 async function getTargetDirents(targetDir: string, basePath: string = ''): Promise<fs.Dirent[]> {
     const ents = await fs.promises.readdir(targetDir, { withFileTypes: true });
     const filtered = filterIgnored(ents); // remove hidden and ignored files
-
     const result: fs.Dirent[] = [];
-
     for (const ent of filtered) {
         const currentPath = path.join(basePath, ent.name);
         result.push(ent);
-
         if (ent.isDirectory()) {
             const subDirents = await getTargetDirents(path.join(targetDir, ent.name), currentPath);
-            result.push(...subDirents); // Append sub-directory contents
+            result.push(...subDirents);
         }
     }
-
     return result;
 }
 
+
 const getFileExtension = (filePath: string): string => path.extname(filePath).slice(1);
-
-
-type FileTree = {
-    tree: FileTreeNode[];
-    metrics: Record<string, number>;
-}
 
 const buildFileTree = (dirents: Dirent[]): FileTree => {
     const metrics: Record<string, number> = {};
@@ -81,14 +84,12 @@ const buildFileTree = (dirents: Dirent[]): FileTree => {
 
     for (const ent of dirents) {
         const { name: filename, parentPath } = ent;
-        const dirPath = path.relative(argv.vault, parentPath);
+        const dirPath = path.relative(argv.in, parentPath);
         const filepath = dirPath ? `${dirPath}/${filename}` : filename; // full file path including extension
         const pathParts = filepath.split('/');
-
         let current = root;
 
-        pathParts.forEach((part, index) => {
-            // const isFile = index === pathParts.length - 1;
+        pathParts.forEach((part) => {
             const isFile = ent.isFile();
             const isDirectory = ent.isDirectory();
             const existingChild = current.children?.find((child) => child.label === part);
@@ -97,8 +98,8 @@ const buildFileTree = (dirents: Dirent[]): FileTree => {
                 const fileType = isFile ? 'file' : isDirectory ? 'folder' : 'symlink'; // assume symlink for now since we wont be using those either
                 const extension = getFileExtension(part) || undefined;
                 const label = extension === 'md' ? part.slice(0, -3) : part;
-                const newPath = path.join(current.filepath, part);
-                const normalizedPath = path.normalize(newPath);
+                const newPath = path.join(current.filepath, part); // Joins file paths with OS-friendly separators
+                const normalizedPath = path.normalize(newPath); // Normalize to remove any redundant slashes
                 const webPath = slugify(normalizedPath);
                 const fileNode: FileTreeNode = {
                     children: isDirectory ? [] : undefined,
@@ -108,7 +109,7 @@ const buildFileTree = (dirents: Dirent[]): FileTree => {
                     id: hash(newPath),
                     label,
                     labelSlug: slugify(label),
-                    webPath: extension === 'md' ? webPath.slice(0, -3) : webPath, // markdown files should not have the .md extension in the webPath
+                    webPath: extension === 'md' ? webPath.slice(0, -3) : webPath, // markdown files are extensionless in the webPaths, everything else has their extension preserved (but still slugified).  This is to align with the obsidian.app behavior
                 };
 
                 if (extension) {
@@ -119,9 +120,6 @@ const buildFileTree = (dirents: Dirent[]): FileTree => {
                 if (!metrics[fileType]) metrics[fileType] = 0;
                 metrics[fileType]++;
 
-                // if (!current.children) {
-                //     current.children = [];
-                // }
                 current.children?.push(fileNode);
 
                 if (!isFile) {
@@ -139,19 +137,41 @@ const buildFileTree = (dirents: Dirent[]): FileTree => {
     return { tree: root.children || [], metrics };
 }
 
+const buildHashTable = (tree: FileTreeNode[]) => {
+    const hashTable: Record<string, FileTreeNode> = {};
+    const traverse = (node: FileTreeNode) => {
+        hashTable[node.labelSlug] = { ...node };  // Create a shallow copy to avoid mutation of the original object
+        delete hashTable[node.labelSlug].children; // Remove the children property to flatten
+        node.children?.forEach(traverse); // Continue traversing if needed
+    };
+    tree.forEach(traverse);
+    return hashTable;
+}
 
-const dirents = await getTargetDirents(argv.vault).catch((err) => {
-    console.error('[!! Error] encountered while attempting to map vault files:  ', err);
+const dirents = await getTargetDirents(argv.in).catch((err) => {
+    console.error('\n[ Error ] encountered while attempting to map vault files:  ', err, '\n');
     process.exit(1);
 });
+
+// Builds a FileTree object from the Dirent[] array first, then we build the hashTable from the tree
 const results = buildFileTree(dirents);
 
-fs.writeFileSync(argv.output, JSON.stringify(results.tree, null, 2));
+fs.writeFileSync(treeFilepath, JSON.stringify(results.tree, null, 2));
+console.log(`[ info ]: file tree data has been saved as:    ${treeFilepath}`);
 
-console.log('File tree written to:', argv.output);
+const hashTable = buildHashTable(results.tree);
+fs.writeFileSync(hashFilepath, JSON.stringify(hashTable, null, 2));
+console.log(`[ info ]: file hash data has been saved as:    ${hashFilepath}`);
 
-console.log('\nMetrics:');
-console.log(JSON.stringify(results.metrics, null, 2));
+
+// printTable(Object.entries(hashTable).map(([labelSlug, node]) => [`${labelSlug}`, `${JSON.stringify(node)}`]));
+// printTable([
+//     ['filetype', 'count'],
+//     ['file', results.metrics.file],
+//     ['folder', results.metrics.folder],
+//     ['symlink', results.metrics.symlink ?? 0],
+//     ...Object.entries(results.metrics).filter(([key]) => key !== 'file' && key !== 'folder' && key !== 'symlink')
+// ]);
 
 
 

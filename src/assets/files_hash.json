@@ -1,0 +1,71 @@
+{
+  "images": {
+    "filepath": "images",
+    "fileType": "folder",
+    "id": "3hqep6",
+    "label": "images",
+    "labelSlug": "images",
+    "webPath": "images"
+  },
+  "arturo_png": {
+    "extension": "png",
+    "filepath": "images/arturo.png",
+    "fileType": "file",
+    "id": "2vopkw",
+    "label": "arturo.png",
+    "labelSlug": "arturo_png",
+    "webPath": "images/arturo_png"
+  },
+  "castle_png": {
+    "extension": "png",
+    "filepath": "images/castle.png",
+    "fileType": "file",
+    "id": "jcpnmy",
+    "label": "castle.png",
+    "labelSlug": "castle_png",
+    "webPath": "images/castle_png"
+  },
+  "readme": {
+    "extension": "md",
+    "filepath": "readme.md",
+    "fileType": "file",
+    "id": "1daehoq",
+    "label": "readme",
+    "labelSlug": "readme",
+    "webPath": "readme"
+  },
+  "top_level_folder": {
+    "filepath": "top level folder",
+    "fileType": "folder",
+    "id": "q9g4s9",
+    "label": "top level folder",
+    "labelSlug": "top_level_folder",
+    "webPath": "top_level_folder"
+  },
+  "second_level_folder": {
+    "filepath": "top level folder/second level folder",
+    "fileType": "folder",
+    "id": "3t5tom",
+    "label": "second level folder",
+    "labelSlug": "second_level_folder",
+    "webPath": "top_level_folder/second_level_folder"
+  },
+  "block_level_elements": {
+    "extension": "md",
+    "filepath": "top level folder/second level folder/block_level_elements.md",
+    "fileType": "file",
+    "id": "d2fmt6",
+    "label": "block_level_elements",
+    "labelSlug": "block_level_elements",
+    "webPath": "top_level_folder/second_level_folder/block_level_elements"
+  },
+  "tables": {
+    "extension": "md",
+    "filepath": "top level folder/tables.md",
+    "fileType": "file",
+    "id": "1ygif1o",
+    "label": "tables",
+    "labelSlug": "tables",
+    "webPath": "top_level_folder/tables"
+  }
+}
