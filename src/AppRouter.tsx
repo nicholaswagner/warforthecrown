@@ -3,7 +3,7 @@ import { createRouter, RouterProvider } from '@tanstack/react-router';
 
 import { routeTree } from './routeTree.gen';
 import { fetchImageByLabelSlug } from './utils/fetchImageByLabelSlug';
-import { fetchMarkdown } from './utils/fetchMarkdown';
+import { fetchMarkdownForWebPath } from './utils/fetchMarkdownForWebPath';
 
 // Handle GitHub Pages redirect **before** router creation
 // const searchParams = new URLSearchParams(window.location.search);
@@ -18,7 +18,7 @@ export const router = createRouter({
   // history,
   routeTree,
   context: {
-    fetchMarkdown,
+    fetchMarkdownForWebPath: fetchMarkdownForWebPath,
     fetchImage: fetchImageByLabelSlug,
   },
   defaultPreload: 'intent',

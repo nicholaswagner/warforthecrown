@@ -4,9 +4,10 @@ import { LinkIcon } from 'lucide-react';
 import { ImgHTMLAttributes, useEffect, useState } from 'react';
 
 import extractMarkdownHeaderContent from '../../utils/extractMarkdownHeaderContent';
-import { fetchMarkdown } from '../../utils/fetchMarkdown';
 import { Markdown } from '../Markdown';
 import { getFileByWebPath } from '../../utils/getFileByLabelSlug';
+import { fetchMarkdownById } from '../../utils/fetchMarkdownById';
+import { BASE_PATH } from '../../AppConstants';
 
 type MarkdownImageProps = ImgHTMLAttributes<HTMLImageElement> & {
   options?: string;
@@ -60,18 +61,15 @@ export const MarkdownImage = (props: MarkdownImageProps) => {
     'data-hash-params': hash,
   } = props;
 
-  console.log('MarkdownImage', props);
-
   const file = weburl ? getFileByWebPath(weburl) : undefined;
-
-
+  
+  
   useEffect(() => {
     if (ext !== 'md') return;
-
     if (!file) return;
-    fetchMarkdown({ pathname: file.filepath, id: file.id })
-      .then(({ markdown }) => {
-        setText(hash ? extractMarkdownHeaderContent(markdown, hash) || markdown : markdown);
+    fetchMarkdownById(file.id)
+      .then(({ text }) => {
+        setText(hash ? extractMarkdownHeaderContent(text, hash) || text : text);
       })
       .catch((error) => {
         throw new Error(error);
@@ -79,8 +77,6 @@ export const MarkdownImage = (props: MarkdownImageProps) => {
   }, [file, hash, weburl, ext]);
 
   if (ext === 'md') {
-    // const file = fileMeta.find((file) => file.pathSlug === pathSlug);
-
     return (
       <Box
         className={'toc_exclude'}
@@ -95,7 +91,7 @@ export const MarkdownImage = (props: MarkdownImageProps) => {
         }}
       >
         <StyledSpan>
-          <a href={`/${file?.webPath}`}>
+          <a href={`${BASE_PATH}${file?.webPath}${hash?'#'+hash:''}`}>
             <SvgIcon fontSize="small">
               <LinkIcon />
             </SvgIcon>

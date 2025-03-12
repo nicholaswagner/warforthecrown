@@ -2,8 +2,10 @@ import { Visitor } from 'unist-util-visit';
 import { Literal, PhrasingContent } from 'mdast';
 
 import slugify from './slugify';
-import { getFileByLabelSlug } from '../utils/getFileByLabelSlug';
+import { getFileById, getFileByLabelSlug } from '../utils/getFileByLabelSlug';
 import { BASE_PATH } from '../AppConstants';
+import { fetchMarkdownById } from '../utils/fetchMarkdownById';
+import extractMarkdownHeaderContent from '../utils/extractMarkdownHeaderContent';
 
 const defaultConfig = {
     filePathPrefix: '/warforthecrown/vault/',
@@ -49,6 +51,14 @@ const createVisitObsidianEmbedsV2 = (config?: typeof defaultConfig): Visitor<Lit
                 });
             } else {
                 if (params[0].startsWith('!')) {
+
+                    // if (file.extension === 'md') {
+                    //     fetchMarkdownById(getFileById(file.id).id).then(({ text }) => {
+                    //         console.log('embed this markdown as ... embedded:  ', urlParams, extractMarkdownHeaderContent(text, slugify(urlParams)))
+                    //     }).catch((err) => { });
+                    // }
+
+
                     const src = file.filepath;
                     results.push({
                         type: 'image',
@@ -60,7 +70,7 @@ const createVisitObsidianEmbedsV2 = (config?: typeof defaultConfig): Visitor<Lit
                                 options: params[2] ?? undefined,
                                 src: filePathPrefix + src,
                                 'data-ext': file.extension,
-                                'data-weburl': file.webPath + urlParams,
+                                'data-weburl': file.webPath,// + urlParams,
                                 'data-hash-params': slugify(urlParams),
                                 'data-label': file.label,
 
@@ -78,7 +88,7 @@ const createVisitObsidianEmbedsV2 = (config?: typeof defaultConfig): Visitor<Lit
                                 options: params[2] ?? undefined,
                                 src: filePathPrefix + file.filepath,
                                 'data-ext': file.extension,
-                                'data-weburl': BASE_PATH + file.webPath + urlParams,
+                                'data-weburl': BASE_PATH + file.webPath,
                                 'data-hash-params': slugify(urlParams),
                                 'data-label': file.label,
                             },

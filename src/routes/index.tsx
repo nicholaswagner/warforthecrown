@@ -2,7 +2,6 @@ import { Box } from '@mui/material';
 import { createFileRoute } from '@tanstack/react-router';
 
 // import { Markdown } from '../components/Markdown';
-import { fetchMarkdown } from '../utils/fetchMarkdown';
 // import remarkFrontmatter from 'remark-frontmatter';
 // import remarkGfm from 'remark-gfm';
 // import ReactMarkdown from 'react-markdown';
@@ -17,6 +16,7 @@ import { fetchMarkdown } from '../utils/fetchMarkdown';
 // import MyPlugin from '../lib/MyPlugin';
 // import { getAllFileMeta } from '../utils/getAllFiles';
 import { Markdown } from '../components/Markdown';
+import { fetchMarkdownForWebPath } from '../utils/fetchMarkdownForWebPath';
 
 
 // const file = await unified()
@@ -50,23 +50,19 @@ import { Markdown } from '../components/Markdown';
 
 
 function RouteComponent() {
-  const { markdown: text } = Route.useLoaderData();
-
-  const content = `
-
-`
+  const { text } = Route.useLoaderData();
 
   // process(content);
 
   return (
     <Box component="section" sx={{ display: 'flex', flexDirection: 'row', gap: '0.5rem', width: '100%' }}>
-      <Markdown sxProps={{ width: 'inherit', paddingTop: '4rem' }}>{content}</Markdown>
+      <Markdown sxProps={{ width: 'inherit', paddingTop: '4rem' }}>{text}</Markdown>
     </Box>
   );
 }
 
 export const Route = createFileRoute('/')({
   component: RouteComponent,
-  loader: () => fetchMarkdown({ pathname: 'readme' }),
+  loader: () => fetchMarkdownForWebPath({ webPath: 'readme' }),
   notFoundComponent: () => <h1>404</h1>,
 });

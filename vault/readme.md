@@ -83,7 +83,7 @@ Links to internal files:
 ---
 
 ### An Embedded Markdown file
-![[block_level_elements]]
+![[block_level_elements#an_example_callout]]
 
 ---
 

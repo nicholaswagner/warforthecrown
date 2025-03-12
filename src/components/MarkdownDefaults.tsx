@@ -6,7 +6,6 @@ import { Blockquote } from './md/Blockquote';
 import CodeBlock from './md/CodeBlock';
 import { MarkdownImage } from './md/MarkdownEmbed';
 import CalloutTitle from './md/CalloutTitle';
-import { Block } from '@tanstack/react-router';
 
 type ComponentProps = {
   children?: ReactNode;
@@ -151,7 +150,8 @@ export const MarkdownComponents = {
     if (_props['data-callout']) {
       return <CalloutTitle {..._props} />;
     }
-    return <p {..._props} />;
+    return <span {..._props} />;
+    // return <p {..._props} />;
     // return (
     //   <Typography
     //     variant="body2"
@@ -162,9 +162,9 @@ export const MarkdownComponents = {
     //       // margin: '1rem',
     //       padding: '1rem',
     //     }}
-    //     {...props}
+    //     {..._props}
     //   >
-    //     {props.children}
+    //     {_props.children}
     //   </Typography>
     // );
   },
