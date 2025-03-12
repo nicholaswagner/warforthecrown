@@ -106,8 +106,9 @@ span.obsidian-hilight {
   background-color: gold;
 }
 
-.obsidian-embed {
+.obsidian-md-embed {
   width: 100%;
   background-color: var(--palette-background-paper);
   padding: 2rem;
 }
+

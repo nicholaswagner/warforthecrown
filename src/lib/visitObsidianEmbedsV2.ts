@@ -51,33 +51,41 @@ const createVisitObsidianEmbedsV2 = (config?: typeof defaultConfig): Visitor<Lit
                 });
             } else {
                 if (params[0].startsWith('!')) {
-                    // if embedding a markdown file, change the parent element from <p> to <div>
-                    // if (file.extension === 'md') parent.data = { ...parent.data, hName: 'div', hProperties: { className: 'obsidian-embed toc_exclude' } }
+                    const src = file.filepath;
 
                     if (file.extension === 'md') {
-                        parent.data = { ...parent.data, hName: 'div', hProperties: { className: 'obsidian-embed' } }
+                        // if embedding a markdown file, change the parent element from <p> to <div>
 
-                    }
-
-
-                    const src = file.filepath;
-                    results.push({
-                        type: 'image',
-                        url: src,
-                        alt: title,
-                        data: {
+                        parent.data = {
+                            ...parent.data,
+                            hName: 'div',
                             hProperties: {
-                                className: 'obsidian-img',
+                                className: 'obsidian-md-embed',
                                 options: params[2] ?? undefined,
-                                src: filePathPrefix + src,
-                                'data-ext': file.extension,
-                                'data-weburl': file.webPath,
-                                'data-anchor': slugify(urlParams),
-                                'data-label': file.label,
+                                'data-file-id': file.id,
+                                'data-hash-params': slugify(urlParams),
+                            }
+                        }
+                    }
+                    else {
+                        results.push({
+                            type: 'image',
+                            url: src,
+                            alt: title,
+                            data: {
+                                hProperties: {
+                                    className: 'obsidian-img',
+                                    options: params[2] ?? undefined,
+                                    src: filePathPrefix + src,
+                                    'data-ext': file.extension,
+                                    'data-weburl': file.webPath,
+                                    'data-anchor': slugify(urlParams),
+                                    'data-label': file.label,
 
+                                },
                             },
-                        },
-                    });
+                        });
+                    }
 
                 } else {
                     results.push({

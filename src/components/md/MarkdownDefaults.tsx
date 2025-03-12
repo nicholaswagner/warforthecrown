@@ -4,8 +4,9 @@ import { ReactNode } from 'react';
 import slugify from '../../lib/slugify'
 import { Blockquote } from './Blockquote';
 import CodeBlock from './CodeBlock';
-import { MarkdownImage } from './MarkdownEmbed';
+import { MarkdownImage } from './MarkdownImage';
 import CalloutTitle from './CalloutTitle';
+import EmbeddedMarkdown from './EmbeddedMarkdown';
 
 type ComponentProps = {
   children?: ReactNode;
@@ -18,6 +19,8 @@ type ComponentProps = {
   ['data-callout']?: string;
   ['data-collapsible']?: string;
   ['data-collapsed']?: string;
+  ['data-file-id']?: string;
+  ['data-hash-params']?: string;
   href?: string;
 };
 
@@ -58,11 +61,9 @@ const StyledTableHead = styled(TableHead)(() => ({
     fontWeight: 800,
     fontSize: '1rem',
     textEmphasis: 'bold',
-    // color: theme.palette.primary.main,
     textTransform: 'Capitalize',
     padding: '1.2rem',
     backgroundColor: 'none',
-    // backgroundColor: 'rgb(26, 27, 38)',
   },
 }));
 
@@ -70,20 +71,9 @@ const StyledTable = styled(Table)(({ theme }) => ({
   width: '100%',
   borderCollapse: 'inherit',
   [`& > thead`]: {
-    // width: '100%',
-    // padding: '10rem',
     borderBottomWidth: '0.5rem',
     borderBottomStyle: 'solid',
     borderBottomColor: theme.palette.primary.main,
-
-    // backgroundColor: theme.palette.primary.main,
-    // backgroundColor: theme.palette.background.paper,
-
-    // backgroundColor: theme.palette.background.paper,
-    // backgroundColor: theme.palette.grey[300],
-    // backgroundColor: theme.palette.primary.main,
-    // backgroundColor: 'transparent',
-    // color: theme.palette.getContrastText(theme.palette.background.paper),
   },
   ['& > tbody > tr > td']: {
     padding: '1rem',
@@ -143,7 +133,11 @@ export const MarkdownComponents = {
   code: CodeBlock,
   img: MarkdownImage,
   div: (props: ComponentProps) => {
-
+    if (props.className === 'obsidian-md-embed') {
+      const {'data-file-id': id, 'data-hash-params': hash} = props;
+      if (!id || !hash) return;
+      return <EmbeddedMarkdown fileId={id} hash={hash} {...props}/>;
+    }
     return <div {...props}/>;
   },
   blockquote: Blockquote,
