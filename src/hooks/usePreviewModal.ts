@@ -24,21 +24,22 @@ export function usePreviewModal() {
 
   const handleMouseEnter = async (event: React.MouseEvent<HTMLAnchorElement | HTMLButtonElement>) => {
     if (isVisible) return;
-    const { type, hash, pathslug, label } = event.currentTarget.dataset;
+    const { ext, anchor: hash, weburl, label } = event.currentTarget.dataset;
+
     const { clientX, clientY } = event;
 
-    if (!pathslug) return;
+    if (!weburl) return;
     setTarget(event.currentTarget);
 
     const link = (event.currentTarget as HTMLAnchorElement).href;
 
     if (!event.currentTarget.classList.contains('obsidian-link')) setPreview({ type: 'url', content: link, x: clientX, y: clientY, setIsVisible, link });
-    else if (type?.match(/(jpg|jpeg|png|gif|webp|svg)$/i)) setPreview({ type: 'image', content: `![[${label}]]`, x: clientX, y: clientY, setIsVisible, hash: hash, link });
+    else if (ext?.match(/(jpg|jpeg|png|gif|webp|svg)$/i)) setPreview({ type: 'image', content: `![[${label}]]`, x: clientX, y: clientY, setIsVisible, hash, link });
     else {
-      const file = getFileByWebPath(pathslug);
-      const response = await fetch(CDN_PREFIX + file?.webPath);
-      const text = await response.text();
-      setPreview({ type: "markdown", content: text, x: clientX, y: clientY, setIsVisible, hash: hash, link });
+      const file = getFileByWebPath(weburl);
+      const response = await fetch(CDN_PREFIX + file?.filepath);
+      const content = await response.text();
+      setPreview({ type: "markdown", content, x: clientX, y: clientY, setIsVisible, hash, link });
     }
 
     setIsVisible(true);

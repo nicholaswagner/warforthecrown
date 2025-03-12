@@ -11,12 +11,12 @@ import { BASE_PATH } from '../../AppConstants';
 
 type MarkdownImageProps = ImgHTMLAttributes<HTMLImageElement> & {
   options?: string;
-  pathslug?: string;
+  // pathslug?: string;
   type?: string;
   'data-label'?: string;
   'data-ext'?: string;
   'data-weburl'?: string;
-  'data-hash-params'?: string;
+  'data-anchor'?: string;
 };
 
 const StyledSpan = styled('span')(() => ({
@@ -58,7 +58,7 @@ export const MarkdownImage = (props: MarkdownImageProps) => {
     'data-label': _label,
     'data-ext': ext,
     'data-weburl': weburl,
-    'data-hash-params': hash,
+    'data-anchor': hash,
   } = props;
 
   const file = weburl ? getFileByWebPath(weburl) : undefined;
