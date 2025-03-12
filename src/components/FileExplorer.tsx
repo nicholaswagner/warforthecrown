@@ -2,16 +2,15 @@ import { alpha, styled } from '@mui/material';
 import { useTreeViewApiRef } from '@mui/x-tree-view';
 import { RichTreeView } from '@mui/x-tree-view/RichTreeView';
 import { TreeItem, treeItemClasses } from '@mui/x-tree-view/TreeItem';
-import { useLocation, useNavigate } from '@tanstack/react-router';
+import { useNavigate, useRouter } from '@tanstack/react-router';
 import { ChevronDown, ChevronRight, FileIcon } from 'lucide-react';
 import { useState } from 'react';
 
 import { SIDEBAR_WIDTH } from '../AppConstants';
-import data from '../assets/files.json';
+import data from '../assets/files_tree.json';
 import slugify from '../lib/slugify'
-// import { slugify } from '../lib/slugifyString';
 import { FileTreeNode } from '../types/FileTreeNode';
-import { getAllFileMeta } from '../utils/getAllFiles';
+import { getFileById, getFileByWebPath } from '../utils/getFileByLabelSlug';
 
 const CustomTreeItem = styled(TreeItem)(({ theme }) => ({
   [`& .${treeItemClasses.content}`]: {
@@ -61,15 +60,14 @@ const StyledTreeView = styled(RichTreeView)(() => ({
 }));
 
 const FileExplorer = () => {
-  const location = useLocation();
   const apiRef = useTreeViewApiRef();
   const navigate = useNavigate();
-  const fileMetas = getAllFileMeta();
-
-  const pathIds = location.pathname
+  const {basepath,latestLocation} = useRouter();
+  const pathIds = latestLocation.pathname.replace(basepath, '')
     .split('/')
     .map((path) => {
-      const fileMeta = fileMetas.find((fileMeta) => fileMeta.slug === slugify(path));
+      if (path === '') return;
+      const fileMeta =  getFileByWebPath(slugify(path));
       return fileMeta?.id;
     })
     .filter((id) => id !== undefined);
@@ -100,10 +98,10 @@ const FileExplorer = () => {
       }}
       items={data as FileTreeNode[]}
       onItemClick={(_, itemId) => {
-        const item = apiRef.current?.getItem(itemId);
-        if (item.type === 'folder' || item.type === 'canvas') return;
+        const file = getFileById(itemId);
+        if(!file || file.fileType !== 'file') return;
         navigate({
-          to: `/${item.pathSlug}`,
+          to: `/${file.webPath}`,
           resetScroll: true,
         });
       }}

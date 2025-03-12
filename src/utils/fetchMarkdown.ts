@@ -1,5 +1,6 @@
 import { CDN_PREFIX } from "../AppConstants";
-import { getFileMetaForId, getFileMetaForPathSlug } from "./getFileDataForUrl";
+import { getFileByLabelSlug } from "./getFileByLabelSlug";
+// import { getFileMetaForId, getFileMetaForPathSlug } from "./getFileDataForUrl";
 import { parseFrontmatter } from "./parseFrontmatter";
 
 type Matter = {
@@ -12,12 +13,12 @@ interface Args {
     pathname: string;
     id?: string;
 }
-export const fetchMarkdown = async ({ pathname, id }: Args) => {
-    const fileMeta = id ? getFileMetaForId(id) : getFileMetaForPathSlug(pathname);
+export const fetchMarkdown = async ({ pathname }: Args) => {
+    const fileMeta = getFileByLabelSlug(pathname);
     if (!fileMeta) {
-        throw new Error(`No file meta found for path: ${pathname}`);
+        throw new Error(`The file requested in the URL above could not be located in the hashfile: ${pathname}`);
     }
-    return fetch(`${CDN_PREFIX}${fileMeta?.path}`)
+    return fetch(`${CDN_PREFIX}${fileMeta?.filepath}`)
         .then((res) => res.text())
         .then((result) => {
             const matter = parseFrontmatter<Matter>(result);

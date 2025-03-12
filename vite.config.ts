@@ -4,12 +4,12 @@ import { defineConfig } from 'vite';
 import VitePluginBrowserSync from 'vite-plugin-browser-sync';
 import tsconfigPaths from 'vite-tsconfig-paths';
 
-
+import { BASE_PATH } from './src/AppConstants';
 
 
 
 export default defineConfig(() => ({
-  base: '/warforthecrown/',
+  base: BASE_PATH,
   build: {
     sourcemap: 'inline' as const,
     outDir: 'docs',

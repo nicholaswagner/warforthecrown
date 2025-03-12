@@ -1,12 +1,12 @@
 import { Alert, Container, ImageList, ImageListItem, ImageListItemBar } from '@mui/material';
 import { createFileRoute } from '@tanstack/react-router';
+import { fetchImageByWebPath } from '../utils/fetchImageByWebPath';
 
-import { fetchImageForSlug } from '../utils/fetchImage';
 
 const ImageComponent = () => {
-  const { image, meta } = Route.useLoaderData();
-
-  if (!image || !meta)
+  const {src,meta} = Route.useLoaderData();
+  
+  if (!src || !meta)
     return (
       <Container>
         <Alert sx={{ marginTop: 'auto' }} variant="filled" severity="error">
@@ -18,7 +18,7 @@ const ImageComponent = () => {
     <Container sx={{}}>
       <ImageList variant="standard" cols={1} gap={8}>
         <ImageListItem key={meta?.id} sx={{ cursor: 'auto' }}>
-          <img src={image} alt={meta?.label} loading="lazy" />
+          <img src={src} alt={meta?.label} loading="lazy" />
           <ImageListItemBar title={meta?.label} position="bottom" />
         </ImageListItem>
       </ImageList>
@@ -26,7 +26,7 @@ const ImageComponent = () => {
   );
 };
 
-export const Route = createFileRoute('/images_/$imageId')({
-  loader: ({ params: { imageId } }) => fetchImageForSlug({ path: imageId }),
+export const Route = createFileRoute('/images_/$')({
+  loader: ({ params }) => fetchImageByWebPath({ webPath: `images/${params._splat}` || '404' }),
   component: ImageComponent,
 });

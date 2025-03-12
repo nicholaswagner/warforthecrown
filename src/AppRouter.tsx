@@ -2,7 +2,7 @@ import { Alert } from '@mui/material';
 import { createRouter, RouterProvider } from '@tanstack/react-router';
 
 import { routeTree } from './routeTree.gen';
-import { fetchImageForSlug } from './utils/fetchImage';
+import { fetchImageByLabelSlug } from './utils/fetchImageByLabelSlug';
 import { fetchMarkdown } from './utils/fetchMarkdown';
 
 // Handle GitHub Pages redirect **before** router creation
@@ -19,7 +19,7 @@ export const router = createRouter({
   routeTree,
   context: {
     fetchMarkdown,
-    fetchImage: fetchImageForSlug,
+    fetchImage: fetchImageByLabelSlug,
   },
   defaultPreload: 'intent',
   defaultStaleTime: 5000,

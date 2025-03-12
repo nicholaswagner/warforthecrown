@@ -3,10 +3,10 @@ import { createFileRoute } from '@tanstack/react-router';
 
 import { Markdown } from '../components/Markdown';
 import { TableOfContents } from '../components/TableOfContents';
-import { fetchMarkdown } from '../utils/fetchMarkdown';
+import { fetchMarkdownForWebPath } from '../utils/fetchMarkdownForWebPath';
 
 function RouteComponent() {
-  const { markdown: content } = Route.useLoaderData();
+  const { text } = Route.useLoaderData();
 
   return (
     <Box
@@ -18,7 +18,7 @@ function RouteComponent() {
         width: '100%',
       }}
     >
-      <Markdown sxProps={{ width: 'inherit', paddingTop: '4rem' }}>{content}</Markdown>
+      <Markdown sxProps={{ width: 'inherit', paddingTop: '4rem' }}>{text}</Markdown>
       <Box component="nav" sx={{ display: 'flex', flexDirection: 'column' }}>
         <TableOfContents />
       </Box>
@@ -27,6 +27,7 @@ function RouteComponent() {
 }
 
 export const Route = createFileRoute('/$')({
-  loader: ({ location }) => fetchMarkdown({ pathname: location.pathname }),
+  loader: ({ params }) => {
+    return fetchMarkdownForWebPath({ webPath: params._splat || '404' })},
   component: RouteComponent,
 });

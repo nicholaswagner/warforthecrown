@@ -2,7 +2,7 @@ import { useNavigate } from "@tanstack/react-router";
 import { useState } from "react";
 
 import { CDN_PREFIX } from "../AppConstants";
-import { getAllFileMeta } from "../utils/getAllFiles";
+import { getFileByWebPath } from "../utils/getFileByLabelSlug";
 
 export type PreviewModalProps = {
   content: string,
@@ -18,7 +18,6 @@ export type PreviewModalProps = {
 export function usePreviewModal() {
   const [isVisible, setIsVisible] = useState(false);
   const [preview, setPreview] = useState<PreviewModalProps>({ setIsVisible, type: 'url', content: '#', x: 0, y: 0 });
-  const fileMeta = getAllFileMeta();
   const navigate = useNavigate();
   const [target, setTarget] = useState<HTMLAnchorElement | HTMLButtonElement | null>(null);
 
@@ -28,6 +27,7 @@ export function usePreviewModal() {
     const { type, hash, pathslug, label } = event.currentTarget.dataset;
     const { clientX, clientY } = event;
 
+    if (!pathslug) return;
     setTarget(event.currentTarget);
 
     const link = (event.currentTarget as HTMLAnchorElement).href;
@@ -35,8 +35,8 @@ export function usePreviewModal() {
     if (!event.currentTarget.classList.contains('obsidian-link')) setPreview({ type: 'url', content: link, x: clientX, y: clientY, setIsVisible, link });
     else if (type?.match(/(jpg|jpeg|png|gif|webp|svg)$/i)) setPreview({ type: 'image', content: `![[${label}]]`, x: clientX, y: clientY, setIsVisible, hash: hash, link });
     else {
-      const file = fileMeta.find((file) => file.pathSlug === pathslug);
-      const response = await fetch(CDN_PREFIX + file?.path);
+      const file = getFileByWebPath(pathslug);
+      const response = await fetch(CDN_PREFIX + file?.webPath);
       const text = await response.text();
       setPreview({ type: "markdown", content: text, x: clientX, y: clientY, setIsVisible, hash: hash, link });
     }

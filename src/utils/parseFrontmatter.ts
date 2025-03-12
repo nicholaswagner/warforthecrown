@@ -4,7 +4,6 @@ type ParsedFrontmatter<T> = {
     [K in keyof T]?: string;
 };
 
-// type ParsedFrontmatter<T> = { metadata: string } & Partial<T>;
 export const parseFrontmatter = <T extends Record<string, string>>(
     markdown: string
 ): ParsedFrontmatter<T> => {

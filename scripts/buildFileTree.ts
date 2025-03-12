@@ -7,17 +7,18 @@ import hash from '../src/lib/hash'; // TODO - dont forget to include copyright a
 import slugify from '../src/lib/slugify'; // this creates a url safe slug from a string, its used by the webapp, filetree, and filehash
 // import { printTable } from './printTable'; // just a silly little table printer for the metrics
 
+import type { FileTreeNode } from '../src/types/FileTreeNode';
 
-type FileTreeNode = {
-    children?: FileTreeNode[];
-    extension?: string; // file extension no dot, undefined for folders
-    filepath: string;
-    fileType?: 'file' | 'folder' | 'symlink';
-    id: string; // hash of the raw filepath including file+extension to ensure uniqueness
-    label: string; // the raw file/folder name that the user uses on their local filesystem
-    labelSlug: string; // slugified version of the label
-    webPath: string;
-}
+// export type FileTreeNode = {
+//     children?: FileTreeNode[];
+//     extension?: string; // file extension no dot, undefined for folders
+//     filepath: string;
+//     fileType?: 'file' | 'folder' | 'symlink';
+//     id: string; // hash of the raw filepath including file+extension to ensure uniqueness
+//     label: string; // the raw file/folder name that the user uses on their local filesystem
+//     labelSlug: string; // slugified version of the label
+//     webPath: string;
+// }
 
 type FileTree = {
     tree: FileTreeNode[];
@@ -109,7 +110,7 @@ const buildFileTree = (dirents: Dirent[]): FileTree => {
                     id: hash(newPath),
                     label,
                     labelSlug: slugify(label),
-                    webPath: extension === 'md' ? webPath.slice(0, -3) : webPath, // markdown files are extensionless in the webPaths, everything else has their extension preserved (but still slugified).  This is to align with the obsidian.app behavior
+                    webPath: extension === 'md' ? webPath.slice(0, -3) : webPath, // markdown files are extensionless in the byWebPath, everything else has their extension preserved (but still slugified).  This is to align with the obsidian.app behavior
                 };
 
                 if (extension) {
@@ -137,15 +138,30 @@ const buildFileTree = (dirents: Dirent[]): FileTree => {
     return { tree: root.children || [], metrics };
 }
 
+
+//https://help.obsidian.md/file-formats
+const obsidianImageTypes = ['avif', 'bmp', 'gif', 'jpeg', 'jpg', 'png', 'svg', 'webp'];
+
+
 const buildHashTable = (tree: FileTreeNode[]) => {
-    const hashTable: Record<string, FileTreeNode> = {};
+    const byId: Record<string, FileTreeNode> = {};
+    const byWebPath: Record<string, string> = {};
+    const byLabelSlug: Record<string, string> = {};
+    const getAllImageIds: string[] = []; // list of image id's
+
     const traverse = (node: FileTreeNode) => {
-        hashTable[node.labelSlug] = { ...node };  // Create a shallow copy to avoid mutation of the original object
-        delete hashTable[node.labelSlug].children; // Remove the children property to flatten
+        const { children: _, ...rest } = node;
+        byId[node.id] = { ...rest };  // Create a shallow copy to avoid mutation of the original object
+        byWebPath[node.webPath] = node.id;
+        byLabelSlug[node.labelSlug] = node.id;
+        if (node.fileType === 'file' && node.extension) {
+            if (obsidianImageTypes.includes(node.extension)) getAllImageIds.push(node.id);
+        }
+        // delete byId[node.labelSlug].children; // Remove the children property to flatten
         node.children?.forEach(traverse); // Continue traversing if needed
     };
     tree.forEach(traverse);
-    return hashTable;
+    return { byId, byWebPath, byLabelSlug, getAllImageIds };
 }
 
 const dirents = await getTargetDirents(argv.in).catch((err) => {

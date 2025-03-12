@@ -14,7 +14,7 @@ import { Route as rootRoute } from './routes/__root'
 import { Route as ImagesImport } from './routes/images'
 import { Route as SplatImport } from './routes/$'
 import { Route as IndexImport } from './routes/index'
-import { Route as ImagesImageIdImport } from './routes/images_.$imageId'
+import { Route as ImagesSplatImport } from './routes/images_.$'
 
 // Create/Update Routes
 
@@ -36,9 +36,9 @@ const IndexRoute = IndexImport.update({
   getParentRoute: () => rootRoute,
 } as any)
 
-const ImagesImageIdRoute = ImagesImageIdImport.update({
-  id: '/images_/$imageId',
-  path: '/images/$imageId',
+const ImagesSplatRoute = ImagesSplatImport.update({
+  id: '/images_/$',
+  path: '/images/$',
   getParentRoute: () => rootRoute,
 } as any)
 
@@ -67,11 +67,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ImagesImport
       parentRoute: typeof rootRoute
     }
-    '/images_/$imageId': {
-      id: '/images_/$imageId'
-      path: '/images/$imageId'
-      fullPath: '/images/$imageId'
-      preLoaderRoute: typeof ImagesImageIdImport
+    '/images_/$': {
+      id: '/images_/$'
+      path: '/images/$'
+      fullPath: '/images/$'
+      preLoaderRoute: typeof ImagesSplatImport
       parentRoute: typeof rootRoute
     }
   }
@@ -83,14 +83,14 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/$': typeof SplatRoute
   '/images': typeof ImagesRoute
-  '/images/$imageId': typeof ImagesImageIdRoute
+  '/images/$': typeof ImagesSplatRoute
 }
 
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/$': typeof SplatRoute
   '/images': typeof ImagesRoute
-  '/images/$imageId': typeof ImagesImageIdRoute
+  '/images/$': typeof ImagesSplatRoute
 }
 
 export interface FileRoutesById {
@@ -98,15 +98,15 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/$': typeof SplatRoute
   '/images': typeof ImagesRoute
-  '/images_/$imageId': typeof ImagesImageIdRoute
+  '/images_/$': typeof ImagesSplatRoute
 }
 
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/$' | '/images' | '/images/$imageId'
+  fullPaths: '/' | '/$' | '/images' | '/images/$'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/$' | '/images' | '/images/$imageId'
-  id: '__root__' | '/' | '/$' | '/images' | '/images_/$imageId'
+  to: '/' | '/$' | '/images' | '/images/$'
+  id: '__root__' | '/' | '/$' | '/images' | '/images_/$'
   fileRoutesById: FileRoutesById
 }
 
@@ -114,14 +114,14 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   SplatRoute: typeof SplatRoute
   ImagesRoute: typeof ImagesRoute
-  ImagesImageIdRoute: typeof ImagesImageIdRoute
+  ImagesSplatRoute: typeof ImagesSplatRoute
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   SplatRoute: SplatRoute,
   ImagesRoute: ImagesRoute,
-  ImagesImageIdRoute: ImagesImageIdRoute,
+  ImagesSplatRoute: ImagesSplatRoute,
 }
 
 export const routeTree = rootRoute
@@ -137,7 +137,7 @@ export const routeTree = rootRoute
         "/",
         "/$",
         "/images",
-        "/images_/$imageId"
+        "/images_/$"
       ]
     },
     "/": {
@@ -149,8 +149,8 @@ export const routeTree = rootRoute
     "/images": {
       "filePath": "images.tsx"
     },
-    "/images_/$imageId": {
-      "filePath": "images_.$imageId.tsx"
+    "/images_/$": {
+      "filePath": "images_.$.tsx"
     }
   }
 }

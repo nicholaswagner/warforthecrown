@@ -29,7 +29,6 @@ const StyledArticle = styled('article')(() => ({
 
 export const Markdown = (props: MarkdownProps) => {
   const { sxProps, children, components } = props;
-  const fileMeta = getAllFileMeta();
   /*@ts-expect-error  ts is saying setIsVisible is never read ... which ... is correct ... its not supposed to be*/
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { preview, isVisible, setIsVisible, handleMouseEnter, handleMouseLeave, handleMouseClick } = usePreviewModal();
@@ -42,7 +41,6 @@ export const Markdown = (props: MarkdownProps) => {
           remarkGfm,
           remarkFrontmatter,
           [obsidianPlugin,{
-            fileMeta,
               vaultPathPrefix: CDN_PREFIX, // prefix any media src with this
               hrefTemplate: (path: string) => `${path}`,
           }]

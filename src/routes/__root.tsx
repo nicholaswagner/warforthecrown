@@ -4,8 +4,8 @@ import { createRootRouteWithContext, Outlet } from '@tanstack/react-router';
 import { useTheme } from '../AppThemeProvider';
 import FileExplorer from '../components/FileExplorer';
 import { ThemeSwitch } from '../components/ThemeSwitch';
-import { fetchImageForSlug } from '../utils/fetchImage';
-import { fetchMarkdown } from '../utils/fetchMarkdown';
+import { fetchImageByLabelSlug } from '../utils/fetchImageByLabelSlug';
+import { fetchMarkdownForWebPath } from '../utils/fetchMarkdownForWebPath';
 
 const StyledNav = styled('nav', {
   name: 'nav',
@@ -39,8 +39,8 @@ const RootRoute = () => {
 };
 
 export const Route = createRootRouteWithContext<{
-  fetchMarkdown: typeof fetchMarkdown;
-  fetchImage: typeof fetchImageForSlug;
+  fetchMarkdownForWebPath: typeof fetchMarkdownForWebPath;
+  fetchImage: typeof fetchImageByLabelSlug;
 }>()({
   component: () => <RootRoute />,
   notFoundComponent: () => <h1>404 caught in __root</h1>,

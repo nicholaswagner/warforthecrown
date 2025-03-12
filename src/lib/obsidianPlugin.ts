@@ -10,7 +10,7 @@ import { FileTreeNode } from '../types/FileTreeNode';
 import createVisitObsidianEmbedsV2 from './visitObsidianEmbedsV2';
 
 export type PluginOptions = {
-    fileMeta: FileTreeNode[];
+    fileMeta?: FileTreeNode[];
     hrefTemplate?: (path: string) => string;
     filePathPrefix?: string; // while the UX should give the illusion that mirrors your vault, the actual files might be stored in a different location (like a CDN)
 }

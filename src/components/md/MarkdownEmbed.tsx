@@ -5,17 +5,17 @@ import { ImgHTMLAttributes, useEffect, useState } from 'react';
 
 import extractMarkdownHeaderContent from '../../utils/extractMarkdownHeaderContent';
 import { fetchMarkdown } from '../../utils/fetchMarkdown';
-import { getAllFileMeta } from '../../utils/getAllFiles';
 import { Markdown } from '../Markdown';
+import { getFileByWebPath } from '../../utils/getFileByLabelSlug';
 
 type MarkdownImageProps = ImgHTMLAttributes<HTMLImageElement> & {
   options?: string;
   pathslug?: string;
   type?: string;
-  'data-type'?: string;
-  'data-pathslug'?: string;
   'data-label'?: string;
-  'data-hash'?: string;
+  'data-ext'?: string;
+  'data-weburl'?: string;
+  'data-hash-params'?: string;
 };
 
 const StyledSpan = styled('span')(() => ({
@@ -47,7 +47,6 @@ const StyledImageBox = styled('span')(() => ({
 
 export const MarkdownImage = (props: MarkdownImageProps) => {
   const [text, setText] = useState('');
-  const fileMeta = getAllFileMeta();
   const theme = useTheme();
   const navigate = useNavigate();
 
@@ -55,27 +54,32 @@ export const MarkdownImage = (props: MarkdownImageProps) => {
     src,
     className,
     options,
-    'data-type': type,
-    'data-pathslug': pathSlug,
     'data-label': _label,
-    'data-hash': hash,
+    'data-ext': ext,
+    'data-weburl': weburl,
+    'data-hash-params': hash,
   } = props;
 
+  console.log('MarkdownImage', props);
+
+  const file = weburl ? getFileByWebPath(weburl) : undefined;
+
+
   useEffect(() => {
-    if (type !== 'md') return;
-    const file = fileMeta.find((file) => file.pathSlug === pathSlug);
+    if (ext !== 'md') return;
+
     if (!file) return;
-    fetchMarkdown({ pathname: file.path, id: file.id })
+    fetchMarkdown({ pathname: file.filepath, id: file.id })
       .then(({ markdown }) => {
         setText(hash ? extractMarkdownHeaderContent(markdown, hash) || markdown : markdown);
       })
       .catch((error) => {
         throw new Error(error);
       });
-  }, [fileMeta, hash, pathSlug, type]);
+  }, [file, hash, weburl, ext]);
 
-  if (type === 'md') {
-    const file = fileMeta.find((file) => file.pathSlug === pathSlug);
+  if (ext === 'md') {
+    // const file = fileMeta.find((file) => file.pathSlug === pathSlug);
 
     return (
       <Box
@@ -91,7 +95,7 @@ export const MarkdownImage = (props: MarkdownImageProps) => {
         }}
       >
         <StyledSpan>
-          <a href={`/${file?.pathSlug}`}>
+          <a href={`/${file?.webPath}`}>
             <SvgIcon fontSize="small">
               <LinkIcon />
             </SvgIcon>
@@ -118,9 +122,9 @@ export const MarkdownImage = (props: MarkdownImageProps) => {
         <img
           src={src}
           className={className}
-          data-pathslug={pathSlug}
+          data-pathslug={weburl}
           data-options={options}
-          onClick={() => navigate({ to: '/$', params: { _splat: pathSlug } })}
+          onClick={() => navigate({ to: '/$', params: { _splat: weburl } })}
         />
       </StyledImageBox>
     );

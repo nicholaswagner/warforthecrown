@@ -1,34 +1,13 @@
 import { Visitor } from 'unist-util-visit';
 import { Literal, PhrasingContent } from 'mdast';
 
-import { FileTreeNode } from '../types/FileTreeNode';
 import slugify from './slugify';
+import { getFileByLabelSlug } from '../utils/getFileByLabelSlug';
+import { BASE_PATH } from '../AppConstants';
 
 const defaultConfig = {
-    // className: 'obsidian-hilight',
     filePathPrefix: '/warforthecrown/vault/',
 };
-
-const testFileMeta: FileTreeNode[] = [
-    {
-        id: 'xxxxxx',
-        label: 'readme',
-        path: 'readme.md',
-        slug: 'readme',
-        pathSlug: 'readme.md',
-        type: 'md',
-        children: []
-    },
-    {
-        "type": "png",
-        "label": "arturo.png",
-        "slug": "arturo_png",
-        "path": "images/arturo.png",
-        "pathSlug": "images/arturo_png",
-        "id": "2vopkw"
-    },
-];
-
 
 const obsidianEmbed = /!?\[\[[^\]]+\]\]/g; // Matches all the ![[...]] in the markdown
 const obsidianEmbedParams = /!?\[\[([^\|\]]+)(?:\s*\|\s*([^\|\]]+))?\]\]/; // Captures the link and optional alias
@@ -37,8 +16,6 @@ const createVisitObsidianEmbedsV2 = (config?: typeof defaultConfig): Visitor<Lit
     const { filePathPrefix } = { ...defaultConfig, ...config };
     return (node, index, parent) => {
         if (!node.value || typeof node.value !== 'string' || !parent || index === undefined) return;
-        // const visitObsidianEmbedsV2: Visitor<Literal> = (node, index, parent) => {
-        //     if (!node.value || typeof node.value !== 'string' || !parent || index === undefined) return;
 
         if (!node.value?.match(obsidianEmbed)?.length) return;
 
@@ -58,11 +35,10 @@ const createVisitObsidianEmbedsV2 = (config?: typeof defaultConfig): Visitor<Lit
                 continue;
             }
 
-            const file = testFileMeta.find(item => item.label === params[1]);
-            console.log('file', file);
             const urlParamsIndex = params[1].indexOf('#');
             const urlParams = urlParamsIndex !== -1 ? params[1].slice(urlParamsIndex) : '';
             const isCarotParams = urlParams.startsWith('^');
+            const file = getFileByLabelSlug(urlParamsIndex !== -1 ? slugify(params[1].slice(0, urlParamsIndex)) : slugify(params[1]));
             const title = isCarotParams ? `${file?.label} > ${urlParams.slice(1)}` : params[1];
 
             if (!file) {
@@ -73,7 +49,7 @@ const createVisitObsidianEmbedsV2 = (config?: typeof defaultConfig): Visitor<Lit
                 });
             } else {
                 if (params[0].startsWith('!')) {
-                    const src = file.path;
+                    const src = file.filepath;
                     results.push({
                         type: 'image',
                         url: src,
@@ -83,9 +59,9 @@ const createVisitObsidianEmbedsV2 = (config?: typeof defaultConfig): Visitor<Lit
                                 className: 'obsidian-embed',
                                 options: params[2] ?? undefined,
                                 src: filePathPrefix + src,
-                                'data-type': file.type,
-                                'data-pathslug': file.pathSlug,
-                                'data-hash': slugify(urlParams),
+                                'data-ext': file.extension,
+                                'data-weburl': file.webPath + urlParams,
+                                'data-hash-params': slugify(urlParams),
                                 'data-label': file.label,
 
                             },
@@ -94,16 +70,16 @@ const createVisitObsidianEmbedsV2 = (config?: typeof defaultConfig): Visitor<Lit
                 } else {
                     results.push({
                         type: 'link',
-                        url: '/' + file.pathSlug + urlParams,
+                        url: BASE_PATH + file.webPath + urlParams,
                         title,
                         data: {
                             hProperties: {
                                 className: 'obsidian-link',
                                 options: params[2] ?? undefined,
-                                src: filePathPrefix + file.path,
-                                'data-type': file.type,
-                                'data-pathslug': file.pathSlug,
-                                'data-hash': slugify(urlParams),
+                                src: filePathPrefix + file.filepath,
+                                'data-ext': file.extension,
+                                'data-weburl': BASE_PATH + file.webPath + urlParams,
+                                'data-hash-params': slugify(urlParams),
                                 'data-label': file.label,
                             },
                         },

@@ -5,8 +5,7 @@ import { useEffect, useState } from 'react';
 
 import { CDN_PREFIX } from '../AppConstants';
 import { FileTreeNode } from '../types/FileTreeNode';
-import { getAllImageMeta } from '../utils/getAllFiles';
-
+import { getAllImageIds, getFileById } from '../utils/getFileByLabelSlug';
 type ImageData = Omit<FileTreeNode, 'children'>;
 
 const ImagesComponent = () => {
@@ -15,7 +14,7 @@ const ImagesComponent = () => {
 
   const location = useLocation();
   const navigate = useNavigate();
-  const images = getAllImageMeta();
+  const images = getAllImageIds().map((id) => getFileById(id));
 
   useEffect(() => {
     setTimeout(() => {
@@ -53,8 +52,8 @@ const ImagesComponent = () => {
         <DialogContent>
           <ImageListItem onClick={() => handleClickImage(image)} sx={{ cursor: 'pointer' }}>
             <img
-              srcSet={`${CDN_PREFIX}${image.path}?w=248&fit=crop&auto=format&dpr=2 2x`}
-              src={`${CDN_PREFIX}${image.path}?w=248&fit=crop&auto=format`}
+              srcSet={`${CDN_PREFIX}${image.filepath}?w=248&fit=crop&auto=format&dpr=2 2x`}
+              src={`${CDN_PREFIX}${image.filepath}?w=248&fit=crop&auto=format`}
               alt={image.label}
               loading="lazy"
             />
@@ -68,8 +67,8 @@ const ImagesComponent = () => {
   const ImageListItems = images.map((item) => (
     <ImageListItem key={item.id} id={item.id} onClick={() => handleClickImage(item)} sx={{ cursor: 'pointer' }}>
       <img
-        srcSet={`${CDN_PREFIX}${item.path}?w=248&fit=crop&auto=format&dpr=2 2x`}
-        src={`${CDN_PREFIX}${item.path}?w=248&fit=crop&auto=format`}
+        srcSet={`${CDN_PREFIX}${item.filepath}?w=248&fit=crop&auto=format&dpr=2 2x`}
+        src={`${CDN_PREFIX}${item.filepath}?w=248&fit=crop&auto=format`}
         alt={item.label}
         loading="lazy"
       />
