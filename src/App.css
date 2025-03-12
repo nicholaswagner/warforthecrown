@@ -94,7 +94,7 @@ span.obsidian-md-error {
   padding: 1.5rem;
   color: var(--palette-error-contrastText);
   background-color: var(--palette-Alert-errorFilledBg);
-  /* opacity: 0.25; */
+
 }
 
 span.obsidian-hilight {
@@ -106,6 +106,8 @@ span.obsidian-hilight {
   background-color: gold;
 }
 
-/* .callout-title {
-  background-color:chocolate;
-} */
+.obsidian-embed {
+  width: 100%;
+  background-color: var(--palette-background-paper);
+  padding: 2rem;
+}

@@ -1,11 +1,11 @@
 import { Divider, styled, Table, TableCell, TableContainer, TableHead, TableRow, Typography } from '@mui/material';
 import { ReactNode } from 'react';
 
-import slugify from '../lib/slugify'
-import { Blockquote } from './md/Blockquote';
-import CodeBlock from './md/CodeBlock';
-import { MarkdownImage } from './md/MarkdownEmbed';
-import CalloutTitle from './md/CalloutTitle';
+import slugify from '../../lib/slugify'
+import { Blockquote } from './Blockquote';
+import CodeBlock from './CodeBlock';
+import { MarkdownImage } from './MarkdownEmbed';
+import CalloutTitle from './CalloutTitle';
 
 type ComponentProps = {
   children?: ReactNode;
@@ -142,6 +142,10 @@ export const MarkdownComponents = {
   break: (props: ComponentProps) => <br {...props} />,
   code: CodeBlock,
   img: MarkdownImage,
+  div: (props: ComponentProps) => {
+
+    return <div {...props}/>;
+  },
   blockquote: Blockquote,
   span: ({ children, ...props }: ComponentProps) => {
     return <span {...props}>{children}</span>;

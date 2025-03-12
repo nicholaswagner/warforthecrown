@@ -51,12 +51,13 @@ const createVisitObsidianEmbedsV2 = (config?: typeof defaultConfig): Visitor<Lit
                 });
             } else {
                 if (params[0].startsWith('!')) {
+                    // if embedding a markdown file, change the parent element from <p> to <div>
+                    // if (file.extension === 'md') parent.data = { ...parent.data, hName: 'div', hProperties: { className: 'obsidian-embed toc_exclude' } }
 
-                    // if (file.extension === 'md') {
-                    //     fetchMarkdownById(getFileById(file.id).id).then(({ text }) => {
-                    //         console.log('embed this markdown as ... embedded:  ', urlParams, extractMarkdownHeaderContent(text, slugify(urlParams)))
-                    //     }).catch((err) => { });
-                    // }
+                    if (file.extension === 'md') {
+                        parent.data = { ...parent.data, hName: 'div', hProperties: { className: 'obsidian-embed' } }
+
+                    }
 
 
                     const src = file.filepath;
@@ -66,17 +67,18 @@ const createVisitObsidianEmbedsV2 = (config?: typeof defaultConfig): Visitor<Lit
                         alt: title,
                         data: {
                             hProperties: {
-                                className: 'obsidian-embed',
+                                className: 'obsidian-img',
                                 options: params[2] ?? undefined,
                                 src: filePathPrefix + src,
                                 'data-ext': file.extension,
-                                'data-weburl': file.webPath,// + urlParams,
+                                'data-weburl': file.webPath,
                                 'data-anchor': slugify(urlParams),
                                 'data-label': file.label,
 
                             },
                         },
                     });
+
                 } else {
                     results.push({
                         type: 'link',

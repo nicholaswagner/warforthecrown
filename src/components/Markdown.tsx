@@ -6,11 +6,9 @@ import remarkGfm from 'remark-gfm';
 
 import { CDN_PREFIX } from '../AppConstants';
 import { usePreviewModal } from '../hooks/usePreviewModal';
-// import MyPlugin from '../lib/MyPlugin';
-import { getAllFileMeta } from '../utils/getAllFiles';
-import { MarkdownComponents } from './MarkdownDefaults';
 import { PreviewModal } from './PreviewModal';
 import obsidianPlugin from '../lib/obsidianPlugin';
+import { MarkdownComponents } from './md/MarkdownDefaults';
 
 type MarkdownProps = {
   id?: string;

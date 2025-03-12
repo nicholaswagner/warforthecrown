@@ -11,7 +11,6 @@ import { BASE_PATH } from '../../AppConstants';
 
 type MarkdownImageProps = ImgHTMLAttributes<HTMLImageElement> & {
   options?: string;
-  // pathslug?: string;
   type?: string;
   'data-label'?: string;
   'data-ext'?: string;
@@ -63,7 +62,6 @@ export const MarkdownImage = (props: MarkdownImageProps) => {
 
   const file = weburl ? getFileByWebPath(weburl) : undefined;
   
-  
   useEffect(() => {
     if (ext !== 'md') return;
     if (!file) return;
@@ -110,7 +108,7 @@ export const MarkdownImage = (props: MarkdownImageProps) => {
         >
           {text}
         </Markdown>
-      </Box>
+        </Box>
     );
   } else {
     return (
