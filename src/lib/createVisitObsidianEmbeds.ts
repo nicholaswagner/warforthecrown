@@ -2,20 +2,14 @@ import { Visitor } from 'unist-util-visit';
 import { Literal, PhrasingContent } from 'mdast';
 
 import slugify from './slugify';
-import { getFileById, getFileByLabelSlug } from '../utils/getFileByLabelSlug';
-import { BASE_PATH } from '../AppConstants';
-import { fetchMarkdownById } from '../utils/fetchMarkdownById';
-import extractMarkdownHeaderContent from '../utils/extractMarkdownHeaderContent';
-
-const defaultConfig = {
-    filePathPrefix: '/warforthecrown/vault/',
-};
+import { getFileByLabelSlug } from '../utils/getFileByLabelSlug';
+import { PluginOptions } from './obsidianPlugin';
 
 const obsidianEmbed = /!?\[\[[^\]]+\]\]/g; // Matches all the ![[...]] in the markdown
-const obsidianEmbedParams = /!?\[\[([^\|\]]+)(?:\s*\|\s*([^\|\]]+))?\]\]/; // Captures the link and optional alias
+const obsidianEmbedParams = /!?\[\[([^\|\]]+)(?:\s*\|\s*([^\|\]]+))?\]\]/; // Captures the link and optional alias from inside the ![[...]]
 
-const createVisitObsidianEmbedsV2 = (config?: typeof defaultConfig): Visitor<Literal> => {
-    const { filePathPrefix } = { ...defaultConfig, ...config };
+const createVisitObsidianEmbeds = (config: PluginOptions): Visitor<Literal> => {
+    const { filePathPrefix, errorClassName, imageClassName, linkClassName, basePath, embeddedMdClassName } = config;
     return (node, index, parent) => {
         if (!node.value || typeof node.value !== 'string' || !parent || index === undefined) return;
 
@@ -29,14 +23,12 @@ const createVisitObsidianEmbedsV2 = (config?: typeof defaultConfig): Visitor<Lit
             if (bufferIndex !== match.index) {
                 results.push({ type: 'text', value: node.value.slice(bufferIndex, match.index) });
             }
-
             const params = match[0].match(obsidianEmbedParams);
             if (!params) {
                 results.push({ type: 'text', value: match[0] });
                 bufferIndex = match.index + match[0].length;
                 continue;
             }
-
             const urlParamsIndex = params[1].indexOf('#');
             const urlParams = urlParamsIndex !== -1 ? params[1].slice(urlParamsIndex) : '';
             const isCarotParams = urlParams.startsWith('^');
@@ -44,10 +36,11 @@ const createVisitObsidianEmbedsV2 = (config?: typeof defaultConfig): Visitor<Lit
             const title = isCarotParams ? `${file?.label} > ${urlParams.slice(1)}` : params[1];
 
             if (!file) {
+                console.error(file);
                 results.push({
                     type: 'text',
                     value: `"${params[1]}" could not be found`,
-                    data: { hName: 'span', hProperties: { className: 'obsidian-md-error' } },
+                    data: { hName: 'span', hProperties: { className: errorClassName } },
                 });
             } else {
                 if (params[0].startsWith('!')) {
@@ -55,12 +48,11 @@ const createVisitObsidianEmbedsV2 = (config?: typeof defaultConfig): Visitor<Lit
 
                     if (file.extension === 'md') {
                         // if embedding a markdown file, change the parent element from <p> to <div>
-
                         parent.data = {
                             ...parent.data,
                             hName: 'div',
                             hProperties: {
-                                className: 'obsidian-md-embed',
+                                className: embeddedMdClassName,
                                 options: params[2] ?? undefined,
                                 'data-file-id': file.id,
                                 'data-hash-params': slugify(urlParams),
@@ -74,14 +66,13 @@ const createVisitObsidianEmbedsV2 = (config?: typeof defaultConfig): Visitor<Lit
                             alt: title,
                             data: {
                                 hProperties: {
-                                    className: 'obsidian-img',
+                                    className: imageClassName,
                                     options: params[2] ?? undefined,
                                     src: filePathPrefix + src,
                                     'data-ext': file.extension,
                                     'data-weburl': file.webPath,
                                     'data-anchor': slugify(urlParams),
                                     'data-label': file.label,
-
                                 },
                             },
                         });
@@ -90,11 +81,11 @@ const createVisitObsidianEmbedsV2 = (config?: typeof defaultConfig): Visitor<Lit
                 } else {
                     results.push({
                         type: 'link',
-                        url: BASE_PATH + file.webPath + urlParams,
+                        url: basePath + file.webPath + urlParams,
                         title,
                         data: {
                             hProperties: {
-                                className: 'obsidian-link',
+                                className: linkClassName,
                                 options: params[2] ?? undefined,
                                 src: filePathPrefix + file.filepath,
                                 'data-ext': file.extension,
@@ -107,10 +98,8 @@ const createVisitObsidianEmbedsV2 = (config?: typeof defaultConfig): Visitor<Lit
                     });
                 }
             }
-
             bufferIndex = match.index + match[0].length;
         }
-
         // Add any remaining text after the last match
         if (bufferIndex < node.value.length) {
             results.push({ type: 'text', value: node.value.slice(bufferIndex) });
@@ -124,4 +113,4 @@ const createVisitObsidianEmbedsV2 = (config?: typeof defaultConfig): Visitor<Lit
     }
 }
 
-export default createVisitObsidianEmbedsV2;
+export default createVisitObsidianEmbeds;

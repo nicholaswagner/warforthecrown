@@ -133,10 +133,10 @@ export const MarkdownComponents = {
   code: CodeBlock,
   img: MarkdownImage,
   div: (props: ComponentProps) => {
-    if (props.className === 'obsidian-md-embed') {
+    if (props.className?.includes('obsidian-md-embed')) {
       const {'data-file-id': id, 'data-hash-params': hash} = props;
       if (!id || !hash) return;
-      return <EmbeddedMarkdown fileId={id} hash={hash} {...props}/>;
+      return <EmbeddedMarkdown fileid={id} hash={hash} {...props}/>;
     }
     return <div {...props}/>;
   },
@@ -148,7 +148,7 @@ export const MarkdownComponents = {
     if (_props['data-callout']) {
       return <CalloutTitle {..._props} />;
     }
-    return <span {..._props} />;
+    return <p {..._props} />;
     // return <p {..._props} />;
     // return (
     //   <Typography

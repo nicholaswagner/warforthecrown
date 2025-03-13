@@ -14,24 +14,23 @@ const StyledSpan = styled('span')(() => ({
 }));
 
 type Props = {
-    fileId: string;
+    fileid: string;
     hash: string;
 }
 
 const EmbeddedMarkdown = (props:Props) => {
-    const {fileId, hash} = props;
+    const {fileid, hash} = props;
     const [content, setContent] = useState('loading...');
     const {getFileById}=useHashLookup();
-
-    useEmbeddedMarkdown(fileId, hash).then((text) => {
+    useEmbeddedMarkdown(fileid, hash).then((text) => {
         if (!text) {
-            setContent('Something went wrong while fetching embedded content.\nfile-id: ${fileId}\nhash params: ${hash}');
+            setContent('Something went wrong while fetching embedded content.\nfile-id: ${fileid}\nhash params: ${hash}');
             return
         }
         setContent(text)
     });
     
-    const meta = getFileById(fileId);
+    const meta = getFileById(fileid);
 
     return (
         <div className={'obsidian-md-embed toc_exclude'} {...props}>

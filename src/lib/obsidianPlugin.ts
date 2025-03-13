@@ -1,30 +1,41 @@
 import { Transformer } from 'unified';
-import { visit, Visitor } from 'unist-util-visit';
-// import { Literal, PhrasingContent, Parent, Text, Paragraph } from 'mdast';
-import visitObsidianCallouts from './visitObsidianCallouts';
-import visitObsidianHilights from './visitObsidianHilights';
+import { visit } from 'unist-util-visit';
 
-
-// chopping block
-import { FileTreeNode } from '../types/FileTreeNode';
-import createVisitObsidianEmbedsV2 from './visitObsidianEmbedsV2';
+import createVisitObsidianEmbeds from './createVisitObsidianEmbeds';
+import createVisitObsidianCallouts from './createVisitObsidianCallouts';
+import createVisitObsidianHilights from './createVisitObsidianHilights';
 
 export type PluginOptions = {
-    fileMeta?: FileTreeNode[];
-    hrefTemplate?: (path: string) => string;
+    basePath: string; // base path for the site, example:  github profile page you'd use "/" but a sub repo you would use "/repo-name/"
+    calloutClassName: string;
+    calloutIsFoldableClassName: string;
+    calloutTitleClassName: string;
+    errorClassName: string;
     filePathPrefix?: string; // while the UX should give the illusion that mirrors your vault, the actual files might be stored in a different location (like a CDN)
+    hilightClassName: string;
+    imageClassName: string;
+    linkClassName: string;
+    embeddedMdClassName: string;
 }
-// const defaultHrefTemplate = (path: string) => path; // by default its assumed that the path to the file is just ./file
-
 
 const defaultConfig = {
-    // className: 'obsidian-hilight',
+    basePath: '/warforthecrown/',
+    calloutClassName: 'callout',
+    calloutIsFoldableClassName: 'foldable',
+    calloutTitleClassName: 'callout-title',
+    errorClassName: 'obsidian-md-error',
     filePathPrefix: '/warforthecrown/vault/',
+    hilightClassName: 'obsidian-hilight',
+    imageClassName: 'obsidian-img',
+    linkClassName: 'obsidian-link',
+    embeddedMdClassName: 'obsidian-md-embed ',
 };
 
-// Export the combined transformer
 export default function obsidianPlugin(options: PluginOptions): Transformer {
-    const visitObsidianEmbeds = createVisitObsidianEmbedsV2({ ...defaultConfig });
+    const config = { ...defaultConfig, ...options };
+    const visitObsidianEmbeds = createVisitObsidianEmbeds({ ...config });
+    const visitObsidianCallouts = createVisitObsidianCallouts({ ...config });
+    const visitObsidianHilights = createVisitObsidianHilights({ ...config });
 
     return (tree) => {
         visit(tree, 'blockquote', visitObsidianCallouts);

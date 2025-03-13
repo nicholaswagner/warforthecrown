@@ -86,7 +86,7 @@ pre {
   word-wrap: break-word;
 }
 
-span.obsidian-md-error {
+.obsidian-md-error {
   border-radius: 0.5rem;
   margin: 3rem;
   text-align: center;
