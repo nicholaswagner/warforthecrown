@@ -1,4 +1,3 @@
-import { CDN_PREFIX } from "../AppConstants";
 import { getFileByWebPath } from "./getFileByLabelSlug";
 
 interface Args {
@@ -7,7 +6,7 @@ interface Args {
 
 export const fetchImageByWebPath = async ({ webPath }: Args) => {
     const meta = getFileByWebPath(webPath);
-    return fetch(`${CDN_PREFIX}${meta?.filepath}`)
+    return fetch(`${import.meta.env.VITE_FILEPATH_PREFIX}${meta?.filepath}`)
         .then((response) => response.blob())
         .then((blob) => ({
             meta,

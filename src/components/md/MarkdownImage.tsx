@@ -9,7 +9,7 @@ type MarkdownImageProps = ImgHTMLAttributes<HTMLImageElement> & {
   'data-weburl'?: string;
 };
 
-// This is just laying the groundwork for applying a global filter to the images, just haven't finished setting it up yet.
+// This is just laying the groundwork for applying a global filter to the images, just haven't decided on what i want yet.
 const StyledImageBox = styled('span')(() => ({
   margin: 0,
   padding: 0,

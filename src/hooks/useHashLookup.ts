@@ -1,3 +1,4 @@
+
 import files_hash from '../assets/files_hash.json';
 import type { FileTreeNode } from '../types/FileTreeNode';
 
@@ -15,11 +16,15 @@ export const getFileByWebPath = (webPath: string) => getFileById(Lookup.byWebPat
 export const getFilesByExtension = (ext: string[]) => Object.values(Lookup.byId).filter((file) => (file.extension && ext.includes(file.extension)));
 export const getAllImageIds = () => Lookup.getAllImageIds;
 
+
 const Lookup = files_hash as unknown as Lookup;
 
+export const getAllImages = () => {
+    return Lookup.getAllImageIds.map((id) => getFileById(id));
+}
 
 const useHashLookup = () => {
-    return { getFileById, getFileByLabelSlug, getFileByWebPath, getFilesByExtension, getAllImageIds };
+    return { getFileById, getFileByLabelSlug, getFileByWebPath, getFilesByExtension, getAllImageIds, getAllImages };
 }
 
 export default useHashLookup;

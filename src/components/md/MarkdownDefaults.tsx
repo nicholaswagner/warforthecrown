@@ -28,22 +28,17 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
   borderBottomWidth: '1px',
   borderBottomStyle: 'solid',
   borderBottomColor: theme.palette.divider,
-  // borderBottomColor: theme.palette.secondary.main,
   backgroundColor: theme.palette.background.paper,
   color: theme.palette.getContrastText(theme.palette.background.paper),
   fontWeight: 300,
   fontSize: '.8rem',
   fontFamily: 'monospace',
-  // backgroundColor: theme.palette.primary.main,
-  // color: theme.palette.common.white,
-  // color: theme.palette.getContrastText(theme.palette.primary.main),
 }));
 
 const StyledTableRow = styled(TableRow)(({ theme }) => ({
   borderBottomWidth: '1px',
   borderBottomStyle: 'solid',
   borderBottomColor: theme.palette.primary.main,
-  // borderBottomColor: theme.palette.secondary.main,
 
   '&:nth-of-type(odd) > td': {
     // backgroundColor: 'rgba(164, 92, 92, 0.05)',
@@ -79,23 +74,6 @@ const StyledTable = styled(Table)(({ theme }) => ({
     padding: '1rem',
   },
 }));
-
-
-// export const StyledLink = styled('a', {
-//   shouldForwardProp: (prop) => prop !== 'to',
-// })(({ theme }) => ({
-//   // color: theme.palette.text.primary,
-//   color: theme.palette.common.white,
-//   backgroundColor: theme.palette.error.main,
-//   textDecoration: 'underline',
-//   '&:hover': {
-//     textDecoration: 'underline',
-//     color: theme.palette.primary.main,
-//   },
-//   '&:visited': {
-//     color: theme.palette.text.secondary,
-//   },
-// }));
 
 export const MarkdownComponents = {
   h1: (props: ComponentProps) => {
@@ -166,16 +144,6 @@ export const MarkdownComponents = {
     //   </Typography>
     // );
   },
-  // blockquote: (props: ComponentProps) => {
-  //   console.log(props.node.hProperties);
-    
-  //   const { node, children, ['data-callout']: type, ['data-collapsible']: collapsible, ['data-title']: title, ...rest } = props;
-  //   return (
-  //     <Callout type={type} {...rest} {...(node.data?.hProperties || {})}>
-  //       {children}
-  //     </Callout>
-  //   );
-  // },
   table: ({ ...rest }: ComponentProps) => {
     return (
       <TableContainer sx={{ my: 4, borderRadius: 1.5 }}>

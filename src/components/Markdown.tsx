@@ -2,9 +2,7 @@ import { styled, SxProps } from '@mui/material';
 import ReactMarkdown from 'react-markdown';
 import remarkFrontmatter from 'remark-frontmatter';
 import remarkGfm from 'remark-gfm';
-// import rehypeRaw from 'rehype-raw';
 
-import { CDN_PREFIX } from '../AppConstants';
 import { usePreviewModal } from '../hooks/usePreviewModal';
 import { PreviewModal } from './PreviewModal';
 import obsidianPlugin from '../lib/obsidianPlugin';
@@ -39,19 +37,10 @@ export const Markdown = (props: MarkdownProps) => {
           remarkGfm,
           remarkFrontmatter,
           [obsidianPlugin,{
-              vaultPathPrefix: CDN_PREFIX, // prefix any media src with this
+              vaultPathPrefix: import.meta.env.BASE_URL,
               hrefTemplate: (path: string) => `${path}`,
           }]
-          // [
-          //   MyPlugin,
-          //   {
-              // fileMeta,
-              // vaultPathPrefix: CDN_PREFIX, // prefix any media src with this
-              // hrefTemplate: (path: string) => `${path}`,
-          //   },
-          // ],
         ]}
-        // rehypePlugins={[rehypeRaw]}
         components={{
           ...MarkdownComponents,
           ...components,

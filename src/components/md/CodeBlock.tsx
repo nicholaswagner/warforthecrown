@@ -10,7 +10,7 @@ const CodeFigure = styled('figure', {
   name: 'CodeFigure',
   slot: 'root',
 })(({ theme }) => ({
-  backgroundColor: 'rgba(31,31,41,1)',//'rgb(26, 27, 38)',
+  backgroundColor: 'rgba(31,31,41,1)',
   borderRadius: '0.5rem',
   color: theme.palette.common.white,
   height: 'auto',
@@ -58,7 +58,7 @@ const CodeBlock: FC<CodeBlockProps> = ({ children, className, inline }: CodeBloc
   useEffect(() => {
     codeToHtml(String(children), {
       lang: codeLanguage,
-      theme: 'kanagawa-wave',//'poimandres',//'laserwave',//'catppuccin-mocha',//'tokyo-night',
+      theme: 'kanagawa-wave',//'poimandres',//'laserwave',//'catppuccin-mocha',//'tokyo-night', // some other favorites
     }).then((highlightedCode) => {
       setText(highlightedCode);
     });

@@ -1,5 +1,4 @@
 
-import { BASE_PATH } from '../../AppConstants';
 import { LinkIcon } from 'lucide-react';
 import { styled, SvgIcon } from '@mui/material';
 import { useState } from 'react';
@@ -35,7 +34,7 @@ const EmbeddedMarkdown = (props:Props) => {
     return (
         <div className={'obsidian-md-embed toc_exclude'} {...props}>
             <StyledSpan>
-                <a href={`${BASE_PATH}${meta?.webPath}${hash?'#'+hash:''}`}>
+                <a href={`${import.meta.env.BASE_URL}${meta?.webPath}${hash?'#'+hash:''}`}>
                 <SvgIcon fontSize="small"><LinkIcon /></SvgIcon>
                 </a>
             </StyledSpan>

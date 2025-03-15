@@ -81,7 +81,8 @@ export const PreviewModal = ({ type, content, x, y, setIsVisible, hash, onClick 
         onClick={onClick && onClick}
         sx={{
           position: 'fixed',
-          overflow: type === 'markdown' ? 'auto' : 'hidden',
+          overflowY: type === 'markdown' ? 'auto' : 'hidden',
+          overflowX: 'hidden',
           left: `calc(${x}px - 20px)`,
           top: `calc(${y}px - 20px)`,
           height: type === 'markdown' ? '400px' : '350px',

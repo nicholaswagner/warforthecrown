@@ -1,20 +1,21 @@
 import { Box, Dialog, DialogContent, IconButton, ImageList, ImageListItem, ImageListItemBar, Typography } from '@mui/material';
 import { createFileRoute, Outlet, useLocation, useNavigate } from '@tanstack/react-router';
 import { CircleXIcon } from 'lucide-react';
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 
-import { CDN_PREFIX } from '../AppConstants';
 import { FileTreeNode } from '../types/FileTreeNode';
-import { getAllImageIds, getFileById } from '../utils/getFileByLabelSlug';
+import useHashLookup from '../hooks/useHashLookup';
+
 type ImageData = Omit<FileTreeNode, 'children'>;
 
 const ImagesComponent = () => {
   const [open, setOpen] = useState(false);
   const [image, setImage] = useState<ImageData | null>(null);
-
   const location = useLocation();
   const navigate = useNavigate();
-  const images = getAllImageIds().map((id) => getFileById(id));
+  
+  const {getAllImages} = useHashLookup();
+  const images = useMemo(() => getAllImages(),[]);
 
   useEffect(() => {
     setTimeout(() => {
@@ -44,6 +45,7 @@ const ImagesComponent = () => {
   };
 
   const DialogImage = ({ image }: { image: ImageData }) => {
+
     return (
       <Dialog open={open} onClose={() => setOpen(false)}>
         <IconButton sx={{ position: 'absolute', right: 8, top: 8, zIndex: 2000 }} onClick={() => setOpen(false)}>
@@ -52,8 +54,8 @@ const ImagesComponent = () => {
         <DialogContent>
           <ImageListItem onClick={() => handleClickImage(image)} sx={{ cursor: 'pointer' }}>
             <img
-              srcSet={`${CDN_PREFIX}${image.filepath}?w=248&fit=crop&auto=format&dpr=2 2x`}
-              src={`${CDN_PREFIX}${image.filepath}?w=248&fit=crop&auto=format`}
+              srcSet={`${import.meta.env.BASE_URL}${image.filepath}?w=248&fit=crop&auto=format&dpr=2 2x`}
+              src={`${import.meta.env.BASE_URL}${image.filepath}?w=248&fit=crop&auto=format`}
               alt={image.label}
               loading="lazy"
             />
@@ -67,8 +69,8 @@ const ImagesComponent = () => {
   const ImageListItems = images.map((item) => (
     <ImageListItem key={item.id} id={item.id} onClick={() => handleClickImage(item)} sx={{ cursor: 'pointer' }}>
       <img
-        srcSet={`${CDN_PREFIX}${item.filepath}?w=248&fit=crop&auto=format&dpr=2 2x`}
-        src={`${CDN_PREFIX}${item.filepath}?w=248&fit=crop&auto=format`}
+        srcSet={`${import.meta.env.BASE_URL}${item.filepath}?w=248&fit=crop&auto=format&dpr=2 2x`}
+        src={`${import.meta.env.BASE_URL}${item.filepath}?w=248&fit=crop&auto=format`}
         alt={item.label}
         loading="lazy"
       />
@@ -89,6 +91,6 @@ const ImagesComponent = () => {
   );
 };
 
-export const Route = createFileRoute('/images')({
+export const Route = createFileRoute('/images/')({
   component: ImagesComponent,
 });

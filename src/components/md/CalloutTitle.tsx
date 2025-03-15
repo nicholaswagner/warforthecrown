@@ -90,7 +90,6 @@ const CalloutIcon = (type: string) => {
     } = props;
     const childElements = Children.toArray(children);
     const restChildren = childElements.slice(1);
-    const visualTitle = title.trim() ? title : callout;
     const chevron = <ChevronRightIcon  />;
 
     const handleClick = (event: React.MouseEvent<HTMLParagraphElement>) => {

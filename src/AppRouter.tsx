@@ -5,8 +5,9 @@ import { routeTree } from './routeTree.gen';
 import { fetchImageByLabelSlug } from './utils/fetchImageByLabelSlug';
 import { fetchMarkdownForWebPath } from './utils/fetchMarkdownForWebPath';
 
+
 export const router = createRouter({
-  basepath: '/warforthecrown/',
+  basepath: import.meta.env.BASE_URL,
   routeTree,
   context: {
     fetchMarkdownForWebPath: fetchMarkdownForWebPath,

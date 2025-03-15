@@ -14,9 +14,7 @@ function getVisibleBoundingClientRect(element: HTMLElement | null): DOMRect {
     return rect;
 }
 
-/**
- * Determines if an element is in the top half of the viewport.
- */
+
 function isInViewportTopHalf(boundingRect: DOMRect) {
     return boundingRect.top > 0 && boundingRect.bottom < window.innerHeight / 2;
 }

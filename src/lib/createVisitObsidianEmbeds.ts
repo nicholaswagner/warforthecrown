@@ -47,7 +47,7 @@ const createVisitObsidianEmbeds = (config: PluginOptions): Visitor<Literal> => {
                     const src = file.filepath;
 
                     if (file.extension === 'md') {
-                        // if embedding a markdown file, change the parent element from <p> to <div>
+                        /** if embedding a markdown file, change the parent element from <p> to <div> */
                         parent.data = {
                             ...parent.data,
                             hName: 'div',
