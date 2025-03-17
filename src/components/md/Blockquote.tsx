@@ -1,101 +1,51 @@
 import { styled, SxProps, Theme, useTheme } from '@mui/material/styles';
 import ReactMarkdown from 'react-markdown';
 
-import React, { useRef,Children, SyntheticEvent, useEffect, useState } from 'react';
+import { useRef, useEffect, useState, ComponentProps } from 'react';
 
 const StyledBlockquote = styled('blockquote', { name: 'div' })(({ theme }) => ({
-  marginBlockStart: '3rem',
-  marginBlockEnd: `2rem`,
-  marginInlineStart: '1rem',
-  marginInlineEnd: '1rem',
-  // unicodeBidi: 'embed',
-  width: '100%',
+  borderColor: theme.palette.primary.main,
+  borderLeft: '0.5rem solid',
   display: 'flex',
   flexDirection: 'column',
-  paddingLeft: '1rem',
-  borderLeft: '0.5rem solid',
-  borderColor: theme.palette.primary.main,
   fontStyle: 'italic',
+  marginBlockEnd: `2rem`,
+  marginBlockStart: '3rem',
+  marginInlineEnd: '1rem',
+  marginInlineStart: '1rem',
+  paddingLeft: '1rem',
   userSelect: 'none',
-  ['& span ']: {
-    // padding: '1rem',
-    // display: 'inline-block',
-  },
-  ['& p']: {
-    // display: 'inline-block',
-    // padding: '1rem',
-    // margin: 0,
-    // marginTop: '1rem',
-    // marginBlockEnd: '1rem',
-  },
-  ['& img']: {
-    // marginTop: '1rem',
-    // marginBottom: '1rem',
-  },
-  ['& blockquote']: {
-    // marginTop: '1rem',
-    // paddingBottom: '1rem',
-  },
-  // ['& + p:last-of-type:not(blockquote)']:{
-  //   backgroundColor: 'blue',
-  // },
-
-  
-
+  width: '100%',
 }));
 
 const getCalloutStyles = (type: string, theme: Theme): SxProps => ({
   backgroundColor: getBackgroundColorForCallout(type, theme),
   border: 'none',
-  margin: 0,
-  // padding: '3rem',
-  marginBlockStart: 0,
-  marginBlockEnd: 0,
-  marginInlineStart: 0,
-  marginInlineEnd: 0,
-  paddingBlockStart: 0,
-  paddingBlockEnd: 0,
-  paddingInlineStart: 0,
-  paddingInlineEnd: 0,
-
   display: 'flex',
   flexDirection: 'column',
+  margin: 0,
+  paddingBlockEnd: '1rem',
+  paddingBlockStart: '1rem',
+  paddingInlineEnd: '1rem',
+  paddingInlineStart: '1rem',
   'strong, em, del': {
     display: 'inline-block',
     padding: '0.3rem',
     marginBlockEnd: 0,
   },
-  // paddingLeft: '1rem',
   '& ol': {
     display: 'flex',
     flexDirection: 'column',
     margin: '1rem',
     paddingBottom: '1rem',
   },
-  
   ['p:empty,span:empty']: {
     display: 'none',
   },
-
   ['&.folded']: {
-    
     display: 'none',
-    // padding: 0,
-    // margin: 0,
-    // ['p:first-of-type']: {
-      // marginTop: 0,
-      // marginBlockEnd: 0,
-    // },
   },
-
-  // '& p + span + :not(blockquote)': {
-    // display: 'inline-block',
-    // padding: '2rem',
-    // backgroundColor: 'red',
-  // },
-  // },
   'p,span:not(.obsidian-hilight)': {
-    // display: 'inline-block',
     marginTop: 0,
     padding: '1rem',
     marginBlockEnd: 0,
@@ -126,7 +76,6 @@ const getCalloutStyles = (type: string, theme: Theme): SxProps => ({
     '&.lucide-chevron-right': {
       transform: 'rotate(0deg)',
       transition: 'transform .1s ease-out',
-
     },
   },
 });
@@ -135,24 +84,24 @@ const getBackgroundColorForCallout = (type: string, theme: Theme) => {
   switch (type) {
     case 'warning':
     return theme.palette.warning.main;
-    case 'danger':
     case 'bug':
+    case 'danger':
     return theme.palette.error.main;
     case 'success':
-    case 'question':
-    return theme.palette.success.main;
-    case 'magic':
-    case 'book':
+      return theme.palette.success.main;
     case 'calendar':
-    return theme.palette.secondary.main;
-    case 'info':
+    case 'magic':
+    case 'question':
+      return theme.palette.info.main; 
+    case 'book':
     case 'example':
-    case 'rocket':
-    case 'swords':
     case 'gem':
+    case 'info':
     case 'pencil':
-    case 'tip':
+    case 'rocket':
     case 'star':
+    case 'swords':
+    case 'tip':
     case 'wip':
     default:
       return theme.palette.background.paper;
@@ -161,7 +110,7 @@ const getBackgroundColorForCallout = (type: string, theme: Theme) => {
 
 
 
-type Props = React.ComponentProps<typeof ReactMarkdown> & {
+type Props = ComponentProps<typeof ReactMarkdown> & {
   ['data-callout']: string;
   ['data-initial-folded']: string;
 }
@@ -180,7 +129,6 @@ export const Blockquote = (props: Props) => {
   const handleToggle = (event: Event) => {
     event.stopImmediatePropagation();
     setFolded((prev) => !prev);
-
   };
 
  useEffect(() => {

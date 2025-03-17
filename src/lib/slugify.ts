@@ -1,3 +1,7 @@
+/**
+ * Slugify a string by converting it to lowercase, removing diacritics, and replacing non-alphanumeric characters with underscores.
+ * This implementation chooses to retain the "/" character so that I can create a slugged folder structure that the user will recognize.
+ */
 const slugify = (str: string) =>
     str
         .toLowerCase()

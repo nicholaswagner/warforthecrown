@@ -3,8 +3,8 @@ import { PluginOptions } from './obsidianPlugin';
 import type { Blockquote, Paragraph, Text } from 'mdast';
 
 const calloutRegex = /^\[\!\s*([\w-]+)\s*\]([-+]?)/;
-const createVisitObsidianCallouts = (config: PluginOptions): Visitor<Blockquote> => {
-    const { calloutClassName, calloutIsFoldableClassName, calloutTitleClassName } = config;
+const createVisitObsidianCallouts = ({ classNames }: PluginOptions): Visitor<Blockquote> => {
+    const { calloutClassName, calloutIsFoldableClassName, calloutTitleClassName } = classNames;
     return (blockquoteNode) => {
         if (!Array.isArray(blockquoteNode.children) || blockquoteNode.children.length === 0) return;
 
@@ -17,18 +17,19 @@ const createVisitObsidianCallouts = (config: PluginOptions): Visitor<Blockquote>
         const match = calloutRegex.exec(firstTextNode.value);
         if (!match) return;
 
-        const calloutType = match[1].toLowerCase();
-        const foldableModifier = match[2] || '';
-        const isFoldable = foldableModifier !== '';
-        const initialFolded = foldableModifier === '-';
+        const calloutType = match[1].toLowerCase(); // e.g. 'note', 'warning', 'info', etc.
+        const foldableModifier = match[2] || ''; // - or + or empty
+        const isFoldable = foldableModifier !== ''; // true if - or +
+        const initialFolded = foldableModifier === '-'; // true if -
 
         firstTextNode.value = firstTextNode.value.replace(calloutRegex, '').trim();
+
         const titleText = firstTextNode.value || calloutType;
 
         blockquoteNode.data ??= {};
         blockquoteNode.data.hProperties = {
             ...blockquoteNode.data.hProperties,
-            'data-callout': calloutType, // callout icon / type
+            'data-callout': calloutType,
             'data-initial-folded': String(initialFolded),
             'data-title': titleText,
             className: [calloutClassName, isFoldable ? calloutIsFoldableClassName : '']

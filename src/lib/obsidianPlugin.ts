@@ -6,29 +6,33 @@ import createVisitObsidianCallouts from './createVisitObsidianCallouts';
 import createVisitObsidianHilights from './createVisitObsidianHilights';
 
 export type PluginOptions = {
-    basePath: string; // base path for the site, example:  github profile page you'd use "/" but a sub repo you would use "/repo-name/"
-    calloutClassName: string;
-    calloutIsFoldableClassName: string;
-    calloutTitleClassName: string;
-    errorClassName: string;
+    basePath: string; // base path for the site, example:  github profile page you'd use "/" but a sub repo you would use "/repo-name/" defaults to "/"
+    classNames: {
+        calloutClassName: string;
+        calloutIsFoldableClassName: string;
+        calloutTitleClassName: string;
+        embeddedMdClassName: string;
+        errorClassName: string;
+        hilightClassName: string;
+        imageClassName: string;
+        linkClassName: string;
+    },
     filePathPrefix?: string; // while the UX should give the illusion that mirrors your vault, the actual files might be stored in a different location (like a CDN)
-    hilightClassName: string;
-    imageClassName: string;
-    linkClassName: string;
-    embeddedMdClassName: string;
 }
 
 const defaultConfig = {
-    basePath: '/warforthecrown/',
-    calloutClassName: 'callout',
-    calloutIsFoldableClassName: 'foldable',
-    calloutTitleClassName: 'callout-title',
-    errorClassName: 'obsidian-md-error',
+    basePath: '/',
+    classNames: {
+        calloutClassName: 'callout',
+        calloutIsFoldableClassName: 'foldable',
+        calloutTitleClassName: 'callout-title',
+        errorClassName: 'obsidian-md-error',
+        hilightClassName: 'obsidian-hilight',
+        imageClassName: 'obsidian-img',
+        linkClassName: 'obsidian-link',
+        embeddedMdClassName: 'obsidian-md-embed ',
+    },
     filePathPrefix: '/warforthecrown/vault/',
-    hilightClassName: 'obsidian-hilight',
-    imageClassName: 'obsidian-img',
-    linkClassName: 'obsidian-link',
-    embeddedMdClassName: 'obsidian-md-embed ',
 };
 
 export default function obsidianPlugin(options: PluginOptions): Transformer {

@@ -23,7 +23,7 @@ export function usePreviewModal() {
 
   const handleMouseEnter = async (event: React.MouseEvent<HTMLAnchorElement | HTMLButtonElement>) => {
     if (isVisible) return;
-    const { ext, anchor: hash, weburl, label } = event.currentTarget.dataset;
+    const { ext, hashParams: hash, weburl, label } = event.currentTarget.dataset;
 
     const { clientX, clientY } = event;
 
@@ -36,7 +36,7 @@ export function usePreviewModal() {
     else if (ext?.match(/(jpg|jpeg|png|gif|webp|svg)$/i)) setPreview({ type: 'image', content: `![[${label}]]`, x: clientX, y: clientY, setIsVisible, hash, link });
     else {
       const file = getFileByWebPath(weburl);
-      const response = await fetch(import.meta.env.BASE_URL + file?.filepath);
+      const response = await fetch(import.meta.env.VITE_FILEPATH_PREFIX + file?.filepath);
       const content = await response.text();
       setPreview({ type: "markdown", content, x: clientX, y: clientY, setIsVisible, hash, link });
     }

@@ -1,5 +1,5 @@
 import { List, ListItem, ListItemProps, ListProps, styled } from '@mui/material';
-import { useParams } from '@tanstack/react-router';
+import { useParams} from '@tanstack/react-router';
 import { useEffect, useState } from 'react';
 
 import { SIDEBAR_WIDTH } from '../AppConstants';
@@ -49,7 +49,6 @@ const StyledToCLink = styled(MarkdownLink)(({ theme }) => ({
   borderLeft: `0.1rem solid ${theme.palette.divider}`,
   color: theme.palette.text.secondary,
   transition: 'color 0.2s, border-left 0.2s',
-  // '&.active': {},
   ['&.visible']: {
     borderLeft: '0.25rem solid var(--palette-primary-main)',
     color: theme.palette.text.primary,
@@ -61,17 +60,17 @@ export const TableOfContents = () => {
   const [headings, setHeadings] = useState<TocData[]>([]);
   const params = useParams({ strict: false });
   const data = buildToc(headings);
-  const activeId = useActiveHeading();
+  const {activeId} = useActiveHeading();
 
+  /** TODO - evaluate fetching / embedding raw markdown before component mounts and see if thats
+   * a better approach.  Then re-evaluate the toc_exclude strategy.
+   */
   useEffect(() => {
-    // Select all headings (h1, h2, h3, h4, h5, h6)
     const elements = Array.from(document.querySelectorAll('h1, h2, h3, h4, h5, h6'))
       .filter((node) => node.closest('.toc_exclude') === null)
       .map((node) => {
-        // const id = hash(`${node.tagName}_${index.toString()}`);
         const id = slugify(node.textContent ?? '');
         node.id = id;
-
         return {
           children: [],
           id,
@@ -79,7 +78,6 @@ export const TableOfContents = () => {
           text: node.textContent?.trim() ?? '',
         };
       })
-      .filter(Boolean); // Remove any null values (ignored headings)
 
     setHeadings(elements);
   }, [params]);
@@ -89,7 +87,7 @@ export const TableOfContents = () => {
       {data.map((item, index) => (
         <StyledLI key={`${item.id}_${index}`} data-level={item.level} disableGutters disablePadding>
           <StyledToCLink
-            key={`${item.id}_${index}_link`}
+            key={`${item.id}${index}`}
             id={`${item.id}_${index}_link`}
             to={`/$`}
             activeOptions={{ includeHash: true }}
@@ -100,7 +98,7 @@ export const TableOfContents = () => {
             {item.text}
           </StyledToCLink>
           {item.children.length > 0 && (
-            <StyledUL key={`${item.id}_${index}_children`} component="ul" dense disablePadding>
+            <StyledUL key={`${item.id}_${index}_ul`} component="ul" dense disablePadding>
               <TableOfContentsItems data={item.children} />
             </StyledUL>
           )}

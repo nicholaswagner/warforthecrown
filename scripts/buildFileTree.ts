@@ -9,17 +9,6 @@ import slugify from '../src/lib/slugify'; // this creates a url safe slug from a
 
 import type { FileTreeNode } from '../src/types/FileTreeNode';
 
-// export type FileTreeNode = {
-//     children?: FileTreeNode[];
-//     extension?: string; // file extension no dot, undefined for folders
-//     filepath: string;
-//     fileType?: 'file' | 'folder' | 'symlink';
-//     id: string; // hash of the raw filepath including file+extension to ensure uniqueness
-//     label: string; // the raw file/folder name that the user uses on their local filesystem
-//     labelSlug: string; // slugified version of the label
-//     webPath: string;
-// }
-
 type FileTree = {
     tree: FileTreeNode[];
     metrics: Record<string, number>;
@@ -37,7 +26,7 @@ const argv = await yargs(process.argv.slice(2))
 // We dont want to try to capture any hidden .dotfiles or try to process any files that are in the gitignore
 const gitignorePath = argv.ignore || `${argv.vault}/.gitignore`;
 const gitignoreExists = fs.existsSync(gitignorePath)
-const mask = gitignoreExists ? fs.readFileSync(gitignorePath, 'utf8').split('\n').map(line => line.trim()).filter(line => line && !line.startsWith('#')).join(' ').trim() : '';
+const mask = gitignoreExists ? readFileSync(gitignorePath, 'utf8').split('\n').map(line => line.trim()).filter(line => line && !line.startsWith('#')).join(' ').trim() : '';
 
 // 🐍_case is best case for files, if you don't agree you can override it ... but you're still wrong 🤪
 const treeFilepath = path.join(argv.out, argv.nameTree || 'files_tree.json');

@@ -1,7 +1,7 @@
 
 import { styled } from "@mui/material/styles";
 import { PencilIcon, GemIcon, InfoIcon, RocketIcon, SwordsIcon, CircleHelpIcon, CircleAlertIcon, FireExtinguisherIcon, BugIcon, ListIcon, StarIcon, BookIcon, WandSparklesIcon, CalendarIcon, HardHatIcon, QuoteIcon, ChevronDownIcon, ChevronRightIcon } from "lucide-react";
-import { Children, } from "react";
+import { Children, ReactNode, } from "react";
 
 const CalloutIcon = (type: string) => {
     switch (type.toLowerCase()) {
@@ -60,23 +60,19 @@ const CalloutIcon = (type: string) => {
     },
     ['& svg.lucide-chevron-right']:{
       marginLeft: '1rem',
-      // transition: 'rotate 0.1s ease-out',
       display: 'none',
-      // transform: 'rotate(0deg)',
     },
-    // backgroundColor: 'black',
     color: theme.palette.text.primary,
   }));
   
-  const StyledContent = styled('span')(({ theme }) => ({
+  const StyledContent = styled('span')(() => ({
       overflow: 'hidden',
       width: '100%',
       flexDirection: 'column',
     }));
 
-  
   type Props = {
-    children: React.ReactNode;
+    children: ReactNode;
     ['data-callout']: string;
     ['data-title']: string;
   };

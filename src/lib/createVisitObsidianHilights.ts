@@ -6,8 +6,8 @@ import type { Text } from 'mdast';
 
 const hilight = /==([^=]+)==/gm;
 
-const createVisitObsidianHilights = (config: PluginOptions): Visitor<Text> => {
-    const { hilightClassName } = config;
+const createVisitObsidianHilights = ({ classNames }: PluginOptions): Visitor<Text> => {
+    const { hilightClassName } = classNames;
 
     return (node, index, parent) => {
         if (!node.value || typeof node.value !== 'string' || !parent || index === undefined) return;

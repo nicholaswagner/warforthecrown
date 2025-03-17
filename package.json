@@ -64,7 +64,6 @@
     "remark-directive": "^3.0.1",
     "remark-frontmatter": "^5.0.0",
     "remark-gfm": "^4.0.0",
-    "remark-obsidian": "^1.8.0",
     "tsx": "^4.19.2",
     "typescript": "latest",
     "typescript-eslint": "^8.22.0",

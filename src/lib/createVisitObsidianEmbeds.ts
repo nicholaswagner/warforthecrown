@@ -8,8 +8,13 @@ import { PluginOptions } from './obsidianPlugin';
 const obsidianEmbed = /!?\[\[[^\]]+\]\]/g; // Matches all the ![[...]] in the markdown
 const obsidianEmbedParams = /!?\[\[([^\|\]]+)(?:\s*\|\s*([^\|\]]+))?\]\]/; // Captures the link and optional alias from inside the ![[...]]
 
-const createVisitObsidianEmbeds = (config: PluginOptions): Visitor<Literal> => {
-    const { filePathPrefix, errorClassName, imageClassName, linkClassName, basePath, embeddedMdClassName } = config;
+
+/**
+ * Creates a visitor function that processes Obsidian links and embeds in markdown nodes.
+ * When links are encountered, 
+ */
+const createVisitObsidianEmbeds = ({ basePath, classNames, filePathPrefix, }: PluginOptions): Visitor<Literal> => {
+    const { linkClassName, imageClassName, errorClassName, embeddedMdClassName } = classNames;
     return (node, index, parent) => {
         if (!node.value || typeof node.value !== 'string' || !parent || index === undefined) return;
 
@@ -71,7 +76,7 @@ const createVisitObsidianEmbeds = (config: PluginOptions): Visitor<Literal> => {
                                     src: filePathPrefix + src,
                                     'data-ext': file.extension,
                                     'data-weburl': file.webPath,
-                                    'data-anchor': slugify(urlParams),
+                                    'data-hash-params': slugify(urlParams),
                                     'data-label': file.label,
                                 },
                             },
@@ -90,7 +95,7 @@ const createVisitObsidianEmbeds = (config: PluginOptions): Visitor<Literal> => {
                                 src: filePathPrefix + file.filepath,
                                 'data-ext': file.extension,
                                 'data-weburl': file.webPath,
-                                'data-anchor': slugify(urlParams),
+                                'data-hash-params': slugify(urlParams),
                                 'data-label': file.label,
                             },
                         },
