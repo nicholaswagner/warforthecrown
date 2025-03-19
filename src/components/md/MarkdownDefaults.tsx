@@ -1,7 +1,7 @@
 import { Divider, styled, Table, TableCell, TableContainer, TableHead, TableRow, Typography } from '@mui/material';
 import { ReactNode } from 'react';
 
-import slugify from '../../lib/slugify'
+import { slugify } from 'remark-obsidious';
 import { Blockquote } from './Blockquote';
 import CodeBlock from './CodeBlock';
 import { MarkdownImage } from './MarkdownImage';

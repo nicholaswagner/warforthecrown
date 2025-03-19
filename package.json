@@ -29,6 +29,7 @@
     "react": "latest",
     "react-dom": "latest",
     "rehype-stringify": "^10.0.1",
+    "remark-obsidious": "file:../remark-obsidious",
     "shiki-codegen": "^2.3.2"
   },
   "devDependencies": {

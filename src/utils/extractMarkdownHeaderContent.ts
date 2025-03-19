@@ -1,6 +1,4 @@
-import slugify from '../lib/slugify'
-
-
+import { slugify } from 'remark-obsidious';
 const extractMarkdownHeaderContent = (
   markdown: string,
   anchor: string,

@@ -1,0 +1,158 @@
+{
+  "files": {
+    "3hqep6": {
+      "children": [],
+      "mtimeMs": 1742325605260.5837,
+      "filepath": "images",
+      "fileType": "folder",
+      "id": "3hqep6",
+      "label": "images"
+    },
+    "2vopkw": {
+      "extension": "png",
+      "mtimeMs": 1742325605259.95,
+      "filepath": "images/arturo.png",
+      "fileType": "file",
+      "id": "2vopkw",
+      "label": "arturo.png"
+    },
+    "jcpnmy": {
+      "extension": "png",
+      "mtimeMs": 1742325605263.1187,
+      "filepath": "images/castle.png",
+      "fileType": "file",
+      "id": "jcpnmy",
+      "label": "castle.png"
+    },
+    "1daehoq": {
+      "extension": "md",
+      "mtimeMs": 1742325605263.9062,
+      "filepath": "readme.md",
+      "fileType": "file",
+      "id": "1daehoq",
+      "label": "readme"
+    },
+    "q9g4s9": {
+      "children": [],
+      "mtimeMs": 1742325605264.793,
+      "filepath": "top level folder",
+      "fileType": "folder",
+      "id": "q9g4s9",
+      "label": "top level folder"
+    },
+    "3t5tom": {
+      "children": [],
+      "mtimeMs": 1742325605264.3813,
+      "filepath": "top level folder/second level folder",
+      "fileType": "folder",
+      "id": "3t5tom",
+      "label": "second level folder"
+    },
+    "d2fmt6": {
+      "extension": "md",
+      "mtimeMs": 1742325605264.688,
+      "filepath": "top level folder/second level folder/block_level_elements.md",
+      "fileType": "file",
+      "id": "d2fmt6",
+      "label": "block_level_elements"
+    },
+    "1ygif1o": {
+      "extension": "md",
+      "mtimeMs": 1742325605265.0435,
+      "filepath": "top level folder/tables.md",
+      "fileType": "file",
+      "id": "1ygif1o",
+      "label": "tables"
+    }
+  },
+  "fileTree": [
+    {
+      "id": "3hqep6",
+      "label": "images",
+      "children": [
+        {
+          "id": "2vopkw",
+          "label": "arturo.png"
+        },
+        {
+          "id": "jcpnmy",
+          "label": "castle.png"
+        }
+      ]
+    },
+    {
+      "id": "1daehoq",
+      "label": "readme"
+    },
+    {
+      "id": "q9g4s9",
+      "label": "top level folder",
+      "children": [
+        {
+          "id": "3t5tom",
+          "label": "second level folder",
+          "children": [
+            {
+              "id": "d2fmt6",
+              "label": "block_level_elements"
+            }
+          ]
+        },
+        {
+          "id": "1ygif1o",
+          "label": "tables"
+        }
+      ]
+    }
+  ],
+  "idsByExtension": {
+    "png": [
+      "2vopkw",
+      "jcpnmy"
+    ],
+    "md": [
+      "1daehoq",
+      "d2fmt6",
+      "1ygif1o"
+    ]
+  },
+  "idsByLabelSlug": {
+    "images": "3hqep6",
+    "arturo-png": "2vopkw",
+    "castle-png": "jcpnmy",
+    "readme": "1daehoq",
+    "top-level-folder": "q9g4s9",
+    "second-level-folder": "3t5tom",
+    "block-level-elements": "d2fmt6",
+    "tables": "1ygif1o"
+  },
+  "idsByWebPath": {
+    "images": "3hqep6",
+    "images/arturo-png": "2vopkw",
+    "images/castle-png": "jcpnmy",
+    "readme": "1daehoq",
+    "top-level-folder": "q9g4s9",
+    "top-level-folder/second-level-folder": "3t5tom",
+    "top-level-folder/second-level-folder/block-level-elements": "d2fmt6",
+    "top-level-folder/tables": "1ygif1o"
+  },
+  "imageIds": [
+    "2vopkw",
+    "jcpnmy"
+  ],
+  "stats": {
+    "totalFiles": 8,
+    "totalDirectories": 3,
+    "totalImages": 2,
+    "fileTypesSummary": [
+      {
+        "ext": "png",
+        "count": 2
+      },
+      {
+        "ext": "md",
+        "count": 3
+      }
+    ]
+  }
+}

@@ -2,20 +2,20 @@ import { Box, Dialog, DialogContent, IconButton, ImageList, ImageListItem, Image
 import { createFileRoute, Outlet, useLocation, useNavigate } from '@tanstack/react-router';
 import { CircleXIcon } from 'lucide-react';
 import { useEffect, useMemo, useState } from 'react';
+import {Obsidious, ObsidiousVaultItem} from 'remark-obsidious';
 
-import { FileTreeNode } from '../types/FileTreeNode';
-import useHashLookup from '../hooks/useHashLookup';
 
-type ImageData = Omit<FileTreeNode, 'children'>;
+
 
 const ImagesComponent = () => {
   const [open, setOpen] = useState(false);
-  const [image, setImage] = useState<ImageData | null>(null);
+  const [image, setImage] = useState<ObsidiousVaultItem | null>(null);
   const location = useLocation();
   const navigate = useNavigate();
   
-  const {getAllImages} = useHashLookup();
-  const images = useMemo(() => getAllImages(),[]);
+
+
+  const images = useMemo(() => Obsidious.getAllImageFiles(),[]);
 
   useEffect(() => {
     setTimeout(() => {
@@ -31,7 +31,7 @@ const ImagesComponent = () => {
     }, 300);
   }, [location.hash]);
 
-  const handleClickImage = (image: ImageData) => {
+  const handleClickImage = (image: ObsidiousVaultItem) => {
     setOpen(false);
     setImage(image);
 
@@ -44,8 +44,7 @@ const ImagesComponent = () => {
     }
   };
 
-  const DialogImage = ({ image }: { image: ImageData }) => {
-
+  const DialogImage = ({ image }: { image: ObsidiousVaultItem }) => {
     return (
       <Dialog open={open} onClose={() => setOpen(false)}>
         <IconButton sx={{ position: 'absolute', right: 8, top: 8, zIndex: 2000 }} onClick={() => setOpen(false)}>
@@ -54,8 +53,8 @@ const ImagesComponent = () => {
         <DialogContent>
           <ImageListItem onClick={() => handleClickImage(image)} sx={{ cursor: 'pointer' }}>
             <img
-              srcSet={`${import.meta.env.BASE_URL}${image.filepath}?w=248&fit=crop&auto=format&dpr=2 2x`}
-              src={`${import.meta.env.BASE_URL}${image.filepath}?w=248&fit=crop&auto=format`}
+              srcSet={`${import.meta.env.VITE_FILEPATH_PREFIX}${image.filepath}?w=248&fit=crop&auto=format&dpr=2 2x`}
+              src={`${import.meta.env.VITE_FILEPATH_PREFIX}${image.filepath}?w=248&fit=crop&auto=format`}
               alt={image.label}
               loading="lazy"
             />
@@ -66,16 +65,16 @@ const ImagesComponent = () => {
     );
   };
 
-  const ImageListItems = images.map((item) => (
+  const ImageListItems = useMemo(() => images.map((item) => (
     <ImageListItem key={item.id} id={item.id} onClick={() => handleClickImage(item)} sx={{ cursor: 'pointer' }}>
       <img
-        srcSet={`${import.meta.env.BASE_URL}${item.filepath}?w=248&fit=crop&auto=format&dpr=2 2x`}
-        src={`${import.meta.env.BASE_URL}${item.filepath}?w=248&fit=crop&auto=format`}
+        srcSet={`${import.meta.env.VITE_FILEPATH_PREFIX}${item.filepath}?w=248&fit=crop&auto=format&dpr=2 2x`}
+        src={`${import.meta.env.VITE_FILEPATH_PREFIX}${item.filepath}?w=248&fit=crop&auto=format`}
         alt={item.label}
         loading="lazy"
       />
     </ImageListItem>
-  ));
+  )),[images]);
 
   return (
     <>

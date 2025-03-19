@@ -4,8 +4,7 @@ import { styled, SvgIcon } from '@mui/material';
 import { useState } from 'react';
 import Markdown from '../Markdown';
 import useEmbeddedMarkdown from '../../hooks/useEmbeddedMarkdown';
-import useHashLookup from '../../hooks/useHashLookup';
-
+import { Obsidious, slugifyFilepath } from 'remark-obsidious';
 const StyledSpan = styled('span')(() => ({
   display: 'block',
   width: '100%',
@@ -20,7 +19,7 @@ type Props = {
 const EmbeddedMarkdown = (props:Props) => {
     const {fileid, hash} = props;
     const [content, setContent] = useState('loading...');
-    const {getFileById}=useHashLookup();
+
     useEmbeddedMarkdown(fileid, hash).then((text) => {
         if (!text) {
             setContent('Something went wrong while fetching embedded content.\nfile-id: ${fileid}\nhash params: ${hash}');
@@ -28,13 +27,16 @@ const EmbeddedMarkdown = (props:Props) => {
         }
         setContent(text)
     });
-    
-    const meta = getFileById(fileid);
 
+    const file = Obsidious.getFileForId(fileid);
+    if (!file) return null;
+    const baseUrl = import.meta.env.BASE_URL;
+    const url = `${baseUrl}${slugifyFilepath(file.filepath)}` + (hash ? '#' + hash : '');
+    
     return (
         <div className={'obsidian-md-embed toc_exclude'} {...props}>
             <StyledSpan>
-                <a href={`${import.meta.env.BASE_URL}${meta?.webPath}${hash?'#'+hash:''}`}>
+                <a href={`${url}`}>
                 <SvgIcon fontSize="small"><LinkIcon /></SvgIcon>
                 </a>
             </StyledSpan>

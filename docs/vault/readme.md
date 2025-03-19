@@ -1,62 +1,9 @@
+
 ## Suspendisse dapibus condimentum ante
 Suspendisse dapibus condimentum ante, vel semper purus pellentesque non. Vivamus efficitur maximus est nec molestie. Quisque accumsan quis felis quis posuere. Cras vel leo interdum, vulputate velit dignissim, ultricies ligula.
 
 > Aenean consequat nulla lacinia lacus pellentesque, id fringilla eros elementum. In maximus pharetra massa non scelerisque. Ut a leo nec purus consectetur fringilla. Etiam vel odio in lacus pulvinar tempor eu ut nunc.
 
----
-
-# A Blockquote
-Suspendisse dapibus condimentum ante, vel semper purus pellentesque non. Maximus est nec molestie.  felis quis posuere. Cras vel leo interdum, vulputate velit dignissim, ultricies ligula.
-
-
-
-> “Do not wait to strike till the iron is hot, but make it hot by striking.” — William Butler Yeats
-
-Quisque accumsan quis felis quis posuere. Cras vel leo interdum, vulputate velit dignissim, ultricies ligula.
-
----
-# Nested Callouts
-
-  > [!Book]+ Who doesn't love books? 
-> **bold** ==block quote== containing _another block_
-> quote which contains a ~~strikethrough item~~ and a list.
-> > [!Question]+ == This text should be hilighted ==
-> >
-> > 1. Item **One**
-> > 2. Item Two
-> > > [!Warning]+
-> > >    
-> > > The Warning callout has no title.
-> Here is an embeddedd image of Arturo
-> ![[arturo.png]]
-> ^ It should be right here.   
->
-
-  > [!Book]- Who doesn't love books? 
-> **bold** ==block quote== containing _another block_
-> quote which contains a ~~strikethrough item~~ and a list.
-> > [!Question]- == This text should be hilighted ==
-> >
-> > 1. Item **One**
-> > 2. Item Two
-> > > [!Warning]-
-> > >    
-> > > The Warning callout has no title.
-> Here is an embeddedd image of Arturo
-> ![[arturo.png]]
-> ^ It should be right here.   
->
-
----
-
-# One last callout
-
-> [!info]+ Info
-> ==Whatever else you want to say== goes on the following lines.
-> **Bold** _Italics_ and ~~strikethrough~~ should also work,
-> And you should be able to embed images
-> ![[castle.png]]
-> 
 
 ---
 
@@ -66,7 +13,7 @@ Text right above a divider with ==hilighted text==.
 
 ---
 
-> [!gem]- Yo Dawg, I hear you like obsidian embeds, 
+> [!gem] Yo Dawg, I hear you like obsidian embeds, 
 > so i put your embed inside of an embed so you can read while you read
 > ![[castle.png]]
 
@@ -81,7 +28,7 @@ Links to internal files:
 
 ---
 
-> [!bug]- custom link names not working this push
+> [!bug] custom link names not working this push
 > ~~[[block_level_elements | I Can't Believe Its Not Block Elements!]]~~ - Should be the same link but with a custom name 
 
 ---

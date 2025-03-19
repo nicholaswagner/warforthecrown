@@ -1,6 +1,6 @@
 # Editor directories and files
 .env
-
+secret
 # misc
 .DS_Store
 

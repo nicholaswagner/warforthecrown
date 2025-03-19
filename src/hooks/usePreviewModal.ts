@@ -1,7 +1,7 @@
 import { useNavigate } from "@tanstack/react-router";
 import { useState } from "react";
-
-import { getFileByWebPath } from "../utils/getFileByLabelSlug";
+import { Obsidious } from "remark-obsidious";
+// import { getFileByWebPath } from "../utils/getFileByLabelSlug";
 
 export type PreviewModalProps = {
   content: string,
@@ -35,7 +35,7 @@ export function usePreviewModal() {
     if (!event.currentTarget.classList.contains('obsidian-link')) setPreview({ type: 'url', content: link, x: clientX, y: clientY, setIsVisible, link });
     else if (ext?.match(/(jpg|jpeg|png|gif|webp|svg)$/i)) setPreview({ type: 'image', content: `![[${label}]]`, x: clientX, y: clientY, setIsVisible, hash, link });
     else {
-      const file = getFileByWebPath(weburl);
+      const file = Obsidious.getFileForWebPathSlug(weburl);
       const response = await fetch(import.meta.env.VITE_FILEPATH_PREFIX + file?.filepath);
       const content = await response.text();
       setPreview({ type: "markdown", content, x: clientX, y: clientY, setIsVisible, hash, link });

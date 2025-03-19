@@ -1,4 +1,4 @@
-import { getFileByWebPath } from "./getFileByLabelSlug";
+import { Obsidious } from "remark-obsidious";
 import { parseFrontmatter } from "./parseFrontmatter";
 
 
@@ -6,7 +6,7 @@ interface Args {
     webPath: string;
 }
 export const fetchMarkdownForWebPath = async ({ webPath }: Args) => {
-    const fileMeta = getFileByWebPath(webPath);
+    const fileMeta = Obsidious.getFileForWebPathSlug(webPath);
     if (!fileMeta) {
         throw new Error(`This url path does not have an associated file in the lookup table: ${webPath}`);
     }

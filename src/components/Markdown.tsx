@@ -5,8 +5,9 @@ import remarkGfm from 'remark-gfm';
 
 import { usePreviewModal } from '../hooks/usePreviewModal';
 import { PreviewModal } from './PreviewModal';
-import obsidianPlugin from '../lib/obsidianPlugin';
 import { MarkdownComponents } from './md/MarkdownDefaults';
+
+import { RemarkObsidious, Obsidious, ObsidiousOptions, slugify } from 'remark-obsidious';
 
 type MarkdownProps = {
   id?: string;
@@ -25,9 +26,14 @@ const StyledArticle = styled('article')(() => ({
 
 export const Markdown = (props: MarkdownProps) => {
   const { sxProps, children, components } = props;
-  /*@ts-expect-error  ts is saying setIsVisible is never read ... which ... is correct ... its not supposed to be*/
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const { preview, isVisible, setIsVisible, handleMouseEnter, handleMouseLeave, handleMouseClick } = usePreviewModal();
+  // const { getFileByLabelSlug } = useHashLookup();
+  const { preview, isVisible, handleMouseEnter, handleMouseClick } = usePreviewModal();
+  
+  const options:ObsidiousOptions = {
+    basePath: import.meta.env.BASE_URL, 
+    filePathPrefix: import.meta.env.VITE_FILEPATH_PREFIX,
+    getFileMetaForLabel: (label: string) => Obsidious.getFileForLabelSlug(slugify(label)), 
+  };
 
   return (
     <StyledArticle sx={{ ...sxProps }}>
@@ -36,10 +42,7 @@ export const Markdown = (props: MarkdownProps) => {
         remarkPlugins={[
           remarkGfm,
           remarkFrontmatter,
-          [obsidianPlugin,{
-              vaultPathPrefix: import.meta.env.BASE_URL,
-              hrefTemplate: (path: string) => `${path}`,
-          }]
+          [RemarkObsidious, options],
         ]}
         components={{
           ...MarkdownComponents,

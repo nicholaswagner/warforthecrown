@@ -7,10 +7,7 @@ import { ChevronDown, ChevronRight, FileIcon } from 'lucide-react';
 import { useState } from 'react';
 
 import { SIDEBAR_WIDTH } from '../AppConstants';
-import data from '../assets/files_tree.json';
-import slugify from '../lib/slugify'
-import { FileTreeNode } from '../types/FileTreeNode';
-import { getFileById, getFileByWebPath } from '../utils/getFileByLabelSlug';
+import { slugify, Obsidious, slugifyFilepath } from 'remark-obsidious';
 
 const CustomTreeItem = styled(TreeItem)(({ theme }) => ({
   [`& .${treeItemClasses.content}`]: {
@@ -67,7 +64,7 @@ const FileExplorer = () => {
     .split('/')
     .map((path) => {
       if (path === '') return;
-      const fileMeta =  getFileByWebPath(slugify(path));
+      const fileMeta = Obsidious.getFileForWebPathSlug(slugify(path)) //getFileByWebPath(slugify(path));
       return fileMeta?.id;
     })
     .filter((id) => id !== undefined);
@@ -96,12 +93,19 @@ const FileExplorer = () => {
         endIcon: FileIcon,
         item: CustomTreeItem,
       }}
-      items={data as FileTreeNode[]}
+      items={Obsidious.getFileTree()}
       onItemClick={(_, itemId) => {
-        const file = getFileById(itemId);
-        if(!file || file.fileType !== 'file') return;
+        const file = Obsidious.getFileForId(itemId);
+        if (!file) return;
+        // images is a special case
+        if (file.label === 'images') navigate({
+          to: `/${slugifyFilepath(file.filepath)}`,
+          resetScroll: true,
+        });
+
+        if(file.fileType !== 'file') return;
         navigate({
-          to: `/${file.webPath}`,
+          to: `/${slugifyFilepath(file.filepath, file.extension)}`,
           resetScroll: true,
         });
       }}

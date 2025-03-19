@@ -2,7 +2,7 @@ import { Alert } from '@mui/material';
 import { createRouter, RouterProvider } from '@tanstack/react-router';
 
 import { routeTree } from './routeTree.gen';
-import { fetchImageByLabelSlug } from './utils/fetchImageByLabelSlug';
+// import { fetchImageByLabelSlug } from './utils/fetchImageByLabelSlug';
 import { fetchMarkdownForWebPath } from './utils/fetchMarkdownForWebPath';
 
 
@@ -11,7 +11,7 @@ export const router = createRouter({
   routeTree,
   context: {
     fetchMarkdownForWebPath: fetchMarkdownForWebPath,
-    fetchImage: fetchImageByLabelSlug,
+    // fetchImage: fetchImageByLabelSlug,
   },
   defaultPreload: 'intent',
   defaultStaleTime: 5000,
