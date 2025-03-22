@@ -1,6 +1,6 @@
 
 import { styled } from "@mui/material/styles";
-import { PencilIcon, GemIcon, InfoIcon, RocketIcon, SwordsIcon, CircleHelpIcon, CircleAlertIcon, FireExtinguisherIcon, BugIcon, ListIcon, StarIcon, BookIcon, WandSparklesIcon, CalendarIcon, HardHatIcon, QuoteIcon, ChevronDownIcon, ChevronRightIcon } from "lucide-react";
+import { PencilIcon, GemIcon, InfoIcon, RocketIcon, SwordsIcon, CircleHelpIcon, CircleAlertIcon, FireExtinguisherIcon, BugIcon, ListIcon, StarIcon, BookIcon, WandSparklesIcon, CalendarIcon, HardHatIcon, QuoteIcon, ChevronRightIcon } from "lucide-react";
 import { Children, ReactNode, } from "react";
 
 const CalloutIcon = (type: string) => {

@@ -1,8 +1,7 @@
 import { MarkdownHooks, Options } from "react-markdown";
 import remarkGfm from 'remark-gfm';
-import { RemarkObsidious, Obsidious, ObsidiousOptions, slugify } from 'remark-obsidious';
+import { RemarkObsidious } from 'remark-obsidious';
 import { MarkdownComponents } from "../components/MarkdownComponent/MarkdownComponents";
-import { useMemo } from "react";
 
 
 

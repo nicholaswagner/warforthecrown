@@ -124,7 +124,7 @@ export const MarkdownComponents = {
   },
   p: (_props: ComponentProps) => {
     if (_props['data-callout']) {
-      return <CalloutTitle {..._props} />;
+      return <CalloutTitle {..._props} data-title={_props['data-title'] || ''} data-callout={_props['data-callout'] || ''}>{_props.children}</CalloutTitle>;
     }
     return <p {..._props} />;
     // return <p {..._props} />;

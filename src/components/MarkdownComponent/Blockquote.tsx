@@ -1,7 +1,5 @@
 import { styled, SxProps, Theme, useTheme } from '@mui/material/styles';
-import ReactMarkdown from 'react-markdown';
 import type {ExtraProps} from 'react-markdown'
-import type {ElementType} from 'react'
 import { useRef, useEffect, useState, ComponentProps } from 'react';
 import { DataAttributes, getDataAttributes } from '../../utils/getDataAttributes';
 
