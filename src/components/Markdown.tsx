@@ -7,7 +7,7 @@ import { usePreviewModal } from '../hooks/usePreviewModal';
 import { PreviewModal } from './PreviewModal';
 import { MarkdownComponents } from './MarkdownComponent/MarkdownDefaults';
 
-import { RemarkObsidious, ObsidiousVault, ObsidiousOptions, slugify, } from 'remark-obsidious';
+import { RemarkObsidious, ObsidiousOptions } from 'remark-obsidious';
 
 type MarkdownProps = {
   id?: string;
@@ -26,13 +26,11 @@ const StyledArticle = styled('article')(() => ({
 
 export const Markdown = (props: MarkdownProps) => {
   const { sxProps, children, components } = props;
-  // const { getFileByLabelSlug } = useHashLookup();
   const { preview, isVisible, handleMouseEnter, handleMouseClick } = usePreviewModal();
   
   const options:ObsidiousOptions = {
     basePath: import.meta.env.BASE_URL, 
     filePathPrefix: import.meta.env.VITE_FILEPATH_PREFIX,
-    getFileMetaForLabel: (label: string) => ObsidiousVault.getFileForLabelSlug(slugify(label)), 
   };
 
   return (

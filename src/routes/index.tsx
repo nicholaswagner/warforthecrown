@@ -10,6 +10,7 @@ function RouteComponent() {
   const { text } = Route.useLoaderData();
   const { preview, isVisible, handleMouseEnter, handleMouseClick } = usePreviewModal();
 
+ 
   return (
     <Box component="section" sx={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', width: '100%' }}>
       {isVisible && <PreviewModal {...preview} onClick={handleMouseClick} />}
@@ -24,6 +25,6 @@ function RouteComponent() {
 export const Route = createFileRoute('/')({
   component: RouteComponent,
   loader: () => fetchVaultItemForWebPath(
-    { webPath: 'folder-with-dashes/facepalm-png' }),
+    { webPath: 'readme' }),
   notFoundComponent: () => <h1>404</h1>,
 });

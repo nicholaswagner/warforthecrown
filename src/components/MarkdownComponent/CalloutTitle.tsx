@@ -1,6 +1,6 @@
 
 import { styled } from "@mui/material/styles";
-import { PencilIcon, GemIcon, InfoIcon, RocketIcon, SwordsIcon, CircleHelpIcon, CircleAlertIcon, FireExtinguisherIcon, BugIcon, ListIcon, StarIcon, BookIcon, WandSparklesIcon, CalendarIcon, HardHatIcon, QuoteIcon, ChevronRightIcon } from "lucide-react";
+import { PencilIcon, GemIcon, InfoIcon, RocketIcon, SwordsIcon, CircleHelpIcon, CircleAlertIcon, FireExtinguisherIcon, BugIcon, ListIcon, StarIcon, BookIcon, WandSparklesIcon, CalendarIcon, HardHatIcon, QuoteIcon, ChevronRightIcon, ImageIcon } from "lucide-react";
 import { Children, ReactNode, } from "react";
 
 const CalloutIcon = (type: string) => {
@@ -36,6 +36,8 @@ const CalloutIcon = (type: string) => {
         return <CalendarIcon />;
       case 'wip':
         return <HardHatIcon />;
+      case 'image':
+        return <ImageIcon />;
       default:
         return <QuoteIcon />;
     }

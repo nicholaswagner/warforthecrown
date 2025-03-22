@@ -10,6 +10,7 @@ export const fetchMarkdownForWebPath = async ({ webPath }: Args) => {
     if (!vaultItem) {
         throw new Error(`This url path does not have an associated file in the lookup table: ${webPath}`);
     }
+
     return fetch(`${import.meta.env.VITE_FILEPATH_PREFIX}${vaultItem?.filepath}`)
         .then((res) => res.text())
         .then((text) => {

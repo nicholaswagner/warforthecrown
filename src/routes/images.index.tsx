@@ -1,4 +1,4 @@
-import { Box, Dialog, DialogContent, IconButton, ImageList, ImageListItem, ImageListItemBar, Typography } from '@mui/material';
+import { Box, Dialog, DialogContent, IconButton, ImageList, ImageListItem, ImageListItemBar } from '@mui/material';
 import { createFileRoute, Outlet, useLocation, useNavigate } from '@tanstack/react-router';
 import { CircleXIcon } from 'lucide-react';
 import { useEffect, useMemo, useState } from 'react';
@@ -79,7 +79,6 @@ const ImagesComponent = () => {
   return (
     <>
       <Box sx={{ width: '100%', height: '100%' }} overflow={'scroll'}>
-        <Typography variant="caption">Images</Typography>
         {image && <DialogImage image={image} />}
         <ImageList variant="masonry" cols={5} gap={8}>
           {ImageListItems}

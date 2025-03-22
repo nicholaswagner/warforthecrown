@@ -8,11 +8,11 @@ interface Args {
 }
 
 const notSupportedMessage = (vaultItem: ObsidiousVaultItem) => `
-> [!error] view vaultfile by webpath in this context is not yet supported.
+> [!bug] Viewing vaultfile by webpath in this context is not yet supported.
 I need to add support for it... details below
-
-
-${JSON.stringify(vaultItem)}
+\`\`\`json
+${JSON.stringify(vaultItem, null, 2)}
+\`\`\`
 
 `
 
@@ -41,8 +41,12 @@ export const fetchVaultItemForWebPath = async ({ webPath }: Args) => {
             });
     }
     else if (SUPPORTED_FILETYPES.has(vaultItem.extension)) {
-        const text = `> [!bug] This is a buuuuuug!
-        ![[${slugify(vaultItem.label)}]]`;
+        const text = `
+![[${slugify(vaultItem.label)}]]
+\`\`\`json
+${JSON.stringify(vaultItem, null, 2)}
+\`\`\`
+`;
         return { text, matter: {} };
     }
     else {

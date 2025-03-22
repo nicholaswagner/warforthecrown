@@ -92,6 +92,7 @@ const getBackgroundColorForCallout = (type: string, theme: Theme) => {
     case 'calendar':
     case 'magic':
     case 'question':
+    case 'image':
       return theme.palette.info.main; 
     case 'book':
     case 'example':
