@@ -22,15 +22,9 @@ Text right above a divider with ==hilighted text==.
 #### Markdown Links
 Links to internal files:
 
-
 - [[block_level_elements]] - A link to `top level folder/second level folder/callouts.md`
 - [[block_level_elements#an_example_callout]] - same file but linking directly to the "example callout heading"
-
----
-
-> [!info] custom link names not working this push
-> [[block_level_elements#an_example_callout|I Can't Believe Its Not Block Elements!]]
-> - Should be the same link but with a custom name 
+- [[block_level_elements#an_example_callout|I Can't Believe Its Not Block Elements!]] - same file but linking directly to the "example callout heading" with an alias
 
 ---
 
