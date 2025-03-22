@@ -1,9 +1,0 @@
-# Editor directories and files
-.env
-
-# misc
-.DS_Store
-
-# Logs
-logs
-*.log
