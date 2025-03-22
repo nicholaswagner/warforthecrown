@@ -1,7 +1,9 @@
 import { styled, SxProps, Theme, useTheme } from '@mui/material/styles';
 import ReactMarkdown from 'react-markdown';
-
+import type {ExtraProps} from 'react-markdown'
+import type {ElementType} from 'react'
 import { useRef, useEffect, useState, ComponentProps } from 'react';
+import { DataAttributes, getDataAttributes } from '../../utils/getDataAttributes';
 
 const StyledBlockquote = styled('blockquote', { name: 'div' })(({ theme }) => ({
   borderColor: theme.palette.primary.main,
@@ -110,13 +112,24 @@ const getBackgroundColorForCallout = (type: string, theme: Theme) => {
 
 
 
-type Props = ComponentProps<typeof ReactMarkdown> & {
-  ['data-callout']: string;
-  ['data-initial-folded']: string;
-}
+// type Props = ComponentProps<typeof ReactMarkdown> & {
+//   ['data-callout']: string;
+//   ['data-initial-folded']: string;
+// }
 
-export const Blockquote = (props: Props) => {
-  const { children, ['data-callout']: calloutType, ['data-initial-folded']: initialFolded, className: cn} = props;
+
+// type Components = {
+//   [Key in Extract<ElementType, string>]?: ElementType<ComponentProps<Key> & ExtraProps> & {
+//     dataAttributes?: DataAttributes;
+//   }
+// }
+
+type ExtendedComponentProps = ComponentProps<'blockquote'> & ExtraProps & { dataAttributes?: DataAttributes };
+
+export const Blockquote = (props: ExtendedComponentProps) => {
+  const { children, className: cn} = props;
+  const { 'data-callout': calloutType, 'data-initial-folded': initialFolded } = getDataAttributes(props);
+
   const [folded, setFolded] = useState(initialFolded === 'true');
   const blockquoteRef = useRef<HTMLQuoteElement>(null);
 

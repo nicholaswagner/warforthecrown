@@ -1,11 +1,11 @@
-import { Obsidious } from "remark-obsidious";
+import { ObsidiousVault } from "remark-obsidious";
 
 interface Args {
     webPath: string;
 }
 
 export const fetchImageByWebPath = async ({ webPath }: Args) => {
-    const meta = Obsidious.getFileForWebPathSlug(webPath);
+    const meta = ObsidiousVault.getFileForWebPathSlug(webPath);
     return fetch(`${import.meta.env.VITE_FILEPATH_PREFIX}${meta?.filepath}`)
         .then((response) => response.blob())
         .then((blob) => ({

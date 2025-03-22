@@ -6,7 +6,7 @@ import { SIDEBAR_WIDTH } from '../AppConstants';
 import useActiveHeading from '../hooks/useActiveHeading';
 import { slugify } from 'remark-obsidious';
 import { buildToc, TocData } from '../utils/buildToc';
-import { MarkdownLink } from './md/MarkdownLink';
+import { MarkdownLink } from './MarkdownComponent/MarkdownLink';
 
 const StyledToC = styled('nav')(() => ({
   display: 'flex',

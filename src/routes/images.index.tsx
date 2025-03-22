@@ -2,7 +2,7 @@ import { Box, Dialog, DialogContent, IconButton, ImageList, ImageListItem, Image
 import { createFileRoute, Outlet, useLocation, useNavigate } from '@tanstack/react-router';
 import { CircleXIcon } from 'lucide-react';
 import { useEffect, useMemo, useState } from 'react';
-import {Obsidious, ObsidiousVaultItem} from 'remark-obsidious';
+import {ObsidiousVault, ObsidiousVaultItem} from 'remark-obsidious';
 
 
 
@@ -15,7 +15,7 @@ const ImagesComponent = () => {
   
 
 
-  const images = useMemo(() => Obsidious.getAllImageFiles(),[]);
+  const images = useMemo(() => ObsidiousVault.getAllImageFiles(),[]);
 
   useEffect(() => {
     setTimeout(() => {

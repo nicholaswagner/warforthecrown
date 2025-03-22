@@ -7,7 +7,7 @@ import { ChevronDown, ChevronRight, FileIcon } from 'lucide-react';
 import { useState } from 'react';
 
 import { SIDEBAR_WIDTH } from '../AppConstants';
-import { slugify, Obsidious, slugifyFilepath } from 'remark-obsidious';
+import { slugify, ObsidiousVault, slugifyFilepath, ObsidiousVaultImageFiletypes } from 'remark-obsidious';
 
 const CustomTreeItem = styled(TreeItem)(({ theme }) => ({
   [`& .${treeItemClasses.content}`]: {
@@ -64,7 +64,7 @@ const FileExplorer = () => {
     .split('/')
     .map((path) => {
       if (path === '') return;
-      const fileMeta = Obsidious.getFileForWebPathSlug(slugify(path)) //getFileByWebPath(slugify(path));
+      const fileMeta = ObsidiousVault.getFileForWebPathSlug(slugify(path))
       return fileMeta?.id;
     })
     .filter((id) => id !== undefined);
@@ -93,9 +93,9 @@ const FileExplorer = () => {
         endIcon: FileIcon,
         item: CustomTreeItem,
       }}
-      items={Obsidious.getFileTree()}
+      items={ObsidiousVault.getFileTree()}
       onItemClick={(_, itemId) => {
-        const file = Obsidious.getFileForId(itemId);
+        const file = ObsidiousVault.getFileForId(itemId);
         if (!file) return;
         // images is a special case
         if (file.label === 'images') navigate({
@@ -103,7 +103,17 @@ const FileExplorer = () => {
           resetScroll: true,
         });
 
+        if (file.extension && file.extension in ObsidiousVaultImageFiletypes){
+          
+          navigate({to: `/images/${slugify(file.label)}`});
+          return;
+        }
+
+        
+        
         if(file.fileType !== 'file') return;
+
+
         navigate({
           to: `/${slugifyFilepath(file.filepath, file.extension)}`,
           resetScroll: true,

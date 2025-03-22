@@ -1,8 +1,8 @@
-import { Obsidious } from "remark-obsidious";
+import { ObsidiousVault } from "remark-obsidious";
 import { parseFrontmatter } from "./parseFrontmatter";
 
 export const fetchMarkdownById = async (id: string) => {
-    const fileMeta = Obsidious.getFileForId(id);
+    const fileMeta = ObsidiousVault.getFileForId(id);
     if (!fileMeta) {
         throw new Error(`This id does not have an associated file in the lookup table: ${id}`);
     }

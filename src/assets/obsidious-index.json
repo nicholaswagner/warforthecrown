@@ -1,7 +1,60 @@
 {
   "files": {
+    "1yf14hc": {
+      "extension": "md",
+      "mtimeMs": 1742485599765.3206,
+      "filepath": "callout.md",
+      "fileType": "file",
+      "id": "1yf14hc",
+      "label": "callout"
+    },
+    "1hzk31t": {
+      "mtimeMs": 1742580628314.9775,
+      "filepath": "folder-with-dashes",
+      "fileType": "folder",
+      "id": "1hzk31t",
+      "label": "folder-with-dashes"
+    },
+    "zmurak": {
+      "extension": "png",
+      "mtimeMs": 1739580485716.1165,
+      "filepath": "folder-with-dashes/facepalm.png",
+      "fileType": "file",
+      "id": "zmurak",
+      "label": "facepalm.png"
+    },
+    "wmhhs0": {
+      "mtimeMs": 1742670069475.3337,
+      "filepath": "folder-with-dashes/folder_with_underbars",
+      "fileType": "folder",
+      "id": "wmhhs0",
+      "label": "folder_with_underbars"
+    },
+    "f17lm0": {
+      "extension": "pdf",
+      "mtimeMs": 1742670060839.2458,
+      "filepath": "folder-with-dashes/folder_with_underbars/dummy-pdf.pdf",
+      "fileType": "file",
+      "id": "f17lm0",
+      "label": "dummy-pdf.pdf"
+    },
+    "1i96598": {
+      "extension": "png",
+      "mtimeMs": 1739580288574.5103,
+      "filepath": "folder-with-dashes/folder_with_underbars/kirby_with_underbars.png",
+      "fileType": "file",
+      "id": "1i96598",
+      "label": "kirby_with_underbars.png"
+    },
+    "1hzsbyq": {
+      "extension": "png",
+      "mtimeMs": 1739580466633.1943,
+      "filepath": "folder-with-dashes/thumbs-up.png",
+      "fileType": "file",
+      "id": "1hzsbyq",
+      "label": "thumbs-up.png"
+    },
     "3hqep6": {
-      "children": [],
       "mtimeMs": 1742325605260.5837,
       "filepath": "images",
       "fileType": "folder",
@@ -33,7 +86,6 @@
       "label": "readme"
     },
     "q9g4s9": {
-      "children": [],
       "mtimeMs": 1742325605264.793,
       "filepath": "top level folder",
       "fileType": "folder",
@@ -41,7 +93,6 @@
       "label": "top level folder"
     },
     "3t5tom": {
-      "children": [],
       "mtimeMs": 1742325605264.3813,
       "filepath": "top level folder/second level folder",
       "fileType": "folder",
@@ -66,6 +117,38 @@
     }
   },
   "fileTree": [
+    {
+      "id": "1yf14hc",
+      "label": "callout"
+    },
+    {
+      "id": "1hzk31t",
+      "label": "folder-with-dashes",
+      "children": [
+        {
+          "id": "zmurak",
+          "label": "facepalm.png"
+        },
+        {
+          "id": "wmhhs0",
+          "label": "folder_with_underbars",
+          "children": [
+            {
+              "id": "f17lm0",
+              "label": "dummy-pdf.pdf"
+            },
+            {
+              "id": "1i96598",
+              "label": "kirby_with_underbars.png"
+            }
+          ]
+        },
+        {
+          "id": "1hzsbyq",
+          "label": "thumbs-up.png"
+        }
+      ]
+    },
     {
       "id": "3hqep6",
       "label": "images",
@@ -106,17 +189,31 @@
     }
   ],
   "idsByExtension": {
-    "png": [
-      "2vopkw",
-      "jcpnmy"
-    ],
     "md": [
+      "1yf14hc",
       "1daehoq",
       "d2fmt6",
       "1ygif1o"
+    ],
+    "png": [
+      "zmurak",
+      "1i96598",
+      "1hzsbyq",
+      "2vopkw",
+      "jcpnmy"
+    ],
+    "pdf": [
+      "f17lm0"
     ]
   },
   "idsByLabelSlug": {
+    "callout": "1yf14hc",
+    "folder-with-dashes": "1hzk31t",
+    "facepalm-png": "zmurak",
+    "folder-with-underbars": "wmhhs0",
+    "dummy-pdf-pdf": "f17lm0",
+    "kirby-with-underbars-png": "1i96598",
+    "thumbs-up-png": "1hzsbyq",
     "images": "3hqep6",
     "arturo-png": "2vopkw",
     "castle-png": "jcpnmy",
@@ -127,6 +224,13 @@
     "tables": "1ygif1o"
   },
   "idsByWebPath": {
+    "callout": "1yf14hc",
+    "folder-with-dashes": "1hzk31t",
+    "folder-with-dashes/facepalm-png": "zmurak",
+    "folder-with-dashes/folder-with-underbars": "wmhhs0",
+    "folder-with-dashes/folder-with-underbars/dummy-pdf-pdf": "f17lm0",
+    "folder-with-dashes/folder-with-underbars/kirby-with-underbars-png": "1i96598",
+    "folder-with-dashes/thumbs-up-png": "1hzsbyq",
     "images": "3hqep6",
     "images/arturo-png": "2vopkw",
     "images/castle-png": "jcpnmy",
@@ -137,21 +241,28 @@
     "top-level-folder/tables": "1ygif1o"
   },
   "imageIds": [
+    "zmurak",
+    "1i96598",
+    "1hzsbyq",
     "2vopkw",
     "jcpnmy"
   ],
   "stats": {
-    "totalFiles": 8,
-    "totalDirectories": 3,
-    "totalImages": 2,
+    "totalFiles": 15,
+    "totalDirectories": 5,
+    "totalImages": 5,
     "fileTypesSummary": [
       {
-        "ext": "png",
-        "count": 2
+        "ext": "md",
+        "count": 4
       },
       {
-        "ext": "md",
-        "count": 3
+        "ext": "png",
+        "count": 5
+      },
+      {
+        "ext": "pdf",
+        "count": 1
       }
     ]
   }

@@ -5,9 +5,9 @@ import remarkGfm from 'remark-gfm';
 
 import { usePreviewModal } from '../hooks/usePreviewModal';
 import { PreviewModal } from './PreviewModal';
-import { MarkdownComponents } from './md/MarkdownDefaults';
+import { MarkdownComponents } from './MarkdownComponent/MarkdownDefaults';
 
-import { RemarkObsidious, Obsidious, ObsidiousOptions, slugify } from 'remark-obsidious';
+import { RemarkObsidious, ObsidiousVault, ObsidiousOptions, slugify, } from 'remark-obsidious';
 
 type MarkdownProps = {
   id?: string;
@@ -32,7 +32,7 @@ export const Markdown = (props: MarkdownProps) => {
   const options:ObsidiousOptions = {
     basePath: import.meta.env.BASE_URL, 
     filePathPrefix: import.meta.env.VITE_FILEPATH_PREFIX,
-    getFileMetaForLabel: (label: string) => Obsidious.getFileForLabelSlug(slugify(label)), 
+    getFileMetaForLabel: (label: string) => ObsidiousVault.getFileForLabelSlug(slugify(label)), 
   };
 
   return (

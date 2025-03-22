@@ -7,16 +7,13 @@ import { AppRouter } from './AppRouter';
 import { darkTheme, lightTheme } from './AppTheme';
 import { useTheme } from './AppThemeProvider';
 
-import VaultJSON from '../src/assets/obsidious-index.json' assert { type: 'json' };;
-import { Obsidious } from 'remark-obsidious';
-import type {ObsidiousVaultData} from 'remark-obsidious' ;
-
+import { ObsidiousVault } from 'remark-obsidious';
+import vaultData from '../src/assets/obsidious-index.json';
 
 export default function App() {
   const { themeMode } = useTheme();
 
-  const typedVaultData = VaultJSON as ObsidiousVaultData;
-  Obsidious.initialize(typedVaultData);
+  ObsidiousVault.initialize(vaultData);
   
   return (
     <ThemeProvider theme={responsiveFontSizes(themeMode === 'light' ? lightTheme : darkTheme)}>

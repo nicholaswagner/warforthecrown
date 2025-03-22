@@ -3,7 +3,7 @@ import { createFileRoute } from '@tanstack/react-router';
 
 import { Markdown } from '../components/Markdown';
 import { TableOfContents } from '../components/TableOfContents';
-import { fetchMarkdownForWebPath } from '../utils/fetchMarkdownForWebPath';
+import { fetchVaultItemForWebPath } from '../utils/fetchVaultItemforWebPath';
 
 function RouteComponent() {
   const { text } = Route.useLoaderData();
@@ -28,6 +28,6 @@ function RouteComponent() {
 
 export const Route = createFileRoute('/$')({
   loader: ({ params }) => {
-    return fetchMarkdownForWebPath({ webPath: params._splat || '404' })},
+    return fetchVaultItemForWebPath({ webPath: params._splat || '404' })},
   component: RouteComponent,
 });

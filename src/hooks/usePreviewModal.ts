@@ -1,7 +1,6 @@
 import { useNavigate } from "@tanstack/react-router";
 import { useState } from "react";
-import { Obsidious } from "remark-obsidious";
-// import { getFileByWebPath } from "../utils/getFileByLabelSlug";
+import { ObsidiousVault, slugify } from "remark-obsidious";
 
 export type PreviewModalProps = {
   content: string,
@@ -23,11 +22,12 @@ export function usePreviewModal() {
 
   const handleMouseEnter = async (event: React.MouseEvent<HTMLAnchorElement | HTMLButtonElement>) => {
     if (isVisible) return;
-    const { ext, hashParams: hash, weburl, label } = event.currentTarget.dataset;
+    const { ext, hashParams: hash, label } = event.currentTarget.dataset;
+    if (!label) return;
+    const file = ObsidiousVault.getFileForLabelSlug(slugify(label));
 
     const { clientX, clientY } = event;
 
-    if (!weburl) return;
     setTarget(event.currentTarget);
 
     const link = (event.currentTarget as HTMLAnchorElement).href;
@@ -35,7 +35,6 @@ export function usePreviewModal() {
     if (!event.currentTarget.classList.contains('obsidian-link')) setPreview({ type: 'url', content: link, x: clientX, y: clientY, setIsVisible, link });
     else if (ext?.match(/(jpg|jpeg|png|gif|webp|svg)$/i)) setPreview({ type: 'image', content: `![[${label}]]`, x: clientX, y: clientY, setIsVisible, hash, link });
     else {
-      const file = Obsidious.getFileForWebPathSlug(weburl);
       const response = await fetch(import.meta.env.VITE_FILEPATH_PREFIX + file?.filepath);
       const content = await response.text();
       setPreview({ type: "markdown", content, x: clientX, y: clientY, setIsVisible, hash, link });

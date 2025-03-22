@@ -4,7 +4,7 @@ import { styled, SvgIcon } from '@mui/material';
 import { useState } from 'react';
 import Markdown from '../Markdown';
 import useEmbeddedMarkdown from '../../hooks/useEmbeddedMarkdown';
-import { Obsidious, slugifyFilepath } from 'remark-obsidious';
+import { ObsidiousVault, slugifyFilepath } from 'remark-obsidious';
 const StyledSpan = styled('span')(() => ({
   display: 'block',
   width: '100%',
@@ -22,13 +22,16 @@ const EmbeddedMarkdown = (props:Props) => {
 
     useEmbeddedMarkdown(fileid, hash).then((text) => {
         if (!text) {
-            setContent('Something went wrong while fetching embedded content.\nfile-id: ${fileid}\nhash params: ${hash}');
+            setContent(`
+                Something went wrong while fetching embedded content.
+                file-id: ${fileid}
+                hash params: ${hash}`);
             return
         }
         setContent(text)
     });
 
-    const file = Obsidious.getFileForId(fileid);
+    const file = ObsidiousVault.getFileForId(fileid);
     if (!file) return null;
     const baseUrl = import.meta.env.BASE_URL;
     const url = `${baseUrl}${slugifyFilepath(file.filepath)}` + (hash ? '#' + hash : '');
