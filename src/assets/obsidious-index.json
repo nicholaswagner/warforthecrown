@@ -1,13 +1,5 @@
 {
   "files": {
-    "1yf14hc": {
-      "extension": "md",
-      "mtimeMs": 1742485599765.3206,
-      "filepath": "callout.md",
-      "fileType": "file",
-      "id": "1yf14hc",
-      "label": "callout"
-    },
     "1hzk31t": {
       "mtimeMs": 1742580628314.9775,
       "filepath": "folder-with-dashes",
@@ -79,7 +71,7 @@
     },
     "1daehoq": {
       "extension": "md",
-      "mtimeMs": 1742325605263.9062,
+      "mtimeMs": 1742674823091.7356,
       "filepath": "readme.md",
       "fileType": "file",
       "id": "1daehoq",
@@ -117,10 +109,6 @@
     }
   },
   "fileTree": [
-    {
-      "id": "1yf14hc",
-      "label": "callout"
-    },
     {
       "id": "1hzk31t",
       "label": "folder-with-dashes",
@@ -189,12 +177,6 @@
     }
   ],
   "idsByExtension": {
-    "md": [
-      "1yf14hc",
-      "1daehoq",
-      "d2fmt6",
-      "1ygif1o"
-    ],
     "png": [
       "zmurak",
       "1i96598",
@@ -204,10 +186,14 @@
     ],
     "pdf": [
       "f17lm0"
+    ],
+    "md": [
+      "1daehoq",
+      "d2fmt6",
+      "1ygif1o"
     ]
   },
   "idsByLabelSlug": {
-    "callout": "1yf14hc",
     "folder-with-dashes": "1hzk31t",
     "facepalm-png": "zmurak",
     "folder-with-underbars": "wmhhs0",
@@ -224,7 +210,6 @@
     "tables": "1ygif1o"
   },
   "idsByWebPath": {
-    "callout": "1yf14hc",
     "folder-with-dashes": "1hzk31t",
     "folder-with-dashes/facepalm-png": "zmurak",
     "folder-with-dashes/folder-with-underbars": "wmhhs0",
@@ -248,14 +233,10 @@
     "jcpnmy"
   ],
   "stats": {
-    "totalFiles": 15,
-    "totalDirectories": 5,
+    "totalFiles": 14,
+    "totalDirectories": 4,
     "totalImages": 5,
     "fileTypesSummary": [
-      {
-        "ext": "md",
-        "count": 4
-      },
       {
         "ext": "png",
         "count": 5
@@ -263,6 +244,10 @@
       {
         "ext": "pdf",
         "count": 1
+      },
+      {
+        "ext": "md",
+        "count": 3
       }
     ]
   }
