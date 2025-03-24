@@ -30,7 +30,7 @@ export const Markdown = (props: MarkdownProps) => {
   
   const options:ObsidiousOptions = {
     basePath: import.meta.env.BASE_URL, 
-    filePathPrefix: import.meta.env.VITE_FILEPATH_PREFIX,
+    filePathPrefix: `${import.meta.env.BASE_URL}${import.meta.env.VITE_FILEPATH_PREFIX}`.replace(/\/\//g, "/"),
   };
 
   return (

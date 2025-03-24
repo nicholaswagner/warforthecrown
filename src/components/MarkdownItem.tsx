@@ -17,7 +17,7 @@ const MarkdownItem = ({children,componentOverrides}:Props) => {
             remarkGfm, 
             [remarkObsidious,{
                 basePath: import.meta.env.BASE_URL, 
-                filePathPrefix: import.meta.env.VITE_FILEPATH_PREFIX,
+                filePathPrefix: `${import.meta.env.BASE_URL}${import.meta.env.VITE_FILEPATH_PREFIX}`.replace(/\/\//g, "/"),            
                 getFileMetaForLabel: (label: string) => ObsidiousVault.getFileForLabelSlug(slugify(label)) 
             }]],
         components: {
