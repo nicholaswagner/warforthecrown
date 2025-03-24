@@ -9,7 +9,6 @@ import { fetchVaultItemForWebPath } from '../utils/fetchVaultItemforWebPath';
 function RouteComponent() {
   const { text } = Route.useLoaderData();
   const { preview, isVisible, handleMouseEnter, handleMouseClick } = usePreviewModal();
-
  
   return (
     <Box component="section" sx={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', width: '100%' }}>
