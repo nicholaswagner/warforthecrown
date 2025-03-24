@@ -19,6 +19,8 @@ ${JSON.stringify(vaultItem, null, 2)}
 export const fetchVaultItemForWebPath = async ({ webPath }: Args) => {
     const vaultItem = ObsidiousVault.getFileForWebPathSlug(webPath);
 
+    console.log('fetchVaultItemForWebPath::', { webPath, vaultItem });
+
     if (!vaultItem)
         throw new Error(`ObsidianVault was unable to find a VaultItemID for: ${webPath}`);
 
@@ -29,8 +31,10 @@ export const fetchVaultItemForWebPath = async ({ webPath }: Args) => {
         throw new Error(`vaultItem for ${webPath} either does not have an extension or is not supported: ${vaultItem.extension}`);
     }
 
+    const prefix = `${import.meta.env.BASE_URL}${import.meta.env.VITE_FILEPATH_PREFIX}`.replace(/\/\//g, "/");
     if (vaultItem.extension === "md") {
-        return fetch(`${import.meta.env.VITE_FILEPATH_PREFIX}${vaultItem?.filepath}`)
+        console.log('fetching markdown file: ', `${prefix}${vaultItem?.filepath}`);
+        return fetch(`${prefix}${vaultItem?.filepath}`)
             .then((res) => res.text())
             .then((text) => {
                 const matter = parseFrontmatter(text);

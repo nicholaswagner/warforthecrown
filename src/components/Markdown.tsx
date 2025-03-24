@@ -7,7 +7,7 @@ import { usePreviewModal } from '../hooks/usePreviewModal';
 import { PreviewModal } from './PreviewModal';
 import { MarkdownComponents } from './MarkdownComponent/MarkdownDefaults';
 
-import { RemarkObsidious, ObsidiousOptions } from 'remark-obsidious';
+import { remarkObsidious, ObsidiousOptions } from 'remark-obsidious';
 
 type MarkdownProps = {
   id?: string;
@@ -40,7 +40,7 @@ export const Markdown = (props: MarkdownProps) => {
         remarkPlugins={[
           remarkGfm,
           remarkFrontmatter,
-          [RemarkObsidious, options],
+          [remarkObsidious, options],
         ]}
         components={{
           ...MarkdownComponents,

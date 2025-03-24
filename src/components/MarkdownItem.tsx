@@ -1,6 +1,6 @@
 import { MarkdownHooks, Options } from "react-markdown";
 import remarkGfm from 'remark-gfm';
-import { RemarkObsidious, ObsidiousVault, slugify } from 'remark-obsidious';
+import { remarkObsidious, ObsidiousVault, slugify } from 'remark-obsidious';
 import { MarkdownComponents } from "./MarkdownComponent/MarkdownComponents";
 import { useMemo } from "react";
 
@@ -15,7 +15,7 @@ const MarkdownItem = ({children,componentOverrides}:Props) => {
     const options:Options = useMemo(() => ({
         remarkPlugins: [
             remarkGfm, 
-            [RemarkObsidious,{
+            [remarkObsidious,{
                 basePath: import.meta.env.BASE_URL, 
                 filePathPrefix: import.meta.env.VITE_FILEPATH_PREFIX,
                 getFileMetaForLabel: (label: string) => ObsidiousVault.getFileForLabelSlug(slugify(label)) 

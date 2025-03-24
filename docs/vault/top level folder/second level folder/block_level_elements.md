@@ -31,7 +31,9 @@ _a visual guide_
 
 
 > [!book] Each blockquote supports a title
->
+> 
+> ![[facepalm.png]]
+> 
 > Which is then followed by normal phrasing content. 
 > Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 > **Bold** ,  _italics_ , and ~~strikethrough~~. will also work. 

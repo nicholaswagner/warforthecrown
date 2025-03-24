@@ -5,7 +5,7 @@ import { routeTree } from './routeTree.gen';
 // import { fetchImageByLabelSlug } from './utils/fetchImageByLabelSlug';
 import { fetchMarkdownForWebPath } from './utils/fetchMarkdownForWebPath';
 
-
+console.log('AppRouter.tsx::', import.meta.env.BASE_URL);
 export const router = createRouter({
   basepath: import.meta.env.BASE_URL,
   routeTree,

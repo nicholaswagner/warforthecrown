@@ -1,6 +1,6 @@
 import { MarkdownHooks, Options } from "react-markdown";
 import remarkGfm from 'remark-gfm';
-import { RemarkObsidious } from 'remark-obsidious';
+import { remarkObsidious } from 'remark-obsidious';
 import { MarkdownComponents } from "../components/MarkdownComponent/MarkdownComponents";
 
 
@@ -11,7 +11,7 @@ import { MarkdownComponents } from "../components/MarkdownComponent/MarkdownComp
 
 const useMarkdown = (text: string) => {
     const options: Options = {
-        remarkPlugins: [remarkGfm, RemarkObsidious],
+        remarkPlugins: [remarkGfm, remarkObsidious],
         className: "markdown",
         components: MarkdownComponents,
         // disallowedElements: [],
