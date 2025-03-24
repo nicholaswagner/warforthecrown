@@ -16,6 +16,7 @@ const ImagesComponent = () => {
 
 
   const images = useMemo(() => ObsidiousVault.getAllImageFiles(),[]);
+  const prefix = `${import.meta.env.BASE_URL}${import.meta.env.VITE_FILEPATH_PREFIX}`.replace(/\/\//g, "/");
 
   useEffect(() => {
     setTimeout(() => {
@@ -43,12 +44,11 @@ const ImagesComponent = () => {
       setOpen(true);
     }
   };
-  const prefix = `${import.meta.env.BASE_URL}${import.meta.env.VITE_FILEPATH_PREFIX}`;
-
 
   const DialogImage = ({ image }: { image: ObsidiousVaultItem }) => {
 
     const url = `${prefix}${image.filepath}`.replace(/\/\//g, "/");
+
     return (
       <Dialog open={open} onClose={() => setOpen(false)}>
         <IconButton sx={{ position: 'absolute', right: 8, top: 8, zIndex: 2000 }} onClick={() => setOpen(false)}>
@@ -69,16 +69,19 @@ const ImagesComponent = () => {
     );
   };
 
-  const ImageListItems = useMemo(() => images.map((item) => (
-    <ImageListItem key={item.id} id={item.id} onClick={() => handleClickImage(item)} sx={{ cursor: 'pointer' }}>
+  const ImageListItems = useMemo(() => images.map((image) => {
+    const url = `${prefix}${image.filepath}`.replace(/\/\//g, "/");
+    return (
+    <ImageListItem key={image.id} id={image.id} onClick={() => handleClickImage(image)} sx={{ cursor: 'pointer' }}>
       <img
-        srcSet={`${import.meta.env.VITE_FILEPATH_PREFIX}${item.filepath}?w=248&fit=crop&auto=format&dpr=2 2x`}
-        src={`${import.meta.env.VITE_FILEPATH_PREFIX}${item.filepath}?w=248&fit=crop&auto=format`}
-        alt={item.label}
+        srcSet={`${url}?w=248&fit=crop&auto=format&dpr=2 2x`}
+        src={`${url}?w=248&fit=crop&auto=format`}
+        alt={image.label}
         loading="lazy"
       />
     </ImageListItem>
-  )),[images]);
+  )
+}),[images]);
 
   return (
     <>
