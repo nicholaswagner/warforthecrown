@@ -13,7 +13,7 @@ Text right above a divider with ==hilighted text==.
 
 ---
 
-> [!gem] Yo Dawg, I hear you like obsidian embeds, 
+> [!gem]- Yo Dawg, I hear you like obsidian embeds, 
 > so i put your embed inside of an embed so you can read while you read
 > ![[castle.png]]
 
