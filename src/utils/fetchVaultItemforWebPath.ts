@@ -31,7 +31,7 @@ export const fetchVaultItemForWebPath = async ({ webPath }: Args) => {
         throw new Error(`vaultItem for ${webPath} either does not have an extension or is not supported: ${vaultItem.extension}`);
     }
 
-    const prefix = `${import.meta.env.BASE_URL}${import.meta.env.VITE_FILEPATH_PREFIX}`.replace(/\/\//g, "/");
+    const prefix = `${import.meta.env.VITE_FILEPATH_PREFIX}`.replace(/\/\//g, "/");
     if (vaultItem.extension === "md") {
         console.log('fetching markdown file: ', `${prefix}${vaultItem?.filepath}`);
         return fetch(`${prefix}${vaultItem?.filepath}`)
