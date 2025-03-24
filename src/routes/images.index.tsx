@@ -43,8 +43,12 @@ const ImagesComponent = () => {
       setOpen(true);
     }
   };
+  const prefix = `${import.meta.env.BASE_URL}${import.meta.env.VITE_FILEPATH_PREFIX}`;
+
 
   const DialogImage = ({ image }: { image: ObsidiousVaultItem }) => {
+
+    const url = `${prefix}${image.filepath}`.replace(/\/\//g, "/");
     return (
       <Dialog open={open} onClose={() => setOpen(false)}>
         <IconButton sx={{ position: 'absolute', right: 8, top: 8, zIndex: 2000 }} onClick={() => setOpen(false)}>
@@ -53,8 +57,8 @@ const ImagesComponent = () => {
         <DialogContent>
           <ImageListItem onClick={() => handleClickImage(image)} sx={{ cursor: 'pointer' }}>
             <img
-              srcSet={`${import.meta.env.VITE_FILEPATH_PREFIX}${image.filepath}?w=248&fit=crop&auto=format&dpr=2 2x`}
-              src={`${import.meta.env.VITE_FILEPATH_PREFIX}${image.filepath}?w=248&fit=crop&auto=format`}
+              srcSet={`${url}?w=248&fit=crop&auto=format&dpr=2 2x`}
+              src={`${url}?w=248&fit=crop&auto=format`}
               alt={image.label}
               loading="lazy"
             />

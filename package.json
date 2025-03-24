@@ -6,7 +6,7 @@
   "scripts": {
     "spotcheck": "tsc --noEmit",
     "prebuild": "mv docs/vault .vault.bkup && obsidious --in .vault.bkup --out src/assets",
-    "build": "tsc -b && vite build && cp docs/index.html docs/404.html",
+    "build": "tsc -b && vite build -m=repo_page && cp docs/index.html docs/404.html",
     "postbuild": "mv .vault.bkup docs/vault",
     "dev:github_profile": "vite",
     "dev:github_repo": "vite -m=repo_page",
