@@ -13,6 +13,8 @@ export type PreviewModalProps = {
   onClick?: () => void;
 };
 
+const prefix = `${import.meta.env.BASE_URL}${import.meta.env.VITE_FILEPATH_PREFIX}`;
+
 export function usePreviewModal() {
   const [isVisible, setIsVisible] = useState(false);
   const [preview, setPreview] = useState<PreviewModalProps>({ setIsVisible, type: 'url', content: '#', x: 0, y: 0 });
@@ -35,7 +37,8 @@ export function usePreviewModal() {
     if (!event.currentTarget.classList.contains('obsidian-link')) setPreview({ type: 'url', content: link, x: clientX, y: clientY, setIsVisible, link });
     else if (ext?.match(/(jpg|jpeg|png|gif|webp|svg)$/i)) setPreview({ type: 'image', content: `![[${label}]]`, x: clientX, y: clientY, setIsVisible, hash, link });
     else {
-      const response = await fetch(import.meta.env.VITE_FILEPATH_PREFIX + file?.filepath);
+      const src = `${prefix}${file?.filepath}`.replace(/\/\//g, "/");
+      const response = await fetch(src);
       const content = await response.text();
       setPreview({ type: "markdown", content, x: clientX, y: clientY, setIsVisible, hash, link });
     }
