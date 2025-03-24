@@ -11,7 +11,6 @@ const ImageComponent = () => {
 
   if (!vaultItem) throw new Error(`no vault item for found for webPath: ${data}`);
   const prefix = `${import.meta.env.BASE_URL}${import.meta.env.VITE_FILEPATH_PREFIX}`.replace(/\/\//g, "/");
-
   const src = `${prefix}${vaultItem?.filepath}`.replace(/\/\//g, "/");
 
   return (
