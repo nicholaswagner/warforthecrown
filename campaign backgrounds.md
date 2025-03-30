@@ -55,8 +55,7 @@ You love your country, its history, and its people... even though they may not l
 
 Choose two ability boosts. One must be to Constitution or Intelligence, and one is a free ability boost. You’re trained in the Diplomacy skill, and gain the Hobnobber skill feat. You’re also trained in History Lore. 
 
-
-
+---
 #### Young Reformer
 Claimed by [[Caritas Zespire]]
 Perhaps you were born at the bottom of Glorian society and you're tired of seeing your friends and family toil endlessly with no hope of a better life, or maybe your privileged outlook was shattered by empathy or tragedy. Either way, you know the system is broken, and you've dedicated your life to fixing it. But tradition rules The Glorian Empire as much as any Grand Prince, and change requires more influence than you have... so far. You've got a few friends and allies, and plenty of determination, but while you work toward the power you need to change the nation, you'll have to resort to more discrete ways of righting wrongs and curbing the abuses of the upper class. 

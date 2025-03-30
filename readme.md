@@ -155,12 +155,12 @@ examples:
 
 Use callouts to include additional content without breaking the flow of your notes.
 
-To create a callout, add `[!info]` to the first line of a blockquote, where `info` is the _type identifier_. The type identifier determines how the callout looks and feels. To see all available types, refer to [Supported types](https://help.obsidian.md/callouts#Supported types).
+To create a callout, add `[!info]` to the first line of a blockquote, where `info` is the _type identifier_. The type identifier determines how the callout looks and feels. To see all available types, refer to https://help.obsidian.md/callouts.
 
 
 ---
 
-> [!info]
+> [!info]+
 > Here's a callout block.
 > It supports Markdown, Embeds, the Wikilinks, etc
 > 
@@ -172,8 +172,8 @@ To create a callout, add `[!info]` to the first line of a blockquote, where `inf
 ---
 
 ## Nested Callouts
-Callouts can also be nested
 
+Callouts can also be nested
 
 
 > [!question]+
@@ -182,68 +182,58 @@ Callouts can also be nested
 > > > SUPRISE!
 > > > ![[periwinkle.png]]
 > 
+
 ---
 
 ##### Callouts have an Initial display state
 
-default callout
+default callout:
 
 > [!magic]
 > By default callouts will not support "folding"
 
-callout with custom title
+---
+
+callout with custom title:
 
 > [!tip] with a custom title
 
-initially folded
+---
+
+You can set a callout to be initially folded:
 
 > [!question]- Initially folded callout
 > inner callout text will be displayed or hidden accordingly
 
- initially expanded folding state
+---
+
+Or have it expanded by default
 
 > [!success]+ Initially expanded callout
- > inner callout text will be displayed or hidden accordingly
+> inner callout text will be displayed or hidden accordingly
 
 ---
 
 ##### Available callout types
 
-> [!pencil]
-
-> [!tip]
-
-> [!gem]
-
-> [!info]
-
-> [!success]
-
-> [!rocket]
-
-> [!swords]
-
-> [!question]
-
-> [!warning]
-
-> [!danger]
-
-> [!bug]
-
-> [!example]
-
-> [!star]
-
-> [!book]
-
-> [!magic]
-
-> [!calendar]
-
-> [!wip]
-
-> [!image]
+- > [!wip]
+- > [!pencil]
+- > [!tip]
+- > [!gem]
+- > [!info]
+- > [!success]
+- > [!rocket]
+- > [!swords]
+- > [!question]
+- > [!warning]
+- > [!danger]
+- > [!bug]
+- > [!example]
+- > [!star]
+- > [!book]
+- > [!magic]
+- > [!calendar]
+- > [!image]
 
 ---
 
@@ -315,3 +305,12 @@ export default CodeBlock;
 [^note]:
     Named footnotes will still render with numbers instead of the text but allow easier identification and linking.  
     This footnote also has been made with a different syntax using 4 spaces for new lines.
+
+
+
+
+
+
+
+
+.
