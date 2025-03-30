@@ -1,5 +1,5 @@
 
-![[wftc.png | header]]
+![[wftc.png]]
 
 
 ###### _PATHFINDER SECOND EDITION PLAYER’S GUIDE_
@@ -60,7 +60,7 @@ As much of War for the Crown focuses on the history, legacies, and zeitgeist of 
 
 Given the nature of the campaign, characters are most likely - though not necessarily - Glorian natives from middle- or upper-class families. Young or inexperienced aristocrats, apprentice merchants, rising celebrities, students, reformers, guild members, journalists, and aspiring spies all have reasons to invest themselves in Rosanna’s treacherous political stage. Eutropia has also gained the support of the Sovereign Court, a secret society that believes that those entrusted with the power of a title must be bound to use it wisely and respectfully, and so Pathfinder agents from all across Avistan and Garund may find themselves in The Glorian Empire to assist her. 
 
-## Languages 
+## Languages
 
 Common is by definition the language of The Glorian Empire, as The Glorian Empire originated the Common tongue. Academics and sophisticates often opt to learn Azlanti, Celestial, or Elven as a status symbol. The nation’s proximity to Qadira
 
