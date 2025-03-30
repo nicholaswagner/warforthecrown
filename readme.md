@@ -157,6 +157,7 @@ Use callouts to include additional content without breaking the flow of your not
 
 To create a callout, add `[!info]` to the first line of a blockquote, where `info` is the _type identifier_. The type identifier determines how the callout looks and feels. To see all available types, refer to [Supported types](https://help.obsidian.md/callouts#Supported types).
 
+
 ---
 
 > [!info]
@@ -171,27 +172,38 @@ To create a callout, add `[!info]` to the first line of a blockquote, where `inf
 ---
 
 ## Nested Callouts
-Callouts can be nested
+Callouts can also be nested
+
+
 
 > [!question]+
 > > [!swords]+
-> > > [!success]-
+> > > [!success]- •••
+> > > SUPRISE!
 > > > ![[periwinkle.png]]
 > 
 ---
 
 ##### Callouts have an Initial display state
 
-- default callout
-	- > [!info]
-- callout with custom title
-	- > [!info] with a custom title
-- initially folded
-	- > [!info]- Initially folded callout
-	  > inner callout text will be displayed or hidden accordingly
-- initially expanded folding state
-	- > [!info]+ Initially expanded callout
-	  > inner callout text will be displayed or hidden accordingly
+default callout
+
+> [!magic]
+> By default callouts will not support "folding"
+
+callout with custom title
+
+> [!tip] with a custom title
+
+initially folded
+
+> [!question]- Initially folded callout
+> inner callout text will be displayed or hidden accordingly
+
+ initially expanded folding state
+
+> [!success]+ Initially expanded callout
+ > inner callout text will be displayed or hidden accordingly
 
 ---
 
@@ -284,7 +296,7 @@ export default CodeBlock;
 
 ---
 
-### Regular block quotes are also still a thing!
+### Quotes
 
 ```md
 > “It’s a dangerous business, Frodo, going out your door. You step onto the road, and if you don’t keep your feet, there’s no knowing where you might be swept off to.”
