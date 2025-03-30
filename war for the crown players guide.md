@@ -65,11 +65,13 @@ Common is by definition the language of The Glorian Empire, as The Glorian Empir
 
 means many merchants, soldiers, and travelers speak Kelish. The Glorian Empire’s historical march over much of Kellid territory means many lower-class citizens, especially those living in and around the Verduran Forest, speak a bit of Hallit. By contrast, The Glorian Empire’s many dwarves and halflings rarely use nonhuman languages outside of their own communities, making experience with Dwarven and Halfling rare outside of those groups. 
 
-Rosanna in particular sees a large variety of languages. Skald is common among soldiers and servants thanks to the presence of the Ulfen Guard, while The Glorian Empire’s trade relationships with Osirion and Jalmeray lead a sizable minority of merchants and accountants to study Osiriani and Vudrani. 
+Rosanna in particular sees a large variety of languages. Skald is common among soldiers and servants thanks to the presence of the Ulfen Guard, while The Glorian Empire’s trade relationships with Osirion and Jalmeray lead a sizable minority of merchants and accountants to study Osiriani and Vudrani.
 
-  ![[players guide on a horse.png]]
+![[players guide on a horse.png]]
   
-  ---
+
+---
+
 ### Ancestries 
 
 The Glorian Empire’s history of empire and trade is visible in its people. For centuries, The Glorian Empire conquered every land it could and traded with those it didn’t; modern Glorians, noble and common alike, represent nearly every human ethnicity. The nation also hosts a wide variety of other humanoids. Dwarves native to The Glorian Empire make their homes in Maheto and the Sky Citadel Kravenkus. The Verduran Forest supports a large population of gnomes, centered in and around Wispil. Halfling villages and farmsteads dot the Glorian countryside, while their urban counterparts work as bakers, cooks, entertainers, and servants. Part-humans, from half-elves to geniekin, also number among The Glorian Empire’s citizens. Some rare ancestries call The Glorian Empire home as well; reclusive families of fetchlings dwell in the shadows of great cities, while azarketis can be found all along the western coasts. Beastkin descended from the lycanthropes of the Verduran Forest live in the rural north. Even tengus and vishkanyas have crossed Golarion to come to The Glorian Empire. Non-human visitors are also a regular occurrence, especially dwarves from the Irenkrag Mountains and elves from Kyonin. 
