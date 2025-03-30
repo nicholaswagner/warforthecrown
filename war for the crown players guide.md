@@ -67,8 +67,9 @@ means many merchants, soldiers, and travelers speak Kelish. The Glorian Empireâ€
 
 Rosanna in particular sees a large variety of languages. Skald is common among soldiers and servants thanks to the presence of the Ulfen Guard, while The Glorian Empireâ€™s trade relationships with Osirion and Jalmeray lead a sizable minority of merchants and accountants to study Osiriani and Vudrani.
 
+---
+
 ![[players guide on a horse.png]]
-  
 
 ---
 

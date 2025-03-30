@@ -157,6 +157,8 @@ Use callouts to include additional content without breaking the flow of your not
 
 To create a callout, add `[!info]` to the first line of a blockquote, where `info` is the _type identifier_. The type identifier determines how the callout looks and feels. To see all available types, refer to [Supported types](https://help.obsidian.md/callouts#Supported types).
 
+---
+
 > [!info]
 > Here's a callout block.
 > It supports Markdown, Embeds, the Wikilinks, etc
@@ -165,7 +167,6 @@ To create a callout, add `[!info]` to the first line of a blockquote, where `inf
 > > [!info] Here's a callout block.
 > It supports Markdown, Embeds, the Wikilinks, etc
 > ```
-
 
 ---
 
