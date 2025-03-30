@@ -11,7 +11,7 @@ https://help.obsidian.md/obsidian-flavored-markdown
 ---
 ### Page Headings
 
-[!warning] Please do not use Level 1 or Level 2 headings
+> [!warning] Please do not use Level 1 or Level 2 headings
  `# heading title` or `## heading title` as those will be reserved for a different purpose. 
 
 ```md
