@@ -1,0 +1,2 @@
+- deceased (stabbed multiple times)
+- has a signet ring of two roosters facing each other

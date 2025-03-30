@@ -1,0 +1,78 @@
+name: Index and Build Obsidious
+description: Index the repository, clone `nicholaswagner/obsidious`, and build
+permissions:
+    contents: write
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+    build_repository_index:
+        runs-on: ubuntu-latest
+
+        steps:
+            # Checkout the current repository (example-vault) which has markdown files / images etc
+            - name: Checkout repository
+              uses: actions/checkout@v4
+              with:
+                path: main
+
+            - name: Checkout repository
+              uses: actions/checkout@v4
+              with:
+                repository: nicholaswagner/obsidious
+                path: obsidious
+
+            # Run the indexer in your current repository
+            - name: Run Obsidious Indexer
+              working-directory: ${{ github.workspace }}
+              run: npm exec remark-obsidious@latest --yes -- --in ${{ github.workspace }}/main --out ${{ github.workspace }}/obsidious/src/assets
+
+            # Clone the second repository (obsidious) into a subdirectory
+            # - name: Clone obsidious (shallow copy)
+            #   run: |
+            #       git clone --depth=1 https://github.com/nicholaswagner/obsidious.git ${{ github.workspace }}/obsidious
+
+            # Install dependencies for obsidious
+            - name: Install dependencies for obsidious
+              working-directory: ${{ github.workspace }}/obsidious
+              run: npm ci
+
+            # Copy the generated index to the obsidious assets folder
+            # - name: Copy index from workspace over to Obsidious src/assets
+            #   run: cp -f ${{ github.workspace }}/obsidious-index.json ${{ github.workspace }}/obsidious/src/assets/obsidious-index.json
+
+            # Build the obsidious app
+            - name: Build Obsidious app
+              env:
+                  VITE_BASE_URL: /warforthecrown/
+                  VITE_FILEPATH_PREFIX: ./
+                  VITE_INITIAL_VAULT_FILE_LABEL_SLUG: readme
+              working-directory: ${{ github.workspace }}/obsidious
+              run: npm run build
+
+            # Copy built files to the main repository
+            - name: Copy built site to workspace root
+              working-directory: ${{ github.workspace }}
+              run: cp -r ${{ github.workspace }}/obsidious/dist/* ${{ github.workspace }}/main
+
+            # Remove the obsidious directory to clean up
+            # - name: Delete the obsidious directory
+            #   run: rm -rf ${{ github.workspace }}/obsidious
+
+            # Set up Git for GitHub Pages deployment
+            - name: Set up Git for GitHub Pages deployment
+              working-directory: ${{ github.workspace }}/main
+              run: |
+                  git config --global user.name "GitHub Actions"
+                  git config --global user.email "actions@github.com"
+                  git checkout --orphan gh-pages  # Create a new orphan branch for GitHub Pages
+
+            # Commit and push to GitHub Pages
+            - name: Commit and push to GitHub Pages
+              working-directory: ${{ github.workspace }}/main
+              run: |
+                  git add -A  # Add all the files from the dist/
+                  git commit -m "Deploy site to GitHub Pages"
+                  git push --force --set-upstream origin gh-pages  # Force push to the gh-pages branch
