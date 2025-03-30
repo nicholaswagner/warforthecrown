@@ -9,15 +9,15 @@ https://help.obsidian.md/obsidian-flavored-markdown
 ---
 ### Page Headings
 
-> [!warning]- Please do not use Level 1 or Level 2 headings
-> These are reserved for other uses
-> 
-> ```markdown
-> 
-> # heading title  🚫
-> ## heading title 🚫
-> 
-> ```
+
+If you put text right above a divider with ==no line break== it will be rendered as an H2 
+---
+
+```markdown
+Text right above a divider with ==hilighted text==. 
+---
+```
+
 
 ```markdown
 
@@ -58,16 +58,6 @@ They can span multiple lines [^2] and can use named references [^note]
 
 ---
 
-
-If you put text right above a divider with ==no line break== it will be rendered as an H2 
----
-
-```markdown
-Text right above a divider with ==hilighted text==. 
----
-```
-
----
 ### Tables
 are created like so
 
@@ -88,17 +78,19 @@ are created like so
 | zebra stripes |    are neat    |            $1 |
 
 ---
-### Yo Dawg, I hear you like markdown, so we embedded markdown in your markdown so you can read while you read ...
+### Embedded Markdown
+Yo Dawg, I hear you like markdown, so we embedded markdown in your markdown so you can read while you read ...
 
 ```markdown
 
-# You can embed other markdown files in the current markdown file by using the following syntax
+# You can embed other markdownfiles by using their filename in the following way
+# note, do not include the file extension
 
 ![[party boons]]
 
 ---
 
-# You can embed just a specific heading by doing:
+# You can embed just a specific heading by using:
 ![[war for the crown players guide#Languages]]
 
 ```
@@ -111,6 +103,29 @@ are created like so
 ![[war for the crown players guide#Languages]]
 
 ---
+
+
+### Embedded Images
+You can also embed images in the same way
+```markdown
+
+Include the file extension for non markdown filetypes
+![[arturo_basri.png]]
+
+You may also apply an optional css class (if supported) by doing the following:
+![[arturo_basri.png | avatar]]
+
+```
+
+![[arturo_basri.png]]
+
+
+![[arturo_basri.png | avatar]]
+
+
+---
+
+
 
 ### `[[ wiki-links ]]`
 
@@ -144,21 +159,22 @@ To create a callout, add `[!info]` to the first line of a blockquote, where `inf
 
 > [!info]
 > Here's a callout block.
-> It supports **Markdown**, [[Internal link|Wikilinks]], and [[Embed files|embeds]]!
+> It supports Markdown, Embeds, the Wikilinks, etc
 > 
-> >```markdown
-> >[!info]
-> >Here's a callout block.
-> >It supports **Markdown**, [[Internal link|Wikilinks]], and [[Embed files|embeds]]!
-> >```
-> 
+> ```markdown 
+> > [!info] Here's a callout block.
+> It supports Markdown, Embeds, the Wikilinks, etc
+> ```
+
+
 ---
+
 ## Nested Callouts
 Callouts can be nested
 
-> [!pencil]
-> > [!gem]
-> > > [!rocket]
+> [!question]
+> > [!swords]
+> > > [!success]
 > 
 ---
 
