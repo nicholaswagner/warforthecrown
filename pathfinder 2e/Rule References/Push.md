@@ -1,0 +1,3 @@
+# Push `pf2:1`
+**Source** [_Rage of Elements pg. 233_](https://2e.aonprd.com/Sources.aspx?ID=205)  
+**Requirements** The monster's last action was a successful Strike that lists Push in its damage entry; **Effect** The monster attempts to [Shove](https://2e.aonprd.com/Actions.aspx?ID=38) the creature. This attempt neither applies nor counts toward the monster's multiple attack penalty. If Push lists a distance, change the distance the creature is pushed on a success to that distance.

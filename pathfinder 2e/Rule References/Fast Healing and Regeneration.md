@@ -1,0 +1,4 @@
+# Fast Healing and Regeneration
+
+**Source** [_Core Rulebook pg. 461_](https://2e.aonprd.com/Sources.aspx?ID=1) [4.0](https://2e.aonprd.com/Sources.aspx?ID=1)  
+A creature with fast healing or regeneration regains the listed amount of Hit Points each round at the beginning of its turn. A creature with regeneration has additional benefits. Its [[dying]] condition can't increase to a value that would kill it (this stops most creatures from going beyond dying 3) as long as its regeneration is active. If it takes damage of a type listed in the regeneration entry, its regeneration deactivates until the end of its next turn, including against the triggering damage.

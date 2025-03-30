@@ -1,0 +1,4 @@
+# Temporary Hit Points
+
+**Source** [_Core Rulebook pg. 461_](https://2e.aonprd.com/Sources.aspx?ID=1) [4.0](https://2e.aonprd.com/Sources.aspx?ID=1)  
+Some spells or abilities give you temporary Hit Points. Track these separately from your current and maximum Hit Points; when you take damage, reduce your temporary Hit Points first. Most temporary Hit Points last for a limited duration. You can’t regain lost temporary Hit Points through healing, but you can gain more via other abilities. You can have temporary Hit Points from only one source at a time. If you gain temporary Hit Points when you already have some, choose whether to keep the amount you already have and their corresponding duration or to gain the new temporary Hit Points and their duration.
