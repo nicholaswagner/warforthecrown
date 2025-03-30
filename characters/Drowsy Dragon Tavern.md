@@ -1,0 +1,1 @@
+A tavern with an adorable magical carved dragon in the signpost

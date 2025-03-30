@@ -1,0 +1,2 @@
+- Cousin to [[Tirri-Kastner]] and rival.
+- hooked up with [[Caritas Zespire]] and then spread a rumor that Caritas had a tiny dick.
