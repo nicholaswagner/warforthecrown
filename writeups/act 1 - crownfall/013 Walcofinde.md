@@ -130,7 +130,7 @@
 
   
 
--Allister declines to pilfer the crystal sets, but does find a scroll of healing he adds to the party’s inventory. Tirri pushes the party to move forward, and Arturo begrudgingly leaves behind the strange circles. ![[f2d547a3642e377adeeda62e1b1ccdc5_MD5.png]]
+-Allister declines to pilfer the crystal sets, but does find a scroll of healing he adds to the party’s inventory. Tirri pushes the party to move forward, and Arturo begrudgingly leaves behind the strange circles. ![[display-cases.png]]
 
   
 

@@ -172,9 +172,10 @@ To create a callout, add `[!info]` to the first line of a blockquote, where `inf
 ## Nested Callouts
 Callouts can be nested
 
-> [!question]
-> > [!swords]
-> > > [!success]
+> [!question]+
+> > [!swords]+
+> > > [!success]-
+> > > ![[periwinkle.png]]
 > 
 ---
 

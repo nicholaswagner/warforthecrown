@@ -97,7 +97,7 @@
 
   
 
--Tirri is immediately laid out by the wicked beak and talons of the mechanical griffon, and the party draws their weapons to fight yet another construct. Rhenquist has seen constructs like these before, a combination of artifice and primal magic which imbues the machines with a fragment of the animal’s original spirit, and, if not maintained, will allow the animal’s original nature to take over. The party faces an enraged and territorial griffon in a body made of metal, every bit as unyielding as the suits of armor. ![[dc703eb03c77044d035faa375fe97d96_MD5.png]]
+-Tirri is immediately laid out by the wicked beak and talons of the mechanical griffon, and the party draws their weapons to fight yet another construct. Rhenquist has seen constructs like these before, a combination of artifice and primal magic which imbues the machines with a fragment of the animal’s original spirit, and, if not maintained, will allow the animal’s original nature to take over. The party faces an enraged and territorial griffon in a body made of metal, every bit as unyielding as the suits of armor. ![[clockwork-gryph.png]]
 
   
 
