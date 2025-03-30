@@ -1,20 +1,25 @@
-#### ==readme.md==
-
----
+ ==readme.md==
+ ---
 
 # Markdown Cheatsheet
 
-
-Obsidian has an excellent page on their custom markup:
+Obsidian has an excellent page on their custom markup here
 https://help.obsidian.md/obsidian-flavored-markdown
 
 ---
 ### Page Headings
 
 > [!warning] Please do not use Level 1 or Level 2 headings
- `# heading title` or `## heading title` as those will be reserved for a different purpose. 
+> These are reserved for other uses
+> 
+> ```markdown
+> 
+> # heading title  🚫
+> ## heading title 🚫
+> 
+> ```
 
-```md
+```markdown
 
 # Lorem Ipsum Dolor 🚫
 ## Aenean consequat nulla 🚫
@@ -27,26 +32,37 @@ https://help.obsidian.md/obsidian-flavored-markdown
 
 
 ---
-
 ### Text Emphasis
 
 **You can bring** __attention to__ specific ~~text~~ by using the ==following codes==:
 
 
-```md
+```markdown
 **bold text**
 __italics text__
 ~~strikethrough~~
 ==hilighted text==
 ```
 
-
 ---
 
-If you put text right above a divider with ==no line break== it will create this effect. 
----
+### Citations / Footnotes
 
 ```md
+Footnotes can be referenced using [^1] with some some extra text after.
+They can span multiple lines [^2] and can use named references [^note]
+```
+
+Footnotes can be referenced using [^1] with some some extra text after.
+They can span multiple lines [^2] and can use named references [^note]
+
+---
+
+
+If you put text right above a divider with ==no line break== it will be rendered as an H2 
+---
+
+```markdown
 Text right above a divider with ==hilighted text==. 
 ---
 ```
@@ -55,7 +71,7 @@ Text right above a divider with ==hilighted text==.
 ### Tables
 are created like so
 
-```md
+```markdown
 
 | Column A      |    Column B    |      Column C |
 | :------------ | :------------: | ------------: |
@@ -72,9 +88,10 @@ are created like so
 | zebra stripes |    are neat    |            $1 |
 
 ---
-### Yo Dawg, I hear you like markdown, so we added markdown embeds to your markdown so you can read while you read ...
+### Yo Dawg, I hear you like markdown, so we embedded markdown in your markdown so you can read while you read ...
 
-```md
+```markdown
+
 # You can embed other markdown files in the current markdown file by using the following syntax
 
 ![[party boons]]
@@ -97,7 +114,7 @@ are created like so
 
 ### `[[ wiki-links ]]`
 
-```md
+```markdown
 
 You can create a special [[wiki-link]] to other files using the following syntax:
 
@@ -111,7 +128,7 @@ The Obsidian.app will let you use "carot links", they won't work on the web, but
 
 ```
 
-wikilink examples:
+examples:
 - [[2025_02_20]] - link to another markdown file
 - [[2025_02_20 | same link but with a custom title]] - same link but with a custom title
 - [[2025_02_20#Bad times at Basri's]] - link to a specific heading
@@ -125,31 +142,82 @@ Use callouts to include additional content without breaking the flow of your not
 
 To create a callout, add `[!info]` to the first line of a blockquote, where `info` is the _type identifier_. The type identifier determines how the callout looks and feels. To see all available types, refer to [Supported types](https://help.obsidian.md/callouts#Supported types).
 
-```markdown
 > [!info]
 > Here's a callout block.
 > It supports **Markdown**, [[Internal link|Wikilinks]], and [[Embed files|embeds]]!
-> ![[Engelbart.jpg]]
-```
+> 
+> >```markdown
+> >[!info]
+> >Here's a callout block.
+> >It supports **Markdown**, [[Internal link|Wikilinks]], and [[Embed files|embeds]]!
+> >```
+> 
+---
+## Nested Callouts
+Callouts can be nested
 
+> [!pencil]
+> > [!gem]
+> > > [!rocket]
+> 
+---
 
-> [!tip] Tip callout
+##### Callouts have an Initial display state
 
-> [!star]- Star callout which is initially folded
-> I dunno if further lines have the > as well or not
-> i guess they do?
-
-> [!book]+ Book callout which is initially open
-> Cras semper justo diam, id elementum dolor venenatis nec. Aenean consequat nulla lacinia lacus pellentesque, id fringilla eros elementum. In maximus pharetra massa non scelerisque. Ut a leo nec purus consectetur fringilla. Etiam vel odio in lacus pulvinar tempor eu ut nunc.
-
-> [!swords] I've included a few custom callout icons and i'll update this list with them soon-ish
-> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie sodales elit eget rhoncus. Integer finibus pharetra gravida. Aenean eget laoreet ante. ![[caritas-zespire-side.png]] Cras semper justo diam, id elementum dolor venenatis nec. Aenean consequat nulla lacinia lacus pellentesque, id fringilla eros elementum. In maximus pharetra massa non scelerisque. Ut a leo nec purus consectetur fringilla. Etiam vel odio in lacus pulvinar tempor eu ut nunc.
-
+- default callout
+	- > [!info]
+- callout with custom title
+	- > [!info] with a custom title
+- initially folded
+	- > [!info]- Initially folded callout
+	  > inner callout text will be displayed or hidden accordingly
+- initially expanded folding state
+	- > [!info]+ Initially expanded callout
+	  > inner callout text will be displayed or hidden accordingly
 
 ---
 
+##### Available callout types
 
-### You can share various structured language formats in the form of codeblocks
+> [!pencil]
+
+> [!tip]
+
+> [!gem]
+
+> [!info]
+
+> [!success]
+
+> [!rocket]
+
+> [!swords]
+
+> [!question]
+
+> [!warning]
+
+> [!danger]
+
+> [!bug]
+
+> [!example]
+
+> [!star]
+
+> [!book]
+
+> [!magic]
+
+> [!calendar]
+
+> [!wip]
+
+> [!image]
+
+---
+
+### You can share various structured language formats in the form of code blocks
 
 
 ```typescript
@@ -198,24 +266,13 @@ export default CodeBlock;
 
 ---
 
-#### Regular block quotes are also still a thing!
+### Regular block quotes are also still a thing!
 
 ```md
-> _“It’s a dangerous business, Frodo, going out your door. You step onto the road, and if you don’t keep your feet, there’s no knowing where you might be swept off to.”_
+> “It’s a dangerous business, Frodo, going out your door. You step onto the road, and if you don’t keep your feet, there’s no knowing where you might be swept off to.”
 ```
 
-> _“It’s a dangerous business, Frodo, going out your door. You step onto the road, and if you don’t keep your feet, there’s no knowing where you might be swept off to.”_
-
----
-#### Citations
-
-```md
-Footnotes can be referenced using [^1] with some some extra text after.
-They can span multiple lines [^2] and can use named references [^note]
-```
-
-Footnotes can be referenced using [^1] with some some extra text after.
-They can span multiple lines [^2] and can use named references [^note]
+> “It’s a dangerous business, Frodo, going out your door. You step onto the road, and if you don’t keep your feet, there’s no knowing where you might be swept off to.”
 
 ---
 

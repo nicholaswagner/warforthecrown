@@ -7,7 +7,7 @@
 - Adventure Path 2E Conversion by Archvillain Ediwyr
 - 2E Player’s Guide Format & Update by Chris Nolen
 
-![[pg_dragon.png.png]]
+![[pg_dragon.png]]
 
 > [!warning] Content Warning
 > 
@@ -68,7 +68,7 @@ means many merchants, soldiers, and travelers speak Kelish. The Glorian Empire�
 
 Rosanna in particular sees a large variety of languages. Skald is common among soldiers and servants thanks to the presence of the Ulfen Guard, while The Glorian Empire’s trade relationships with Osirion and Jalmeray lead a sizable minority of merchants and accountants to study Osiriani and Vudrani. 
 
-  ![[pg_im_on_a_horse.png | jumbo]]
+  ![[pg_im_on_a_horse.png]]
 
   
 
