@@ -1,4 +1,0 @@
-# Items and Hit Points
-
-**Source** [_Core Rulebook pg. 461_](https://2e.aonprd.com/Sources.aspx?ID=1) [4.0](https://2e.aonprd.com/Sources.aspx?ID=1)  
-Items have Hit Points like creatures, but the rules for damaging them are different (page 272). An item has a Hardness statistic that reduces damage the item takes by that amount. The item then takes any damage left over. If an item is reduced to 0 HP, it’s destroyed. An item also has a Broken Threshold. If its HP are reduced to this amount or lower, it’s broken, meaning it can’t be used for its normal function and it doesn’t grant bonuses. Damaging an unattended item usually requires attacking it directly, and can be difficult due to that item’s Hardness and immunities. You usually can’t attack an attended object (one on a creature’s person).

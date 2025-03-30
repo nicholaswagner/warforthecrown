@@ -1,2 +1,0 @@
-**Source** [_Bestiary pg. 343_](https://2e.aonprd.com/Sources.aspx?ID=2)  
-When first exposed to bright light, the monster is [blinded](https://2e.aonprd.com/Conditions.aspx?ID=1) until the end of its next turn. After this exposure, light doesn’t blind the monster again until after it spends 1 hour in darkness. However, as long as the monster is in an area of bright light, it’s [dazzled](https://2e.aonprd.com/Conditions.aspx?ID=7).

@@ -1,5 +1,5 @@
-name: Index and Build Site
-description: Index the repository, clone `nicholaswagner/obsidious`, and build the site.
+name: Index and Build Obsidious
+description: Index the repository, clone `nicholaswagner/obsidious`, and build
 permissions:
     contents: write
 on:
@@ -15,6 +15,12 @@ jobs:
             # Checkout the current repository (example-vault) which has markdown files / images etc
             - name: Checkout repository
               uses: actions/checkout@v4
+
+            # - name: Checkout repository
+            #   uses: actions/checkout@v4
+            #   with:
+            #     repository: nicholaswagner/obsidious
+            #     path: obsidious
 
             # Run the indexer in your current repository
             - name: Run Obsidious Indexer
@@ -32,7 +38,7 @@ jobs:
               run: npm ci
 
             # Copy the generated index to the obsidious assets folder
-            - name: Copy index to Obsidious assets
+            - name: Copy index from workspace over to Obsidious src/assets
               run: cp -f ${{ github.workspace }}/obsidious-index.json ${{ github.workspace }}/obsidious/src/assets/obsidious-index.json
 
             # Build the obsidious app

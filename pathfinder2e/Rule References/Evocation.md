@@ -1,4 +1,0 @@
-# Evocation
-
-**Source** [_Core Rulebook pg. 298_](https://2e.aonprd.com/Sources.aspx?ID=1) [4.0](https://2e.aonprd.com/Sources.aspx?ID=1)  
-[Evocations](https://2e.aonprd.com/Traits.aspx?ID=65) capture magical energy and then shape it to harm your foes or protect your allies. Evocation spells often have a trait that comes from the type of damage they deal, such as [acid](https://2e.aonprd.com/Traits.aspx?ID=3), [cold](https://2e.aonprd.com/Traits.aspx?ID=27), [fire](https://2e.aonprd.com/Traits.aspx?ID=72), [force](https://2e.aonprd.com/Traits.aspx?ID=75), or [sonic](https://2e.aonprd.com/Traits.aspx?ID=147).
