@@ -58,7 +58,7 @@ With the end of summer comes Armasse, a celebration of Thaeodaen, Light of the S
 |---|
 |The Stellarza|
 
- ![[e35bd7a19f9bc03d8f3ecc4390e487d3_MD5.png]]
+ ![[qrcode.png]]
 
   
   

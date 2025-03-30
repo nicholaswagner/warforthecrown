@@ -9,7 +9,7 @@ https://help.obsidian.md/obsidian-flavored-markdown
 ---
 ### Page Headings
 
-> [!warning] Please do not use Level 1 or Level 2 headings
+> [!warning]- Please do not use Level 1 or Level 2 headings
 > These are reserved for other uses
 > 
 > ```markdown

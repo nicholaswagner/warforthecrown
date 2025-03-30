@@ -72,7 +72,7 @@
 
   
 
--Inside they find an old greeting room, currently occupied by an enterprising kobold named Mimips. Mimips explains that he ventured in through a sinkhole from the Underdark, and is trying to open his own alchemy shop to raise funds for his continued alchemical education. Excited at the prospect of selling to his first customers, he offers Gnomish Gooseberry Wine as he sets out his wares - wine on which Allister immediately gets drunk.  ![[8e7e0cfb621a23ba09e50e29f47edc75_MD5.png]]
+-Inside they find an old greeting room, currently occupied by an enterprising kobold named Mimips. Mimips explains that he ventured in through a sinkhole from the Underdark, and is trying to open his own alchemy shop to raise funds for his continued alchemical education. Excited at the prospect of selling to his first customers, he offers Gnomish Gooseberry Wine as he sets out his wares - wine on which Allister immediately gets drunk.  ![[red-dragon-ish.png]]
 
   
 

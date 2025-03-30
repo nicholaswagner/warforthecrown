@@ -117,7 +117,7 @@ Caritas’s father Madeira Zespire abruptly stops playing his cello and chastise
   
   
 Madeira’s Dragon Slaying Soundtrack
-![[child_adventure_madeira_dragon_slaying_soundtrack_qr_code.png | 100]]
+![[qrcode-dragon-slaying-playlist.png| 100]]
 
 -Maderia’s lecture is cut short by a frantic knock at the door. René answers it to see one of his lieutenants with a Qadiran woman in rags and her terrified child. Caritas notices a brand of some kind on both the woman and her child’s arm. The lieutenant explains that the woman showed up at the border alone and it was all he could do to get them to the Zespire’s home without attracting notice. 
 

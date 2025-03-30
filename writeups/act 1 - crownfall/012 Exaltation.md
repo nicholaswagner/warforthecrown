@@ -143,7 +143,7 @@
 
   
 
--Rhenquist recognizes what the tapestry represents, and upon examining it finds a well-concealed hole in the tapestry where the unicorn’s eye should be. Behind the hole is a small indentation with the impression of the unicorn and linnorm carved into the wall. ![[b071874b14a5052d87818d9113932847_MD5.png]]
+-Rhenquist recognizes what the tapestry represents, and upon examining it finds a well-concealed hole in the tapestry where the unicorn’s eye should be. Behind the hole is a small indentation with the impression of the unicorn and linnorm carved into the wall. ![[tapestry-snake-and-horse.png]]
 
   
 
