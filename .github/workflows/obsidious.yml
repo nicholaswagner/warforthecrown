@@ -60,7 +60,7 @@ jobs:
                 
             # Upload the built site as an artifact for GitHub Pages
             - name: Upload artifact
-              uses: actions/upload-pages-artifact@v2
+              uses: actions/upload-artifact@v3
               with:
                 path: ${{ github.workspace }}/main  # Path to your built site
             
