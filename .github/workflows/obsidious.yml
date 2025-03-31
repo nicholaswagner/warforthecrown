@@ -59,12 +59,22 @@ jobs:
             # Configure GitHub Pages
             - name: Setup Pages
               uses: actions/configure-pages@v5
+
+            # Check if directory exists before uploading artifact
+            - name: Check directory exists
+              run: |
+                if [ -d "${{ github.workspace }}/main" ]; then
+                  echo "Directory exists"
+                else
+                  echo "Directory does not exist"
+                  exit 1
+                fi
                 
             # Upload the built site as an artifact for GitHub Pages
             - name: Upload artifact
               uses: actions/upload-pages-artifact@v3
               with:
-                path: ${{ github.workspace }}/main/*  # Path to your built site
+                path: ${{ github.workspace }}/main  # Path to your built site
             
             # Deploy to GitHub Pages
             - name: Deploy to GitHub Pages
