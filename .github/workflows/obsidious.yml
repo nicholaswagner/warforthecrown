@@ -80,23 +80,3 @@ jobs:
             - name: Deploy to GitHub Pages
               id: deployment
               uses: actions/deploy-pages@v4
-
-
-
-
-
-
-              # Set up Git for GitHub Pages deployment
-            # - name: Set up Git for GitHub Pages deployment
-            #   working-directory: ${{ github.workspace }}/main
-            #   run: |
-            #       git config --global user.name "GitHub Actions"
-            #       git config --global user.email "actions@github.com"
-            #       git checkout --orphan gh-pages  # Create a new orphan branch for GitHub Pages
-            # # Commit and push to GitHub Pages
-            # - name: Commit and push to GitHub Pages
-            #   working-directory: ${{ github.workspace }}/main
-            #   run: |
-            #       git add -A  # Add all the files from the dist/
-            #       git commit -m "Deploy site to GitHub Pages"
-            #       git push --force --set-upstream origin gh-pages  # Force push to the gh-pages branch
