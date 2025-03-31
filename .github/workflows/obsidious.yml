@@ -51,7 +51,7 @@ jobs:
             
             # disable jekyll
             - name: Disable Jekyll on GitHub Pages
-              working-directory: ${{ github.workspace }}/main
+              working-directory: ${{ github.workspace }}/main/
               run: touch .nojekyll
             
             # Configure GitHub Pages
@@ -60,7 +60,7 @@ jobs:
                 
             # Upload the built site as an artifact for GitHub Pages
             - name: Upload artifact
-              uses: actions/upload-artifact@v3
+              uses: actions/upload-artifact@v4
               with:
                 path: ${{ github.workspace }}/main  # Path to your built site
             
