@@ -17,6 +17,10 @@ jobs:
               uses: actions/checkout@v4
               with:
                 path: main
+    
+            - name: Disable Jekyll on GitHub Pages
+              working-directory: ${{ github.workspace }}/main
+              run: touch .nojekyll
 
             - name: Checkout repository
               uses: actions/checkout@v4
@@ -28,21 +32,10 @@ jobs:
             - name: Run Obsidious Indexer
               working-directory: ${{ github.workspace }}
               run: npm exec remark-obsidious@latest --yes -- --in ${{ github.workspace }}/main --out ${{ github.workspace }}/obsidious/src/assets
-
-            # Clone the second repository (obsidious) into a subdirectory
-            # - name: Clone obsidious (shallow copy)
-            #   run: |
-            #       git clone --depth=1 https://github.com/nicholaswagner/obsidious.git ${{ github.workspace }}/obsidious
-
             # Install dependencies for obsidious
             - name: Install dependencies for obsidious
               working-directory: ${{ github.workspace }}/obsidious
               run: npm ci
-
-            # Copy the generated index to the obsidious assets folder
-            # - name: Copy index from workspace over to Obsidious src/assets
-            #   run: cp -f ${{ github.workspace }}/obsidious-index.json ${{ github.workspace }}/obsidious/src/assets/obsidious-index.json
-
             # Build the obsidious app
             - name: Build Obsidious app
               env:
@@ -51,28 +44,39 @@ jobs:
                   VITE_INITIAL_VAULT_FILE_LABEL_SLUG: readme
               working-directory: ${{ github.workspace }}/obsidious
               run: npm run build
-
             # Copy built files to the main repository
             - name: Copy built site to workspace root
               working-directory: ${{ github.workspace }}
               run: cp -r ${{ github.workspace }}/obsidious/dist/* ${{ github.workspace }}/main
+            # Configure Pages for deployment
+            - name: Setup Pages
+              uses: actions/configure-pages@v3
+            # Upload the built site as an artifact for GitHub Pages
+            - name: Upload artifact
+              uses: actions/upload-pages-artifact@v2
+              with:
+                path: ${{ github.workspace }}/main
+            # Deploy to GitHub Pages
+            - name: Deploy to GitHub Pages
+              id: deployment
+              uses: actions/deploy-pages@v2
 
-            # Remove the obsidious directory to clean up
-            # - name: Delete the obsidious directory
-            #   run: rm -rf ${{ github.workspace }}/obsidious
 
-            # Set up Git for GitHub Pages deployment
-            - name: Set up Git for GitHub Pages deployment
-              working-directory: ${{ github.workspace }}/main
-              run: |
-                  git config --global user.name "GitHub Actions"
-                  git config --global user.email "actions@github.com"
-                  git checkout --orphan gh-pages  # Create a new orphan branch for GitHub Pages
 
-            # Commit and push to GitHub Pages
-            - name: Commit and push to GitHub Pages
-              working-directory: ${{ github.workspace }}/main
-              run: |
-                  git add -A  # Add all the files from the dist/
-                  git commit -m "Deploy site to GitHub Pages"
-                  git push --force --set-upstream origin gh-pages  # Force push to the gh-pages branch
+
+
+
+              # Set up Git for GitHub Pages deployment
+            # - name: Set up Git for GitHub Pages deployment
+            #   working-directory: ${{ github.workspace }}/main
+            #   run: |
+            #       git config --global user.name "GitHub Actions"
+            #       git config --global user.email "actions@github.com"
+            #       git checkout --orphan gh-pages  # Create a new orphan branch for GitHub Pages
+            # # Commit and push to GitHub Pages
+            # - name: Commit and push to GitHub Pages
+            #   working-directory: ${{ github.workspace }}/main
+            #   run: |
+            #       git add -A  # Add all the files from the dist/
+            #       git commit -m "Deploy site to GitHub Pages"
+            #       git push --force --set-upstream origin gh-pages  # Force push to the gh-pages branch
