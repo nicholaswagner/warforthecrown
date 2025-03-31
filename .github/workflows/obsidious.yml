@@ -12,16 +12,13 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
-            # Checkout the current repository (example-vault) which has markdown files / images etc
+            # Checkout the current repository which has markdown files / images etc
             - name: Checkout repository
               uses: actions/checkout@v4
               with:
                 path: main
-    
-            - name: Disable Jekyll on GitHub Pages
-              working-directory: ${{ github.workspace }}/main
-              run: touch .nojekyll
 
+            # Checkout the obsidious repository
             - name: Checkout repository
               uses: actions/checkout@v4
               with:
@@ -32,11 +29,13 @@ jobs:
             - name: Run Obsidious Indexer
               working-directory: ${{ github.workspace }}
               run: npm exec remark-obsidious@latest --yes -- --in ${{ github.workspace }}/main --out ${{ github.workspace }}/obsidious/src/assets
-            # Install dependencies for obsidious
+            
+              # Install dependencies for obsidious
             - name: Install dependencies for obsidious
               working-directory: ${{ github.workspace }}/obsidious
               run: npm ci
-            # Build the obsidious app
+            
+              # Build the obsidious app
             - name: Build Obsidious app
               env:
                   VITE_BASE_URL: /warforthecrown/
@@ -44,18 +43,27 @@ jobs:
                   VITE_INITIAL_VAULT_FILE_LABEL_SLUG: readme
               working-directory: ${{ github.workspace }}/obsidious
               run: npm run build
+
             # Copy built files to the main repository
             - name: Copy built site to workspace root
               working-directory: ${{ github.workspace }}
               run: cp -r ${{ github.workspace }}/obsidious/dist/* ${{ github.workspace }}/main
+            
+            # disable jekyll
+            - name: Disable Jekyll on GitHub Pages
+              working-directory: ${{ github.workspace }}/main
+              run: touch .nojekyll
+            
             # Configure GitHub Pages
             - name: Setup Pages
               uses: actions/configure-pages@v3
+                
             # Upload the built site as an artifact for GitHub Pages
             - name: Upload artifact
               uses: actions/upload-pages-artifact@v2
               with:
                 path: ${{ github.workspace }}/main  # Path to your built site
+            
             # Deploy to GitHub Pages
             - name: Deploy to GitHub Pages
               id: deployment
