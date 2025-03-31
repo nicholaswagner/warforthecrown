@@ -30,7 +30,7 @@ jobs:
             # Run the indexer in your current repository
             - name: Run Obsidious Indexer
               working-directory: ${{ github.workspace }}
-              run: npm exec remark-obsidious@latest --yes -- --in ${{ github.workspace }}/main --out ${{ github.workspace }}/obsidious/src/assets
+              run: npm exec remark-obsidious@latest --yes -- --in ${{ github.workspace }}/main --out ${{ github.workspace }}/main
             
               # Install dependencies for obsidious
             - name: Install dependencies for obsidious
