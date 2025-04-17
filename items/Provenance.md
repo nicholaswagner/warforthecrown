@@ -30,44 +30,72 @@ owned by [[Vice Count Rene Malbec du Valle]] and bequeathed to [[Caritas Zespire
 **Knight Incantor:** 
 Brethren, we gather tonight in the Halls of the Valiant to bear witness to the petition of Syr Rene. We stand before the fires of truth and trial. We stand in solidarity, not to pass judgment but to receive it. Who comes before u
 
+---
 
 **Jacques Coeurageaux:**
 I am Jacques Coeurageaux, Lord Protector of the Kingdom of Rysher, the Unbroken Shield, High Commander of the Order of the Harmonious Sword, the Order of the Golden Hart, and the Order of the Argent Guard, and First Among Equals in this Circle of Loyalty. I come here on behalf of Syr Rene, who seeks admittance to our High Circle. He has walked the Fivefold Path of Valor as far as his greaves will take him._ ^8b4da0
 
+---
+
 **Knight Incantor:**
 Have you, Syr Rene, walked the pathless ways to find the Questing Beast in his hidden glen? Did you pass through whispering boughs, past veils of twilight where mortal sight falters, and kneel in humility before that creature whose eyes burn with the light of ancient dreams? And did you fulfill the quest bestowed upon you in that sacred hour?
+
+---
 
 **Rene:**
 By the strength of my arm and the will of my heart, I have.
 
+---
+
 **Knight Incantor:**
 Have you braved the labyrinthine depths beneath the towers of Castle Vantress? There, where shadows hold secrets and the bones of the vanquished sleep, did you look into the mirror that knows no lies? Did it show you the visage of your truest self, stripped bare of pretense and pride? And did you, though trembling, hold firm beneath the weight of that revelation?
+
+---
 
 **Rene:**
 With eyes unclouded and courage unbroken, I have.
 
+---
+
 **Knight Incantor:**
 Have you stood before the Cauldron of Eternity, where power and desire flow like molten gold, and listened as the voices of forever sang to your soul? Did the sweet promises of immortality and dominion caress your mind? And did you, with a heart tempered like finest steel, turn away from that alluring doom?
+
+---
 
 **Rene:**
 With steadfast resolve, I have.
 
+---
+
 **Knight Incantor:**
 Have you crossed swords upon the crimson sands before the gates of Castle Embereth? Did you face Lord Protector Jacques Coeurageaux, whose might is as a storm upon the sea and whose shield is the bulwark of justice? Did your valor burn bright in the fires of his crucible? And did you, in the clash of arms, emerge victorious by strength, by skill, and by determination?
+
+---
 
 **Rene:**
 I have faced him, and I prevailed.
 
+---
+
 > **The Knight-Incantor lowers his sword, pointing it toward the candidate’s heart**
+
+
+---
 
 **Knight Incantor:**
 And do you swear, by the beating of your heart, that all of these triumphs were accomplished honestly and honorably, without deception?
 
+---
+
 **Rene:**
 By the beating of my heart, I swear it.
 
+---
+
 **Knight Incantor:**
 Then let the fires of the Circle of Loyalty cast their judgment. With sword in hand, submit yourself to the pure white fires of the circle, and emerge a High Knight of the Court of Jacques Coeurageaux—or not at all.
+
+---
 
 A flare of white light and a pleasant tickling warmth wash over you, and you emerge to an outdoor space, a glen full of the people of Rysher dressed in their finery, little faeries flitting around in mirthful jubilation and sylphs splash around joyfully in a stream. A three-headed beast stares at you, all three heads nod in approval. You see an ancient stooped wizard with a pointy wizard hat, and orders of knights in their different armor. There are roars of applause, and music, and shouting and clapping, and the chanting of your name, and Jacques Coeurageaux steps forward, with arms outspread, and your armor clanks as he pulls you into an embrace before turning to the crowd and saying:
 
