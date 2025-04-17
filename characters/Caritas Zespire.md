@@ -22,7 +22,6 @@
 - Adopted son of [[Vice Count Rene Malbec du Valle]] and [[Madeira Zespire]]
 - Resides in the [[City of Zimar]] in the Sophra Prefecture of the Glorian Empire
 - Attended the [[Gennaris Academy]]
-- Lineage [[House Zespire.canvas]]
 
 ---
 
