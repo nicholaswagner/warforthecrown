@@ -7,7 +7,7 @@ _Rising Star_ / _Cleric_
 #### Notable details
 - A ViceCountess
 - Performs / does shows / chasing fame and fortune
-- [[Allister Hound]] has seen her during the jump (several times)
+- [[Tribune Ser Allister Hound]] has seen her during the jump (several times)
 
 ---
 

@@ -38,11 +38,8 @@
 
 ---
 
-![[caritas-zespire-with-wooden-sword.png]]
-
----
-
-![[caritas-zespire-front.jpg]]
+![[caritas-zespire-with-wooden-sword.png | 100x100]]
+![[caritas-zespire-front.jpg | 100x100]]
 
 ---
 

@@ -11,6 +11,7 @@ _Servant_ / _Witch_ of _The Resentment_
 - Countess Lotheed dies, and the Nocturne family is let go, and for several years is unable to find an appointment.
 - eventually finds a position at the [[Grand Duke Avernathus]] and [[Grand Duchess Liomtraud Heskillar]] home with the help of Princess Eutropia
 - Has a drawer sister
+- was knighted by [[Princess Eutropia Stavian]]
 ---
 
 #### Patron

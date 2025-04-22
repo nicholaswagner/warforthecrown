@@ -1,4 +1,4 @@
 Notable characters from here:
-- [[Allister Hound]]
+- [[Tribune Ser Allister Hound]]
 - "post revolutionary america vibe... they have the eagle as their birb / etc"
 - Fashion is heavily inspired by military garb of revolution

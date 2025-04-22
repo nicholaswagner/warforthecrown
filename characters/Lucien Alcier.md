@@ -7,7 +7,7 @@ _"coatless" commoner_
 
 #### Key Notes
 - Loves fashion and dancing
-- partner of [[Allister Hound]]
+- partner of [[Tribune Ser Allister Hound]]
 
 ---
 
