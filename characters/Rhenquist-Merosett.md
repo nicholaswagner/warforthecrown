@@ -1,7 +1,10 @@
 > [!gem] Rhenquist Merosett
+> 
 > _Glorian Patriot_ / Mastermind Rogue
-![[Rhenquist_Merosett.png]]
-![[Campaign Backgrounds#Glorian Patriot]]
+> 
+> ![[Rhenquist_Merosett.png]]
+> 
+> ![[Campaign Backgrounds#Glorian Patriot]]
 
 ---
 

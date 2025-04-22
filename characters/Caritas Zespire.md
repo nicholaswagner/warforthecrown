@@ -1,6 +1,8 @@
 > [!swords] Caritas Zespire
 >  _Young Reformer_ / _Human Fighter_
+>  
 > ![[caritas-zespire-side.png]]
+> 
 > ![[Campaign Backgrounds#Young Reformer]]
 
 
