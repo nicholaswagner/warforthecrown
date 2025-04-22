@@ -41,10 +41,10 @@ jobs:
             - name: Build Obsidious app
               env:
                   VITE_BASE_URL: /warforthecrown/
-                  VITE_FILEPATH_PREFIX: ./
+                  VITE_FILEPATH_PREFIX:
                   VITE_INITIAL_VAULT_FILE_LABEL_SLUG: readme
                   VITE_OBSIDIOUS_FILE_URL: '/warforthecrown/obsidious-index.json'
-                  VITE_EDIT_FILE_URL_PREFIX: 'https://github.com/nicholaswagner/warforthecrown/blob/main/'
+                  VITE_EDIT_FILE_URL_PREFIX: 'https://github.com/nicholaswagner/warforthecrown/blob/main'
 
               working-directory: ${{ github.workspace }}/obsidious
               run: npm run build
