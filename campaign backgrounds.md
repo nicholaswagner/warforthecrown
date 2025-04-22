@@ -20,7 +20,8 @@ Choose two ability boosts. One must be to Dexterity or Charisma, and one is a fr
 
 ---
 
-#### (Claimed) Disgraced Noble ==claimed==
+#### Disgraced Noble
+Claimed by [[Arturo Basri]]
 
 Your noble family used to matter, until your father took a stand against Maxillar Pythareus, the commander of The Glorian Empire's military. True or not, the accusations Pythareus leveled against your family in return destroyed your reputation and isolated you from the society you grew up in. Now the only thing that matters to you is clawing your way back up the social ladder, either for your own quality of life or to clear your family's name. You've had to practice deception as you began working your way back into Glorian social circles. 
 

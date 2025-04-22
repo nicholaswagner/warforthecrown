@@ -7,7 +7,7 @@ Location: ==The Imperial Senate of the Glorian Empire==
   
 ![[copurnia_vau.png]]
 
-- [[Rhenquist-Merosett]]t and the Dowager Duchess are approached by a woman who introduces herself as [[Copurnia Vau]], the Head Curator of the Arcade of Triumphs. Copernia confirms that the crossbow is a counterfeit of [[Dignity’s Barb]],  and gives them some history of the relic. It was wielded by General Gerefein of the Seventh Army of Exploration, and its most famous moment was when he used it to shoot a Kellid warlord through a raging blizzard, finding his mark and winning the day. The relic was probably put in storage in one of the many corridors and passageways underground, never to be found again. 
+- [[Rhenquist-Merosett]]t and the Dowager Duchess are approached by a woman who introduces herself as [[Copurnia Vau]], the Head Curator of the Arcade of Triumphs. Copernia confirms that the crossbow is a counterfeit of [[Dignitys Barb]],  and gives them some history of the relic. It was wielded by General Gerefein of the Seventh Army of Exploration, and its most famous moment was when he used it to shoot a Kellid warlord through a raging blizzard, finding his mark and winning the day. The relic was probably put in storage in one of the many corridors and passageways underground, never to be found again. 
 
 
 - The PCs move to the Courtyard for the Princess’s address. The Princess, dressed in dazzling attire bedecked with emeralds and sapphires, steps up onto a fountain ledge to give a speech to a huge audience. She introduces [[Kalbio of Breezy Creek]], the weaver being exalted tonight, and goes on to speak about the future of the Glorian Empire. 

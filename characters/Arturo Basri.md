@@ -1,6 +1,8 @@
+> [!tip] Arturo Basri
+> _Disgraced Noble_ / _Investigator_
 ![[arturo_portrait.png]]
-### Arturo Basri
-_Disgraced Noble_ / _Investigator_
+![[campaign backgrounds#Disgraced Noble]]
+
 
 ---
 
@@ -24,9 +26,6 @@ _Disgraced Noble_ / _Investigator_
 ---
 
 #### Adult life
-
-
- ![[arturo_as_an_adult.png | 200]]
 - Hair: blue base with a green top
 - has a neck / shoulder tattoo and he doesn't know what it says / means.  (weird dwarvish or elvish script)
 - Feels like the weight of nobility is a heavy burden
