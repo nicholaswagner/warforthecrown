@@ -1,6 +1,11 @@
-![[ZarissaNocturne.jpeg]]
-### Zarissa Nocturne
-_Servant_ / _Witch_ of _The Resentment_
+> [!magic] Zarissa Nocturne
+> _Servant_ / _Witch_ of _The Resentment_
+>  
+> ![[ZarissaNocturne.jpeg]]
+>  
+> #### Background
+> House Servant .. or something... I need to follow up with Alex on that.
+
 
 ---
 

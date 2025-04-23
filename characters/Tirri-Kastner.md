@@ -1,13 +1,17 @@
-![[Tirri_Kastner.png]]
-### Tirri Kastner
-_Rising Star_ / _Cleric_
+> [!star] Tirri Kastner
+>  _Rising Star_ / _Cleric_
+>   
+>  ![[Tirri_Kastner.png]]
+>   
+>  ![[campaign backgrounds#Rising Star]]
+
 
 ---
 
 #### Notable details
 - A ViceCountess
 - Performs / does shows / chasing fame and fortune
-- [[Tribune Ser Allister Hound]] has seen her during the jump (several times)
+- [[Allister Hound]] has seen her during the jump (several times)
 
 ---
 

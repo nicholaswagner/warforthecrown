@@ -94,7 +94,7 @@ In the Brashen Deep, the children engage in the arduous process of collecting hi
 
 The children hide in the shadows when they hear a conversation between two people. [[Ser Gul Guisarne]], Count Lotheed’s seneschal, is reprimanding a terrified halfling man for trying to steal berries from the Grand Prince’s hunting grounds. The man tearfully explains that his crops have not yielded because of the drought, and all the clean water has been rerouted to [[The Palace of Birdsong]] for their landscaping. Nevertheless, Ser Guisarne informs him that stealing from the Grand Prince is a crime against the crown, and that the punishment for theft is death. He aims his crossbow at the man and asks if he has any last words. 
 
-[[Tribune Ser Allister Hound]] makes a desperate attempt to distract Ser Gul Guisarne by throwing a stone. The distraction gives the halfling man a chance to escape, and he darts into the woods. [[Rhenquist-Merosett]] and [[Arturo Basri]] successfully hide from the senescal, but [[Tribune Ser Allister Hound]] and [[Tirri-Kastner]] are caught, and Ser Guisarne tells them that their parents will be made aware of their obstruction of justice. !
+[[Allister Hound]] makes a desperate attempt to distract Ser Gul Guisarne by throwing a stone. The distraction gives the halfling man a chance to escape, and he darts into the woods. [[Rhenquist-Merosett]] and [[Arturo Basri]] successfully hide from the senescal, but [[Allister Hound]] and [[Tirri-Kastner]] are caught, and Ser Guisarne tells them that their parents will be made aware of their obstruction of justice. !
 
 ![[not_quite_legolas.png]]
 > Ser Gul Guisarne, Sadistic Senescal

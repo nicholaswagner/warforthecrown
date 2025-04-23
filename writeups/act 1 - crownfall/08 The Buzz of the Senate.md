@@ -34,11 +34,11 @@ Location: ==The Imperial Senate of the Glorian Empire==
   
 ![[Countess Abrielle Pace.png]]
 
-- [[Dame Zarissa Nocturne]] tries to blend in at the Arcade of Triumphs so she can spy on High Strategos Pythareus, but she finds the task more difficult than she anticipated. Her tiefling heritage makes her stick out like a sore thumb, and she’s constantly accosted by people making rude and prying comments about her appearance and inquiring as to what she’s doing in the Senate tonight. 
+- [[Zarissa Nocturne]] tries to blend in at the Arcade of Triumphs so she can spy on High Strategos Pythareus, but she finds the task more difficult than she anticipated. Her tiefling heritage makes her stick out like a sore thumb, and she’s constantly accosted by people making rude and prying comments about her appearance and inquiring as to what she’s doing in the Senate tonight. 
 
   
 
-- [[Tribune Ser Allister Hound]] begins to attempt to influence [[Countess Abrielle Pace]]. Through discussion with her he learns that she is cagey and duplicitous, difficult to pin down.
+- [[Allister Hound]] begins to attempt to influence [[Countess Abrielle Pace]]. Through discussion with her he learns that she is cagey and duplicitous, difficult to pin down.
 
   
 

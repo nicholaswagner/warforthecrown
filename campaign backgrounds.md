@@ -10,7 +10,9 @@ Choose two ability boosts. One must be to Strength or Charisma, and one is a fre
 
 ---
 
-#### Child of Rosanna ==claimed==
+#### Child of Rosanna
+Claimed by [[Allister Hound]]
+
 You belong to a noble family that matters in The Glorian Empire, though as the story begins you may or may not be on good terms with your relatives. Your upbringing among the city's well-to-do gives you an upper hand when it comes to knowledge of high society, and you start the game being used to a certain level of comfort. With Princess Eutropia's efforts to provide for The Glorian Empire's common citizens and overturn years of tradition, new lines are being quietly drawn in the sand, and you have found yourself embroiled in these intrigues whether you intended to be or not. 
 
 With this trait, the assumption is that you belong to a minor noble family (and can make up your family name). In this case, your family keeps a small manor in Aroden's View or Senate's Hill. If you want to be a member of one of Rosanna's major noble families, you must take the Noble Scion heritage. 
@@ -31,7 +33,8 @@ Choose two ability boosts. One must be to Strength or Charisma, and one is a fre
 
 ---
 
-#### Rising Star 
+#### Rising Star
+Claimed by [[Tirri-Kastner]]
 
 All too often, great minds must suffer for their art, but you're one of the lucky ones. Your skills attracted the attention of a noble patron who pays for your food, housing, and tools. As your patron introduces you to other cultural elites, you're slowly learning to navigate the treacherous waters of high society, but you still remember the lean times when each meal was a hard-won treasure. 
 

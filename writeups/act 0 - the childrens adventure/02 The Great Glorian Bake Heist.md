@@ -16,7 +16,7 @@ _August 15, 2024_ - The Palace of Birdsong
 
 #### Team Key
 
-- [[Martella-Lotheed]], [[Tribune Ser Allister Hound]], and [[Dame Zarissa Nocturne]] head to the servant’s building. As they approach the building they overhear/spy on a conversation between [[Count Bartleby Lotheed]], [[Fendren Merosett]], and [[Caldadis Merosett]], in which the twin Merosetts make fun of Rhenquist, calling him a runt and explaining that they call him that because he is “Runoff” - a Merosett born with no magical blood. 
+- [[Martella-Lotheed]], [[Allister Hound]], and [[Zarissa Nocturne]] head to the servant’s building. As they approach the building they overhear/spy on a conversation between [[Count Bartleby Lotheed]], [[Fendren Merosett]], and [[Caldadis Merosett]], in which the twin Merosetts make fun of Rhenquist, calling him a runt and explaining that they call him that because he is “Runoff” - a Merosett born with no magical blood. 
 - The kids connect over Martella’s interest in mechanical tinkering and Zarissa’s interest in embroidery, and they talk about Allister’s recent adoption. 
 - They conquer squeaky floors, a vicious chihuahua guard dog, and the sleeping cook and successfully filch the key. 
 
