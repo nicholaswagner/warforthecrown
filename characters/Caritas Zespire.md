@@ -45,5 +45,6 @@
 
 #### Notable Inventory Items
 - the folio of [[Museta Zespire]]
-	- written by [[Museta Zespire]] , it is essentially a planner.  She took an active role in planning senatorial stuff.  schedules, seating charts.  discovers several spell scrolls tucked into the back.  "blur", "confetti cloud", "charital urge", "haste", and "marvelous mount"  ( I belive @TrashQueen has this, but will update later once confirmed)
+	- written by [[Museta Zespire]] , it is essentially a planner.  She took an active role in planning senatorial stuff.  schedules, seating charts.  discovers several spell scrolls tucked into the back.  "blur", ~~"confetti cloud"~~, "charital urge", "haste", and "marvelous mount"  ( I believe @TrashQueen has this, but will update later once confirmed)
+	- Note: Gave
 - Owner of [[Provenance]]

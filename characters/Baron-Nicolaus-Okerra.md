@@ -1,5 +1,8 @@
 ![[Baron_Niklaus_Okerra.png]]
 
+
+![[OkerraJoustin.png]]
+
 ### Baron Nicolaus Okerra
 
 
@@ -8,12 +11,14 @@
 ---
 
 #### Family
-- Daughter:  "Selli"
+- Daughter:  [[Selly Okerra]]
 - Wife: Deceased
-
 ---
 
 #### Notes: 
 - A stickler for tradition, "good man", sticks to the most traditional stances, concerned about upcoming vote, and "stability", not a fan of breaking with tradition
-- Selly—daughter
 - Selly wants to become a knight, and the Baron has reluctantly agreed to support her.
+-  reputation: does not brook talk against rebellion or disobedience against superiors
+-  loyalty / lawful etc
+- According to his daughter he is afraid of water.  She says his horse is named boat because its the only one he'll get on.
+- 
