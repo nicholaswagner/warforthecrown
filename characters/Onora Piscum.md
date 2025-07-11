@@ -18,5 +18,4 @@ influenced by:
 	survival
 
 She is also the Sheriff of Stackies
-
 ### Currently feels `Helpful` toward the party

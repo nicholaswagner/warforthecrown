@@ -4,6 +4,7 @@
 ### Notes
 - Old crotchety woman
 - moment of weakness when she looks at caritas ... 
+- Was a member of the Glorian Phalinx (army) in her younger days
 
 Her Strength: -4 penalty to checks if you attempt to flatter her
 
@@ -15,3 +16,8 @@ Her Strength: -4 penalty to checks if you attempt to flatter her
 - Diplomacy, 
 - Intimidation
 
+### Things she likes
+Loves talking about History and Tradition
+She did not seem to respond well to overhearing any talk against the Count (bartleby).
+
+Current mood towards our party `Indifferent`
