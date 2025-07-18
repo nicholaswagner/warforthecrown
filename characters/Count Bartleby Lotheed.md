@@ -13,7 +13,7 @@
 - a person with an insatiable thirst for arcane knowledge.  he's constantly locked in his study learning more about arcane magic.  Much higher INT than you would expect.  He's kind of a slacker
 - 5gp of arcane knowledge = +5 bonus to arcane checks against him forever
 
-### Current mood toward the party:  `Friendly`
+### Current mood toward the party:  `Helpful`
 
 Can be influenced via Arcana but its really high... 25 worked for Arturo
 
