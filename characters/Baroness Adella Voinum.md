@@ -15,9 +15,10 @@ Her Strength: -4 penalty to checks if you attempt to flatter her
 - Lore Glorian History, 
 - Diplomacy, 
 - Intimidation
-
 ### Things she likes
 Loves talking about History and Tradition
 She did not seem to respond well to overhearing any talk against the Count (bartleby).
 
-Current mood towards our party `Indifferent`
+Players get a +2 circumstance bonus to influence checks made targeting her while she's drinking
+
+### Current attitude towards our party `Indifferent`

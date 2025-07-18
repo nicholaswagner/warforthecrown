@@ -4,7 +4,6 @@ Description:
 (Michelle Yeoh in a pope outfit with a large bronze key charm around her neck)
 
 Leader of the church of [[Abadar]] merat county.
-
 - loves gossip
 - worship is financial , transactions are sacred
 
@@ -17,3 +16,5 @@ Weaknesses:
 - any pro war talk will not go well with her
 
 
+
+Religion dc is 22 !
