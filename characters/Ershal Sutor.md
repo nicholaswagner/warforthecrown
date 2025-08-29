@@ -1,0 +1,1 @@
+![[Ershal Sutor.png]]

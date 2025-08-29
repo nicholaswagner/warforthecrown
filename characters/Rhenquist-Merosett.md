@@ -4,7 +4,7 @@
 > 
 > ![[Rhenquist_Merosett.png]]
 > 
-> ![[Campaign Backgrounds#Glorian Patriot]]
+> ![[campaign backgrounds#Glorian Patriot]]
 
 ---
 

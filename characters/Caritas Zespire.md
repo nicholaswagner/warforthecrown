@@ -3,7 +3,7 @@
 >  
 > ![[caritas-zespire-side.png]]
 > 
-> ![[Campaign Backgrounds#Young Reformer]]
+> ![[campaign backgrounds#Young Reformer]]
 
 
 ---
