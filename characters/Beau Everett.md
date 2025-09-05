@@ -1,1 +1,0 @@
-Shirtless man - works with pigs
