@@ -18,6 +18,7 @@
 #### Anecdotes
 
 - as a child he once broke up with Madame Pallponia (his first love and our group's fully adult dance instructor) during Armasse Week.
+- loves books, you might even catch him reading almanacs or interesting tax documents
 
 ---
 

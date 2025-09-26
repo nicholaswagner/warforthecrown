@@ -7,7 +7,7 @@ Location: ==The Imperial Senate of the Glorian Empire==
   
 ![[copurnia_vau.png]]
 
-- [[Rhenquist-Merosett]]t and the Dowager Duchess are approached by a woman who introduces herself as [[Copurnia Vau]], the Head Curator of the Arcade of Triumphs. Copernia confirms that the crossbow is a counterfeit of [[Dignitys Barb]],  and gives them some history of the relic. It was wielded by General Gerefein of the Seventh Army of Exploration, and its most famous moment was when he used it to shoot a Kellid warlord through a raging blizzard, finding his mark and winning the day. The relic was probably put in storage in one of the many corridors and passageways underground, never to be found again. 
+- [[Rhenquist-Merosett]]t and the Dowager Duchess are approached by a woman who introduces herself as [[Copernia Vau]], the Head Curator of the Arcade of Triumphs. Copernia [[Copernia Vau]] that the crossbow is a counterfeit of [[Dignitys Barb]],  and gives them some history of the relic. It was wielded by General Gerefein of the Seventh Army of Exploration, and its most famous moment was when he used it to shoot a Kellid warlord through a raging blizzard, finding his mark and winning the day. The relic was probably put in storage in one of the many corridors and passageways underground, never to be found again. 
 
 
 - The PCs move to the Courtyard for the Princess’s address. The Princess, dressed in dazzling attire bedecked with emeralds and sapphires, steps up onto a fountain ledge to give a speech to a huge audience. She introduces [[Kalbio of Breezy Creek]], the weaver being exalted tonight, and goes on to speak about the future of the Glorian Empire. 
@@ -44,7 +44,7 @@ Location: ==The Imperial Senate of the Glorian Empire==
 
 - Caritas begins to talk with [[Baron-Nicolaus-Okerra]], a handsome bear of man with a friendly and gentle smile. The Baron gives heartfelt condolences to Caritas for the loss of his father so many years ago, and admits that while he didn’t know the man personally, many of his colleagues have had many kind things to say about him. He shares his concerns about the vote to overturn primogeniture with Caritas - he is worried about the instability it would cause, especially because his young daughter Selli wants to become a knight, and he feels it’s his responsibility to give her as safe a world as possible. Caritas continues working to sway the Baron to Eutropia’s side. ![[okerra.png]]
 
-- Arturo endures a tiresome conversation with the braggadocious and rude [[Earl Calhadian Vernisant]] , who informs him (between assertions that he has descended from General Arnisant himself) that a genealogical book is being held by Copernia Vau in the Arcade of Triumphs. Arturo goes to the Arcade and wins Copernia’s admiration with his genuine admiration of the artifacts on display. She brings him into the Artifact Restoration Room and gifts him a Superior Repair Kit. Arturo finds the book.   
+- Arturo endures a tiresome conversation with the braggadocious and rude [[Earl Calhadian Vernisant]] , who informs him (between assertions that he has descended from General Arnisant himself) that a genealogical book is being held by [[Copernia Vau]] in the Arcade of Triumphs. Arturo goes to the Arcade and wins [[Copernia Vau]]’s admiration with his genuine admiration of the artifacts on display. She brings him into the Artifact Restoration Room and gifts him a Superior Repair Kit. Arturo finds the book.   
 
   
 ![[library.png]]
@@ -72,7 +72,7 @@ Location: ==The Imperial Senate of the Glorian Empire==
 
   
 
--Arturo critically succeeds on his attempt to convince Copernia Vau to let him examine the book, and in doing so discovers that Earl Vernisant, while truly a descendant of General Arnisant, is also the descendant of a man who was dishonorably discharged from Lastwall for criminal misbehavior and banished back to the empire. It’s a humiliating scandal that will surely embarrass the Earl. This complete’s Martella’s “Theft” mission.
+-Arturo critically succeeds on his attempt to convince [[Copernia Vau]] to let him examine the book, and in doing so discovers that Earl Vernisant, while truly a descendant of General Arnisant, is also the descendant of a man who was dishonorably discharged from Lastwall for criminal misbehavior and banished back to the empire. It’s a humiliating scandal that will surely embarrass the Earl. This complete’s Martella’s “Theft” mission.
 
   
 

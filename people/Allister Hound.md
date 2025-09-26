@@ -1,4 +1,4 @@
-> [!tip] Allister Hound
+> [!gem] Allister Hound
 > _Child of Rosanna_ / _Bard_
 >  
 > ![[allister-hound-sitting.jpg]]

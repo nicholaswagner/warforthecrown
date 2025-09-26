@@ -22,6 +22,7 @@
 - Adopted son of [[Vice Count Rene Malbec du Valle]] and [[Madeira Zespire]]
 - Resides in the [[City of Zimar]] in the Sophra Prefecture of the Glorian Empire
 - Attended the [[Gennaris Academy]]
+- The Zespire family has vineyards in the Tandak Prefecture
 
 ---
 
@@ -32,7 +33,7 @@
 - watched the prince get slammed into the Pegasus statue
 - is carried by René as the count is beating bartlebee as a result of the battle royale
 - [[Prince Carrius Stavian]] dies at age 16 in an accident
-- The memory shared by [[Provenance]] of his father taking his solumn vows.
+- The memory shared by [[Provenance]] of his father taking his solemn vows.
 
 	> By the strength of my arm and the will of my heart, I have. - Rene
 
@@ -45,6 +46,7 @@
 
 #### Notable Inventory Items
 - the folio of [[Museta Zespire]]
-	- written by [[Museta Zespire]] , it is essentially a planner.  She took an active role in planning senatorial stuff.  schedules, seating charts.  discovers several spell scrolls tucked into the back.  "blur", ~~"confetti cloud"~~, "charital urge", "haste", and "marvelous mount"  ( I believe @TrashQueen has this, but will update later once confirmed)
-	- Note: Gave
+	- written by [[Museta Zespire]] , it is essentially a diary / planner.  
+		- She took an active role in planning senatorial stuff.  schedules and seating charts.  
+		- discovers several spell scrolls tucked into the back.  "blur", ~~"confetti cloud"~~ (given to [[Count Bartleby Lotheed]] later on), "charital urge", "haste", and "marvelous mount" which he later gives to [[Zarissa Nocturne]]
 - Owner of [[Provenance]]
