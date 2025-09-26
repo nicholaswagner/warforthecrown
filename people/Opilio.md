@@ -1,1 +1,3 @@
-A boy once matched for [[Sepsinia Crabbe]], but killed himself.
+- A boy once matched for [[Sepsinia Crabbe]], but killed himself.
+- left no note, walked into one of the bogs and drowned
+- found with stones in his pocket

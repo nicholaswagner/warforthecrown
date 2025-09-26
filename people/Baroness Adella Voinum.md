@@ -1,6 +1,8 @@
 
 ![[Baroness Adella Voinum.png]]
 
+### Current attitude towards our party `Indifferent`
+
 ### Notes
 - Old crotchety woman
 - moment of weakness when she looks at caritas ... 
@@ -21,4 +23,3 @@ She did not seem to respond well to overhearing any talk against the Count (bart
 
 Players get a +2 circumstance bonus to influence checks made targeting her while she's drinking
 
-### Current attitude towards our party `Indifferent`
