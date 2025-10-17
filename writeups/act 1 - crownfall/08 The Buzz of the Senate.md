@@ -42,7 +42,7 @@ Location: ==The Imperial Senate of the Glorian Empire==
 
   
 
-- Caritas begins to talk with [[Baron-Nicolaus-Okerra]], a handsome bear of man with a friendly and gentle smile. The Baron gives heartfelt condolences to Caritas for the loss of his father so many years ago, and admits that while he didn’t know the man personally, many of his colleagues have had many kind things to say about him. He shares his concerns about the vote to overturn primogeniture with Caritas - he is worried about the instability it would cause, especially because his young daughter Selli wants to become a knight, and he feels it’s his responsibility to give her as safe a world as possible. Caritas continues working to sway the Baron to Eutropia’s side. ![[okerra.png]]
+- Caritas begins to talk with [[Baron Nicolaus Okerra]], a handsome bear of man with a friendly and gentle smile. The Baron gives heartfelt condolences to Caritas for the loss of his father so many years ago, and admits that while he didn’t know the man personally, many of his colleagues have had many kind things to say about him. He shares his concerns about the vote to overturn primogeniture with Caritas - he is worried about the instability it would cause, especially because his young daughter Selli wants to become a knight, and he feels it’s his responsibility to give her as safe a world as possible. Caritas continues working to sway the Baron to Eutropia’s side. ![[okerra.png]]
 
 - Arturo endures a tiresome conversation with the braggadocious and rude [[Earl Calhadian Vernisant]] , who informs him (between assertions that he has descended from General Arnisant himself) that a genealogical book is being held by [[Copernia Vau]] in the Arcade of Triumphs. Arturo goes to the Arcade and wins [[Copernia Vau]]’s admiration with his genuine admiration of the artifacts on display. She brings him into the Artifact Restoration Room and gifts him a Superior Repair Kit. Arturo finds the book.   
 
@@ -59,28 +59,28 @@ Location: ==The Imperial Senate of the Glorian Empire==
 
 #### Round 2
 
--Zarissa continues to attempt to spy on the High Strategos, with no success. She finally leaves to find a quiet spot to imbibe the Infiltrator’s Elixir to give herself a better chance to go incognito. 
+- Zarissa continues to attempt to spy on the High Strategos, with no success. She finally leaves to find a quiet spot to imbibe the Infiltrator’s Elixir to give herself a better chance to go incognito. 
 
   
-![[50cent.png]]
+![[Duke_Leonard_Centimus.png]]
 
--Allister abandons Countess Pace to try to work on Duke Centimus. He talks to the Duke about his invention’s impact on his grandmother, and the Duke is delighted to hear it. He tells Allister that he is proud of his wheelchair and would rather spend the fortune it would cost to heal his affliction on creating and providing more chairs for people in need. It’s a very effective conversation, and Allister makes significant progress on Duke Centimus. 
-
-  
-
--Caritas turns his attention to influencing the Senate Floor, and critically succeeds at the task. Word of his success spreads through the Senate Building, allowing the party to use Diplomacy to influence any room in the building. Additionally, a man named Baronet Dexterius awards Caritas a silver ring worth 30sp as a token of his admiration of Caritas’s abilities. 
+- Allister abandons Countess Pace to try to work on Duke Centimus. He talks to the Duke about his invention’s impact on his grandmother, and the Duke is delighted to hear it. He tells Allister that he is proud of his wheelchair and would rather spend the fortune it would cost to heal his affliction on creating and providing more chairs for people in need. It’s a very effective conversation, and Allister makes significant progress on Duke Centimus. 
 
   
 
--Arturo critically succeeds on his attempt to convince [[Copernia Vau]] to let him examine the book, and in doing so discovers that Earl Vernisant, while truly a descendant of General Arnisant, is also the descendant of a man who was dishonorably discharged from Lastwall for criminal misbehavior and banished back to the empire. It’s a humiliating scandal that will surely embarrass the Earl. This complete’s Martella’s “Theft” mission.
+- Caritas turns his attention to influencing the Senate Floor, and critically succeeds at the task. Word of his success spreads through the Senate Building, allowing the party to use Diplomacy to influence any room in the building. Additionally, a man named Baronet Dexterius awards Caritas a silver ring worth 30sp as a token of his admiration of Caritas’s abilities. 
 
   
 
--Rhenquist engages in frothy conversation with Countess Pace, who is eager to talk with the young Merosett. He learns - much to Allister’s chagrin - that she has a penchant for fashion and for gossip. 
+- Arturo critically succeeds on his attempt to convince [[Copernia Vau]] to let him examine the book, and in doing so discovers that Earl Vernisant, while truly a descendant of General Arnisant, is also the descendant of a man who was dishonorably discharged from Lastwall for criminal misbehavior and banished back to the empire. It’s a humiliating scandal that will surely embarrass the Earl. This complete’s Martella’s “Theft” mission.
 
   
 
--Tirri returns to the gallery to try to influence the area with her dancing. She has some success, but she learns a hard lesson - kids are a tough crowd. 
+- Rhenquist engages in frothy conversation with Countess Pace, who is eager to talk with the young Merosett. He learns - much to Allister’s chagrin - that she has a penchant for fashion and for gossip. 
+
+  
+
+- Tirri returns to the gallery to try to influence the area with her dancing. She has some success, but she learns a hard lesson - kids are a tough crowd. 
 
 ---
 

@@ -22,3 +22,8 @@
 - Familiar: [[Primrose]] (opossum) - Familiar of Ongoing Misery: hostile to all other creatures, hisses at them if they get too near
 - [[Periwinkle]] (pet badger)
 ![[Young Zarissa.png]]
+
+Items:
+- Silent Heart magical tattoo
+	- "looking down her bodice she see's a marking / tattoo above her heart above her chest of a heart with a dagger plunged into it and a pulsing glow."
+	- `grants a permenant +1 item bonus to occultist checks`

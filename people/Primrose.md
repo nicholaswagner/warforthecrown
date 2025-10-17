@@ -1,3 +1,3 @@
 ### Primrose
-_familiar_ of [[zarissa]] and also an opossum
+_familiar_ of [[Zarissa Nocturne]] and also an opossum
 
