@@ -8,6 +8,7 @@
 - Was chased by peacocks during the great prank war in the children's adventure
 - ![[bartleby_chased.png]]
 - was abused by his father and has emotional scars
+- resides in [[Lothidar]]
 
 ### Weaknesses
 - a person with an insatiable thirst for arcane knowledge.  he's constantly locked in his study learning more about arcane magic.  Much higher INT than you would expect.  He's kind of a slacker
