@@ -1,0 +1,314 @@
+--- File: Caritas Armor.md (last modified: 2026-02-13T02:16:01.040Z) ---
+
+
+
+### Chainmail
+https://2e.aonprd.com/Armor.aspx?ID=46
+**Source** [_Player Core pg. 273_](https://2e.aonprd.com/Sources.aspx?ID=216) [2.0](https://2e.aonprd.com/Sources.aspx?ID=216)  
+**Price** 6 gp; **AC Bonus** +4; **Dex Cap** +1; **Check Penalty** -2; **Speed Penalty** -5 ft.  
+**Strength** +3; **Bulk** 2; **Category** Medium; **Group** [Chain](https://2e.aonprd.com/ArmorGroups.aspx?ID=1)
+
+---
+
+A suit of chain mail consists of several pieces of armor composed of small metal rings linked together in a protective mesh. It typically includes a chain shirt, leggings, a pair of arms, and a coif, collectively protecting most of the body.
+
+#### Traits
+
+**Flexible:**
+
+The armor is pliable and doesn’t hinder most actions. You don’t apply its check penalty to Acrobatics or Athletics checks.
+
+**Noisy:**
+
+This armor is loud and likely to alert others to your presence. The armor’s check penalty applies to Stealth checks even if you have the required Strength modifier.
+
+
+---
+
+
+### [![PFS Standard](https://2e.aonprd.com/Images/Icons/PFS_Standard.png "PFS Standard")](https://2e.aonprd.com/Equipment.aspx?ID=2791)Raiment Item 5
+
+[Illusion](https://2e.aonprd.com/Traits.aspx?ID=629) [Magical](https://2e.aonprd.com/Traits.aspx?ID=644)   
+**Source** [_GM Core pg. 226_](https://2e.aonprd.com/Sources.aspx?ID=218) [2.0](https://2e.aonprd.com/Sources.aspx?ID=218)  
+**Price** 140 gp  
+**Usage** etched onto armor; **Bulk** —
+
+---
+
+This armor can be disguised with a mere thought.  
+  
+**Activate****—Costume Change** [one-action] ([concentrate](https://2e.aonprd.com/Traits.aspx?ID=32)); **Effect** You change the shape and appearance of this armor to appear as ordinary or fine clothes of your imagining. The armor’s statistics don’t change. Only a creature that’s benefiting from _truesight_ or a similar effect can attempt to disbelieve this illusion, with a DC of 25.
+
+--- File: Dignitys Barb.md (last modified: 2025-04-22T21:10:43.591Z) ---
+### Dignity's Barb
+
+[[Arturo Basri]]'s Light Crossbow.  Found in the labyrinth beneath the senate on the night of the massacre.
+
+Brass inlay and Glorian military symbols adorn fine wooden stock of this masterwork darkwood light crossbow. The polished stock feels slightly warm to the touch when held. A golden inscription bears the name of General Gerefein of the 7th Army of Exploration. In his most famous act, the general turned the tide of a prolonged and vicious battle with a canny Kellid warlord. Through the driving snow of a chaotic blizzard, General Gerefein shot practically blind, yet his bolt struck a lethal blow, dashing the warlord from his mount. As the Kellid soldiers watched their leader fall, they broke their charge, leaving General Gerefein the victor that day.
+
+--- File: Envoys Ring.md (last modified: 2025-04-17T21:01:48.925Z) ---
+will need to collect details from mark on this one
+
+--- File: Everlight Crystal.md (last modified: 2024-12-13T02:50:51.000Z) ---
+https://2e.aonprd.com/Equipment.aspx?ID=3055&Redirected=1
+
+
+--- File: Ghost Charges.md (last modified: 2025-09-05T02:31:24.280Z) ---
+
+# [![PFS Standard](https://2e.aonprd.com/Images/Icons/PFS_Standard.png "PFS Standard")](https://2e.aonprd.com/PFS.aspx)Ghost ChargeItem 1+
+
+[Alchemical](https://2e.aonprd.com/Traits.aspx?ID=528) [Bomb](https://2e.aonprd.com/Traits.aspx?ID=548) [Consumable](https://2e.aonprd.com/Traits.aspx?ID=564) [Splash](https://2e.aonprd.com/Traits.aspx?ID=699) [Vitality](https://2e.aonprd.com/Traits.aspx?ID=509)   
+**Source** [_Player Core 2 pg. 285_](https://2e.aonprd.com/Sources.aspx?ID=227) [1.1](https://2e.aonprd.com/Sources.aspx?ID=227)  
+**Usage** held in 1 hand; **Bulk** L  
+**Activate** [one-action] Strike
+
+---
+
+These spring-loaded metal canisters contain a mixture of chemicals and salts that drain and disintegrate nearby undead creatures. A ghost charge deals the listed vitality damage and splash damage, though as usual for [vitality](https://2e.aonprd.com/Traits.aspx?ID=509) damage, this damage harms only undead and creatures with [void healing](https://2e.aonprd.com/MonsterAbilities.aspx?ID=83). Ghost charges are designed to explode even on contact with a spiritual substance, making them ideal for damaging [incorporeal](https://2e.aonprd.com/Traits.aspx?ID=632) undead. A primary target that takes damage from a ghost charge becomes [enfeebled](https://2e.aonprd.com/Conditions.aspx?ID=71) until the start of your next turn. Many types grant an item bonus to attack rolls.  
+
+
+## [![PFS Standard](https://2e.aonprd.com/Images/Icons/PFS_Standard.png "PFS Standard")](https://2e.aonprd.com/PFS.aspx)Ghost Charge (Lesser)Item 1
+
+**Source** [_Player Core 2 pg. 285_](https://2e.aonprd.com/Sources.aspx?ID=227) [1.1](https://2e.aonprd.com/Sources.aspx?ID=227)  
+**Price** 3 gp  
+**Bulk** L  
+The bomb deals 1d8 vitality damage and 1 vitality splash damage, and the target is enfeebled 1 until the start of your next turn.
+
+---
+
+## [![PFS Standard](https://2e.aonprd.com/Images/Icons/PFS_Standard.png "PFS Standard")](https://2e.aonprd.com/PFS.aspx)Ghost Charge (Moderate)Item 3
+
+**Source** [_Player Core 2 pg. 285_](https://2e.aonprd.com/Sources.aspx?ID=227) [1.1](https://2e.aonprd.com/Sources.aspx?ID=227)  
+**Price** 10 gp  
+**Bulk** L  
+You gain a +1 item bonus to attack rolls. The bomb deals 2d8 vitality damage and 2 vitality splash damage, and the target is enfeebled 1 until the start of your next turn.  
+
+---
+
+## [![PFS Standard](https://2e.aonprd.com/Images/Icons/PFS_Standard.png "PFS Standard")](https://2e.aonprd.com/PFS.aspx)Ghost Charge (Greater)Item 11
+
+**Source** [_Player Core 2 pg. 285_](https://2e.aonprd.com/Sources.aspx?ID=227) [1.1](https://2e.aonprd.com/Sources.aspx?ID=227)  
+**Price** 250 gp  
+**Bulk** L  
+You gain a +2 item bonus to attack rolls. The bomb deals 3d8 vitality damage and 3 vitality splash damage, and the target is enfeebled 2 until the start of your next turn.  
+
+---
+
+## [![PFS Standard](https://2e.aonprd.com/Images/Icons/PFS_Standard.png "PFS Standard")](https://2e.aonprd.com/PFS.aspx)Ghost Charge (Major)Item 17
+
+**Source** [_Player Core 2 pg. 285_](https://2e.aonprd.com/Sources.aspx?ID=227) [1.1](https://2e.aonprd.com/Sources.aspx?ID=227)  
+**Price** 2,500 gp  
+**Bulk** L  
+You gain a +3 item bonus to attack rolls. The bomb deals 4d8 vitality damage and 4 vitality splash damage, and the target is enfeebled 2 until the start of your next turn.
+
+---
+
+
+--- File: Godspike.md (last modified: 2025-09-10T21:03:49.893Z) ---
+
+**[invested] [unique] [magical] [necromancy] [holy] [relic] [item lv: 5]**
+
+![[godspike.png]]
+
+Godspike is a `+1 Striking` longspear.
+
+> **This silvery weapon gleams with golden inscriptions and warms up in welcoming power to the hands of the righteous. Imbued with the spirit of the brave [[Marjorine Sandaris]], an ancient hero of the battle of Vaishali Pass, it possesses a glimmer of resolve and sentience that strengthens her wielder against the forces of evil.**
+
+> Whenever Godspike is within `60ft from undeads or fiends`, it begins to heat up and shine like a torch. This doesn’t harm the wielder unless in exceptional cases, and does not reveal undetected or disguised creatures.
+
+> Godspike deals `+1 Holy damage on each strike`. 
+
+
+> If the wielder is Evil, they are Enfeebled 1 as long as they hold Godspike.
+
+
+---
+
+| Triumphs | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9   | 10  |
+| -------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|          | X   |     |     |     |     |     |     |     |     |     |
+
+Triumphs: 1 [item lv: 6]
+
+Once per day when Godspike critically hits a fiend or undead, the wielder can choose to heal a number of HP equal to the enemy’s level as a reaction.
+
+---  
+
+Triumphs: 2 [item lv: 8]
+
+Godspike is treated as a Ghost Touch weapon, but only when attacking undeads. It has no special effect on living incorporeal creatures.
+
+  ---
+
+Triumphs: 3 [item lv: 12]
+
+Godspike is a +1 Striking Holy longspear.
+
+  ---
+
+Triumphs: 4 [item lv: 12]
+
+As long as Godspike is held, the wielder receives a +2 status bonus to all saves against effects with the death trait.  
+  
+---
+
+Triumphs: 5 [item lv: 15]
+
+Once per day while wielding Godspike, the wielder can use an action to cause it to shine with blessed light and hold it high, reducing the Doomed or Drained condition by 1 on all creatures within 10ft (your choice). If there are no fiends or undeads nearby, Godspike keeps shining for 5 rounds after using this effect.
+
+---  
+
+SPECIAL [item lv: 18]
+
+Once per day while Godspike shines, the wielder can use a single action to fill its light with divine power, causing all creatures that start their turn within the bright light to regain hit points. This otherwise functions as a lv8 Field of Life spell.
+
+  ---
+
+SPECIAL [item lv: 20]
+
+Once per day while wielding Godspike, the wielder can use an action to cause it to shine with blessed light and hold it high, reducing the Doomed or Drained condition by 2 on all creatures within 10ft (your choice). If there are no fiends or undeads nearby, Godspike keeps shining for 5 rounds after using this effect.
+
+
+
+--- File: Knights of Summer Sword.md (last modified: 2026-02-24T22:22:52.730Z) ---
+## Knights of Summer Sword 🗡️ 
+
+Price 1 gp; Damage 1d8 S; Bulk 1 Hands 1 Type Melee; Category Martial; Group Sword `Versatile` weapon: does `slashing` or `piercing` dmg depending on which damage type you choose when you attack `+2 item bonus to social checks against loyalists`
+
+
+--- File: Ligosi Red.md (last modified: 2025-04-17T20:22:57.638Z) ---
+![[LigosiRed.png]]
+
+The BEST wine in the Glorian Empire /s
+The wine produced by House Zespire
+
+--- File: Medal of Griffon's Heart.md (last modified: 2025-10-17T13:06:56.482Z) ---
+## Medal of Griffon’s Heart
+_Item 4_
+
+**Source** [_Battlecry! pg. 151_](https://2e.aonprd.com/Sources.aspx?ID=268)  
+**Price** 80 gp  
+This copper medal features a [griffon’s](https://2e.aonprd.com/Monsters.aspx?ID=3034) face, wings, and talons in profile. It is given in recognition of remarkable bravery, and it grants you a +1 item bonus to saving throws against [fear](https://2e.aonprd.com/Traits.aspx?ID=598) and [mental](https://2e.aonprd.com/Traits.aspx?ID=647) effects. 
+
+While wearing this pendant, you can also cast [_forbidding ward_](https://2e.aonprd.com/Spells.aspx?ID=1535) as an [innate](https://2e.aonprd.com/Rules.aspx?ID=2901) cantrip.
+
+--- File: Ooze Wig.md (last modified: 2025-02-20T03:19:28.663Z) ---
+### Ooze Wig
+
+![[wig.png]]
+
+#### Stats / Info
+... @mark has the sheet
+
+--- File: Provenance.md (last modified: 2025-04-23T18:33:56.977Z) ---
+![[Provenance.png]]
+
+### Provenance
+
+owned by [[Vice Count Rene Malbec du Valle]] and bequeathed to [[Caritas Zespire]] upon his death.
+
+---
+
+#### Weapon Stats
+
+| Name               | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | Tags                              |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------- |
+| `+1 Potency Rune`  | Installed at The Gilded Griffin                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |                                   |
+| `+1 Merciful Rune` | _Merciful_ weapons are sheathed in an unmistakable wispy green aura recognized by both gladiators and guards around the world. A merciful weapon has the [nonlethal](https://2e.aonprd.com/Traits.aspx?ID=188) trait and can't be used to make a lethal attack. Any [persistent damage](https://2e.aonprd.com/Conditions.aspx?ID=29) the weapon would deal is negated.     <br><br>On a critical hit, a _merciful_ weapon causes the target to become [fascinated](https://2e.aonprd.com/Conditions.aspx?ID=14) with the weapon's wielder for 1 minute, as the target is bombarded with feelings of guilt and remorse. This is a [mental](https://2e.aonprd.com/Traits.aspx?ID=106) effect. If you have access to the weapon's [critical specialization effect](https://2e.aonprd.com/Rules.aspx?ID=235), you choose whether to use it or the merciful effect. <br><br>If you kill someone with this sword you lose the _merciful_ trait.<br><br>**Source** [_Treasure Vault pg. 33_](https://2e.aonprd.com/Sources.aspx?ID=191) [1.1](https://2e.aonprd.com/Sources.aspx?ID=191)  <br>**Price** 70 gp  <br>**Usage** etched onto a weapon; **Bulk** — | `Abjuration`, `magical`, `mental` |
+| `+1 Striking Rune` | A _striking rune_ stores destructive magic in the weapon, **increasing the weapon damage dice** it deals to two instead of one. <br><br>For instance, a _+1 striking [dagger](https://2e.aonprd.com/Weapons.aspx?ID=3)_ would deal 2d4 damage instead of 1d4 damage.  <br><br>You can upgrade the _striking rune_ already etched on a weapon to a stronger version, increasing the values of the existing rune to those of the new rune. The Price of the upgrade is the difference between the two runes' Prices.<br><br>[[https://2e.aonprd.com/Equipment.aspx?ID=2829]]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |                                   |
+|                    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |                                   |
+
+---
+
+#### Memories
+
+
+#####  01
+
+> A grand, torchlit chamber. The air is heavy with the scent of incense and the sound of silence. A circle of knights stands solemnly, their polished armor gleaming as they watch a figure kneel in the center of the circle -your father, decades younger than you remember him, barely a man. A knight you recognize as Jacques Coeurageaux stands beside him with his hand on his shoulder. A grizzled-looking man with graying blonde hair and weathered skin and golden armor steps forward.
+
+
+
+**Knight Incantor:** 
+Brethren, we gather tonight in the Halls of the Valiant to bear witness to the petition of Syr Rene. We stand before the fires of truth and trial. We stand in solidarity, not to pass judgment but to receive it. Who comes before u
+
+---
+
+**Jacques Coeurageaux:**
+I am Jacques Coeurageaux, Lord Protector of the Kingdom of Rysher, the Unbroken Shield, High Commander of the Order of the Harmonious Sword, the Order of the Golden Hart, and the Order of the Argent Guard, and First Among Equals in this Circle of Loyalty. I come here on behalf of Syr Rene, who seeks admittance to our High Circle. He has walked the Fivefold Path of Valor as far as his greaves will take him._ ^8b4da0
+
+---
+
+**Knight Incantor:**
+Have you, Syr Rene, walked the pathless ways to find the Questing Beast in his hidden glen? Did you pass through whispering boughs, past veils of twilight where mortal sight falters, and kneel in humility before that creature whose eyes burn with the light of ancient dreams? And did you fulfill the quest bestowed upon you in that sacred hour?
+
+---
+
+**Rene:**
+By the strength of my arm and the will of my heart, I have.
+
+---
+
+**Knight Incantor:**
+Have you braved the labyrinthine depths beneath the towers of Castle Vantress? There, where shadows hold secrets and the bones of the vanquished sleep, did you look into the mirror that knows no lies? Did it show you the visage of your truest self, stripped bare of pretense and pride? And did you, though trembling, hold firm beneath the weight of that revelation?
+
+---
+
+**Rene:**
+With eyes unclouded and courage unbroken, I have.
+
+---
+
+**Knight Incantor:**
+Have you stood before the Cauldron of Eternity, where power and desire flow like molten gold, and listened as the voices of forever sang to your soul? Did the sweet promises of immortality and dominion caress your mind? And did you, with a heart tempered like finest steel, turn away from that alluring doom?
+
+---
+
+**Rene:**
+With steadfast resolve, I have.
+
+---
+
+**Knight Incantor:**
+Have you crossed swords upon the crimson sands before the gates of Castle Embereth? Did you face Lord Protector Jacques Coeurageaux, whose might is as a storm upon the sea and whose shield is the bulwark of justice? Did your valor burn bright in the fires of his crucible? And did you, in the clash of arms, emerge victorious by strength, by skill, and by determination?
+
+---
+
+**Rene:**
+I have faced him, and I prevailed.
+
+---
+
+> **The Knight-Incantor lowers his sword, pointing it toward the candidate’s heart**
+
+
+---
+
+**Knight Incantor:**
+And do you swear, by the beating of your heart, that all of these triumphs were accomplished honestly and honorably, without deception?
+
+---
+
+**Rene:**
+By the beating of my heart, I swear it.
+
+---
+
+**Knight Incantor:**
+Then let the fires of the Circle of Loyalty cast their judgment. With sword in hand, submit yourself to the pure white fires of the circle, and emerge a High Knight of the Court of Jacques Coeurageaux—or not at all.
+
+---
+
+A flare of white light and a pleasant tickling warmth wash over you, and you emerge to an outdoor space, a glen full of the people of Rysher dressed in their finery, little faeries flitting around in mirthful jubilation and sylphs splash around joyfully in a stream. A three-headed beast stares at you, all three heads nod in approval. You see an ancient stooped wizard with a pointy wizard hat, and orders of knights in their different armor. There are roars of applause, and music, and shouting and clapping, and the chanting of your name, and Jacques Coeurageaux steps forward, with arms outspread, and your armor clanks as he pulls you into an embrace before turning to the crowd and saying:
+
+“Be you known no longer by your given name, but henceforth as Syr Rene of the Valley, high knight of the Circle of Loyalty, and your sword Provenance. May it always be wielded by so true a heart.”
+
+
+--- File: The Brass Chatterbox.md (last modified: 2025-04-17T20:35:39.729Z) ---
+Given to the party by [[Martella-Lotheed]]
+
+---
+
+Takes three actions to wind up, 
+once started is active for two minutes which will obscure speech for anyone within 5 feet.
+

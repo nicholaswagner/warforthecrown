@@ -1,7 +1,7 @@
 
 ![[Baroness Adella Voinum.png]]
 
-### Current attitude towards our party `Indifferent`
+### Current attitude towards our party `Friendly`
 
 ### Notes
 - Old crotchety woman

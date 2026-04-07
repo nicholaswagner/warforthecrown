@@ -1,0 +1,458 @@
+--- File: Dueling Rules.md (last modified: 2025-06-26T13:50:56.842Z) ---
+[2e.aonprd.com](https://2e.aonprd.com/Rules.aspx?ID=3084&Redirected=1)
+
+# Duels - Rules - Archives of Nethys: Pathfinder 2nd Edition Database
+
+8–10 minutes
+
+---
+
+## [Rules Index](https://2e.aonprd.com/Rules.aspx) | [GM Screen](https://2e.aonprd.com/GMScreen.aspx) | [Player's Guide](https://2e.aonprd.com/PlayersGuide.aspx)
+
+---
+
+GM Core / [Chapter 4: Subsystems](https://2e.aonprd.com/Rules.aspx?ID=3026)  
+**Source** [_GM Core pg. 202_](https://2e.aonprd.com/Sources.aspx?ID=218) [2.0](https://2e.aonprd.com/Sources.aspx?ID=218)  
+Sometimes conflicts become personal. It’s not the entire group against a challenge, but one character struggling against the skills of a single adversary. In many societies, duels are considered a reasonable way to resolve individual differences, though others consider such practices—especially the more deadly varieties—to be an affront to law and order. Duels can come in several forms, and this section gives you rules to run them.  
+
+## [Setting Up a Duel](https://2e.aonprd.com/Rules.aspx?ID=3085)
+
+**Source** [_GM Core pg. 202_](https://2e.aonprd.com/Sources.aspx?ID=218) [2.0](https://2e.aonprd.com/Sources.aspx?ID=218)  
+Participants must willingly agree to the duel and to abide by its rules. If one of the duelists breaks the duel’s rules (and, more importantly, is caught doing so), that duelist loses, taking any penalties agreed upon when the challenge was accepted. Here are some sample dueling rules.  
+
+### [Compete Alone](https://2e.aonprd.com/Rules.aspx?ID=3086)
+
+**Source** [_GM Core pg. 202_](https://2e.aonprd.com/Sources.aspx?ID=218) [2.0](https://2e.aonprd.com/Sources.aspx?ID=218)  
+It’s customary that each participant must compete alone and may receive no help from outside sources. However, some duels pit pairs of combatants against one another (either all together or as tag teams).  
+
+### [Limited Tools](https://2e.aonprd.com/Rules.aspx?ID=3087)
+
+**Source** [_GM Core pg. 202_](https://2e.aonprd.com/Sources.aspx?ID=218) [2.0](https://2e.aonprd.com/Sources.aspx?ID=218)  
+The participants agree to the tools, including weapons and magic items, before the duel starts. Most combat duels that don’t involve magic limit participants to melee weapons and prohibit the use of poison. Some duels forbid the use of polearms and other reach weapons. A spellcasting duel might agree upon a roughly equal number of magic items, and a cap on the power (in game terms, the level) of the items. Some spellcasting duels might prohibit certain types of spells, such as summoning or healing.  
+
+### [Duration](https://2e.aonprd.com/Rules.aspx?ID=3088)
+
+**Source** [_GM Core pg. 202_](https://2e.aonprd.com/Sources.aspx?ID=218) [2.0](https://2e.aonprd.com/Sources.aspx?ID=218)  
+Combat duels typically last either until first blood (hitting and dealing damage) or until one of the duelists is knocked out. Most duels allow a participant to yield, which means they concede victory to their opponent, though sometimes this could diminish their social standing. Duels of talent usually involve several equal turns in which the duelists display their ability.  
+
+### [Adjudication](https://2e.aonprd.com/Rules.aspx?ID=3089)
+
+**Source** [_GM Core pg. 202_](https://2e.aonprd.com/Sources.aspx?ID=218) [2.0](https://2e.aonprd.com/Sources.aspx?ID=218)  
+Most duels are overseen by a third party who ensures the duelists don’t break the duel’s rules—inadvertently or by cheating. Where duels are legal, this is typically a constable or magistrate. In other places, a cleric or other respected figure serves as judge. Typically the GM plays the judge.  
+
+## [Combat Duels](https://2e.aonprd.com/Rules.aspx?ID=3090)
+
+**Source** [_GM Core pg. 202_](https://2e.aonprd.com/Sources.aspx?ID=218) [2.0](https://2e.aonprd.com/Sources.aspx?ID=218)  
+Unlike the other subsystems in this chapter, a combat duel works almost the same as a normal combat encounter, with a few exceptions. These rules require exceptional focus between two duelists and a third-party arbiter, and thus are not available in a normal combat.  
+
+### [Initiative and Dueling Actions](https://2e.aonprd.com/Rules.aspx?ID=3091)
+
+**Source** [_GM Core pg. 202_](https://2e.aonprd.com/Sources.aspx?ID=218) [2.0](https://2e.aonprd.com/Sources.aspx?ID=218)  
+Unlike in typical combat, the duelists roll initiative checks at the beginning of each round of combat. Each round the combatant can choose to use Deception, Intimidation, or Perception when they roll initiative. Because a duelist might act twice in a row, durations that last until the beginning of a duelist's next turn might function oddly. A duelist acting second can choose to avoid such abilities that turn, or can choose to act second if they win initiative on the next round.
+
+If the duelist is at least trained in whichever initiative choice they pick, they gain the corresponding dueling reaction that round: Bullying Press for Intimidation, Deceptive Sidestep for Deception, or Sense Weakness for Perception. Neither duelist is aware of what type of roll the other used for initiative—surprise and the use of dueling actions are a part of dueling strategies. Familiars and companions, even when allowed in the duel, can't use these actions, nor can bystanders.
+
+### [Bullying Press](https://2e.aonprd.com/Actions.aspx?ID=471) [reaction]
+
+[Flourish](https://2e.aonprd.com/Traits.aspx?ID=73)   
+**Source** [_Gamemastery Guide pg. 167_](https://2e.aonprd.com/Sources.aspx?ID=22)  
+**Trigger** You attempt a melee Strike against your opponent, but haven’t rolled yet.  
+**Requirements** You’re in a duel, you’re trained in Intimidation, and you rolled an Intimidation check for initiative this round.
+
+---
+
+If you hit, your opponent becomes frightened 1. If your opponent is using Perception for initiative when this ability is used, they become frightened 2 instead.
+
+### [Deceptive Sidestep](https://2e.aonprd.com/Actions.aspx?ID=472) [reaction]
+
+[Misfortune](https://2e.aonprd.com/Traits.aspx?ID=110)   
+**Source** [_Gamemastery Guide pg. 167_](https://2e.aonprd.com/Sources.aspx?ID=22)  
+**Trigger** An opponent hits, but does not critically hit you, with a melee Strike.  
+**Requirements** You’re in a duel, you’re trained in Deception, and you rolled a Deception check for initiative this round.
+
+---
+
+You draw your enemy in and pull away at the last moment. The triggering opponent must roll again and take the second result. If your opponent is using Intimidation for initiative when this ability is used, they also take a –2 circumstance penalty to the second attack roll.
+
+### [Sense Weakness](https://2e.aonprd.com/Actions.aspx?ID=473) [reaction]
+
+**Source** [_Gamemastery Guide pg. 167_](https://2e.aonprd.com/Sources.aspx?ID=22)  
+**Trigger** You attempt a melee Strike against your opponent, but haven’t rolled yet.  
+**Requirements** You’re in a duel, you’re trained in Perception, and you rolled a Perception check for initiative this round.
+
+---
+
+You pick a precise moment to attack, giving you an edge. Your opponent is flat-footed against the attack. If your opponent is using Deception for initiative when this ability is used, they are instead flat-footed until the start of their next turn.
+
+  
+
+### [Ending the Duel](https://2e.aonprd.com/Rules.aspx?ID=3092)
+
+**Source** [_GM Core pg. 203_](https://2e.aonprd.com/Sources.aspx?ID=218) [2.0](https://2e.aonprd.com/Sources.aspx?ID=218)  
+The duel ends when the duel’s judge confirms the victory condition, when the judge determines one of the duelists has cheated, or when one of the duelists yields. Note that if either of the combatants attempts to continue the duel after its end, the combatants should roll initiative and proceed with normal combat.  
+
+## [Spellcasting Duels](https://2e.aonprd.com/Rules.aspx?ID=3093)
+
+**Source** [_GM Core pg. 203_](https://2e.aonprd.com/Sources.aspx?ID=218) [2.0](https://2e.aonprd.com/Sources.aspx?ID=218)  
+Like combat duels, spellcasting duels take place in encounter mode, but their rules are not available during normal combat. They are typically more organized affairs than combat duels. Many spellcasting duels prohibit any sort of combat but spellcasting. They typically have the duelists take turns casting a turn’s worth of spells, giving their rivals a chance to counter the spells if they can.  
+
+### [Initiative and Dueling Actions](https://2e.aonprd.com/Rules.aspx?ID=3094)
+
+**Source** [_GM Core pg. 203_](https://2e.aonprd.com/Sources.aspx?ID=218) [2.0](https://2e.aonprd.com/Sources.aspx?ID=218)  
+In most cases, each duelist rolls initiative normally and proceeds in that initiative order throughout the duel, unlike in a combat duel. Each duelist can roll an Arcana, Nature, Occultism, or Religion check instead of Perception. If they are trained at that skill, they gain the tradition focus of that skill, which allows them to hone in on a magical tradition corresponding to the check they made for their initiative roll. They also gain the Dueling Counter reaction, which enables a duelist to counter their opponent's spell if their tradition focus matches the tradition of that spell. They also gain the Change Tradition Focus action, which changes the duelist's tradition focus to a different tradition. Familiars and companions, even when allowed in the duel, can't use these actions, nor can bystanders.
+
+When mixing a spellcasting duel and a combat duel, use the initiative rules for combat dueling, but allow the duelist to roll Arcana, Nature, Occultism, or Religion for their initiative checks. They still gain the Dueling Counter reaction and Change Tradition Focus action, though Change Tradition Focus is less useful in combat duels.
+
+### [Dueling Counter](https://2e.aonprd.com/Actions.aspx?ID=474) [reaction]
+
+[Magical](https://2e.aonprd.com/Traits.aspx?ID=103)   
+**Source** [_Gamemastery Guide pg. 167_](https://2e.aonprd.com/Sources.aspx?ID=22)  
+**Trigger** Your opponent Casts a Spell from the same tradition as your tradition focus.  
+**Requirements** You are in a duel and have a tradition focus.
+
+---
+
+Expend a prepared spell or spell slot. You then attempt to counteract the triggering spell with the expended spell.
+
+### [Change Tradition Focus](https://2e.aonprd.com/Actions.aspx?ID=475) [one-action]
+
+**Source** [_Gamemastery Guide pg. 167_](https://2e.aonprd.com/Sources.aspx?ID=22)  
+**Requirements** You are in a duel and are trained in the skill for the tradition you’re changing your focus to (Arcana for arcane, Occultism for occult, Nature for primal, or Religion for divine).
+
+---
+
+You change your tradition focus to another magical tradition.
+
+  
+
+### [Ending the Duel](https://2e.aonprd.com/Rules.aspx?ID=3095)
+
+**Source** [_GM Core pg. 203_](https://2e.aonprd.com/Sources.aspx?ID=218) [2.0](https://2e.aonprd.com/Sources.aspx?ID=218)  
+Just like a combat duel, a spellcasting duel ends when the duel’s judge confirms the victory condition, when the judge determines one of the duelists has cheated, or when one of the duelists yields. As with a combat duel, if either of the combatants attempts to continue the duel after its end, the combatants should roll initiative and proceed with normal combat.
+
+--- File: Letter from Marquess Tanasha Starborne, the senator from Wispil to Arturo Basri.md (last modified: 2026-01-16T02:37:41.266Z) ---
+# From the Desk of Marquess Tanasha Starborne, Senator from Wispil
+
+_Envoy to the Wildwood Lodge, Keeper of Too Many Papers and Not Enough Patience_
+
+*To Lord Arturo Basri, Esteemed Investigator and Unflappable Correspondent in Trying Times*
+
+> My dear Lord Basri,
+> 
+Oh, how *very* welcome your letter was\! You cannot imagine what a delight it is to receive something that isn’t either (a) a demand for a vote of confidence, (b) a demand for a vote of *no* confidence, (c) a panicked report about the Exaltation Massacre, or (d) a memorandum beginning with the words “urgent matter, please respond immediately.” I’ve had *quite enough* of all four, thank you!
+> 
+The Senate, as you can imagine, is in a *state.* I don’t mean a political state, I mean a *messy*, *chaotic*, *where’s-my-inkpot* kind of state. Half the Senators are barricaded in their estates, the other half are pretending nothing’s wrong, and the pages are all whispering about ghosts in the rotunda (and honestly, given the draft in there, I wouldn’t be surprised). Oh, and the pigeons have all gone missing again \- *again\!* \- which is why I was so very pleased to see a courier at my door bearing your seal.
+> 
+Now, you asked about Anllel Oakleaf, and I nearly spilled my tea when I saw her name. Goodness, what a relic of memory\! She’s one of the Archdruids of the Wildwood Lodge, as you rightly know. One of their senior-most, in fact, and not at all the sort of person to be trifled with. Cold as a frostfall morning, but precise, deliberate, and *impossible* to deceive. The first time we met, I remember thinking she could see straight through me, and not in a friendly “let’s have tea and talk about it” sort of way, but in the “I know every lie you’ve ever told” sort of way.
+> 
+Still, once you learn not to mistake her silence for disinterest, she’s a formidable ally. I’ve always had a good working relationship with her, which is no small feat considering her opinion of most of us in Glorian is that we’re “a nation of axemen trying to write treaties on bark we stole.” She never quite forgave the empire for the deforestation that followed the old Wildwood Treaty. Remember when I said she was one of the senior-most druids at the Wildwood Lodge? Well I really meant that. I think she was *actually alive* when the Wildwood Treaty was signed back in 3841\. And she carries the memory of the treaty (and the Verdigris Expanse as it was back then) like it was yesterday. That’s the thing about druids of her age: they don’t just remember history, they inherit it.
+> 
+When I last saw her…oh, let me think…it must have been early this year, before the whole business with the Exaltation Massacre turned everything upside down. She was... different. Slower. I had the impression she was preparing for something. Putting her affairs in order, as one might say, before a long journey. She spoke of “returning to the roots” and “settling the wild places within.” I thought she meant retirement, or perhaps, well, passing on. The Lodge was certainly treating her that way: reverent, protective, already speaking of her in the past tense when she was still standing right there.
+> 
+So to hear she’s been arrested for trespassing and witchcraft, of all things\! I confess, I nearly dropped my quill. Trespassing, perhaps I could believe; she’s never respected borders when nature was involved. But witchcraft? Ha\! If she wanted to hex someone, the forest itself would rise to do it for her.
+> 
+You must understand, Anllel is not one for dramatics. She’s quiet, watchful, and utterly efficient. The sort of person who can end a debate with a single word, or end a threat with a single gesture. I’ve seen her stare down a full conclave of druids over the placement of a single sapling. (I know that sounds small, but the sapling in question later grew into a sacred grove, so she was *right*, naturally.) There’s something about her that commands obedience. No shouting, no spells, just that calm certainty that she *is* the forest, and it’s foolish to argue with the trees.
+> 
+She once told me, very dryly, “Senator, you misunderstand us. The Wildwood does not wish for peace; it wishes for *balance*. Peace is merely what mortals call it when they are on the winning side of imbalance.” I wrote it down at the time. It struck me as the sort of line philosophers will someday argue about for centuries. I don’t remember where I wrote it down though, so let’s hope that philosophers stumble across that someday. Or, I guess now they could stumble across this letter.
+> 
+Now, to answer the more practical part of your inquiry: I haven’t had a proper dispatch from the Lodge since the Exaltation. Everything’s gone so sideways here in Rosanna that I haven’t dared send one of my usual messengers through the Verdigris Expanse. The last report I received \- carried, incidentally, by a very chatty starling who refused to leave until I shared my pastry \- suggested that the Lodge is mustering its forces. They’re gathering supplies, summoning allies from the deep woods, and strengthening the outer circles. The implication was clear: they’re preparing for war, or at least for *defense.* Maybe they’re worried the civil strife here might spill over into the Verdigris, and I don’t blame them. When humans fight, the forests always bleed.
+> 
+The gnomes of Wispil, bless their bright hearts, are already feeling the pressure. Fey from the inner glades have been growing restless, quarrelsome, even. Some blame the Senate’s chaos for disrupting the balance of things. (As if the fey needed an excuse to be temperamental\!) I’ve been trying to keep trade flowing, but every day brings a new complication. Just yesterday, a dryad delegation refused to cross the border until I personally apologized on behalf of “all civilization.” Which I *did*, of course, though it took three hours and two glasses of blackberry cordial.
+> 
+So you see, my dear Lord Basri, I fear you’ve stepped into something quite tangled. If Anllel was traveling this far from home, it wasn’t idle wandering. She must have had purpose \- a mission, perhaps, or a warning to deliver. And if she’s truly been detained, I’d advise handling her with utmost care. She’s not vindictive, but she *is* the sort of woman who wins every argument, one way or another. And if the Lodge ever finds out that she was mistreated…well, let’s just hope the Lodge never finds out anything like that. 
+> 
+I’ll do what I can to reach out to the Lodge through less official channels \- perhaps through the riverwardens or the rangers near Wispil \- but it may take some time. Things are... delicate here. (Oh, and if you happen to encounter any of the Senate Guard, *do* tell them to stop requisitioning my courier birds for “emergency communiqués.” I’ve gone through *four dozen* in a week\!)
+> 
+Until we next correspond, preferably under less apocalyptic circumstances, please take care, and do let me know what becomes of poor Anllel. If anyone can untangle this mystery, it’s you. 
+> 
+With affection, admiration, and far too many exclamation points,
+> 
+**Marquess Tanasha Starborne**  
+Senator from Wispil  
+Envoy to the Wildwood Lodge  
+Ambassador (Unofficial) to Birds, Trees, and All Who Speak Wisely and Slowly
+> 
+*Postscript\!* I’m sending this with a squirrel courier. Don’t laugh\! He’s very reliable, though easily distracted by shiny things. If your reply arrives nibbled, please assume it was a show of enthusiastic agreement.
+
+
+
+--- File: Opilio's letter.md (last modified: 2025-09-26T15:14:39.531Z) ---
+> Sepsinia,
+> 
+The words may not have flown yet from your lips, but I know they are there, trembling like a sparrow waiting to fly. You will tell your mother what happened last night - not as it truly was, but dressed up and colored to make you a saint and me a monster. You will rush to her as you always do, with your wide eyes and your trembling hands, and she will hold you and believe every word you choose to say. You will slander my name and my reputation to the most insatiable gossip in the empire. And with each breath you take, my name, my future, my very life will be unmade.
+>
+Last night was not the crime I know you will twist it to be. It was you who led me on, who smiled and lingered, who gave me every signal a man could mistake for welcome. You know this, and yet you mean to play the innocent, to say I “attacked” you as though you were some lamb and I a wolf. If there is guilt, it is shared, yet it is I alone who will wear the iron collar of shame when you open your mouth.
+>
+Do you understand what you are about to do? Every word you plan to speak is a stone in my pockets, every glance of your mother’s scorn another inch deeper into the mire. You will go on, protected and adored, while I am cast out, mocked, and branded. That is the future you are building even now.
+>
+I cannot and will not live through the slow hanging you are preparing for me. Before this week is ended, I will go to the bog and let the water take me. At least there, in the reeds and the dark, I will find the silence of death - a silence you would deny me.
+>
+When you lie awake tonight, as I know you will, remember: it will not be despair that drowns me, but you. You and the story you choose to tell. Though I vanish beneath the water, it will be your lies that drags me under, your betrayal that fills my lungs. You have ended my life with your words last night. The least you can do now is spare my legacy with your silence. 
+>
+Forever,  
+Opilio
+
+--- File: Religious Traditions of Meratt County.md (last modified: 2025-09-05T16:39:28.117Z) ---
+### On the Religious Traditions of Meratt County
+
+The religious landscape of Meratt County is at once emblematic of Glorian’s greater spiritual fabric and marked by peculiarities that set it apart. As in most of the empire, the foundational pillars of faith have long been Abadar and Shelyn, the divine patrons of civic life and cultural aspiration. The God of Walls and Ditches has historically enjoyed strong devotion in the county’s prosperous settlements. His worship has waned somewhat in those towns that have declined or contracted over the centuries, yet his altars remain well attended in the cities such as Lotheedar and Pensaris. The Cathedral of the Wealthy Father in Lotheedar stands as the principal seat of Abadaran worship in the county, where the city’s merchants, magistrates, and civic officials still gather in solemn reverence for the divine order that sustains law and wealth alike.
+
+Shelyn, by contrast, has always found her followers among those who cherish beauty, music, and love. In Meratt’s provincial towns, her rites are often humble (a bridal hymn sung at a wedding, a painted icon kept in a family shrine) but in more cultivated places her presence is resplendent. Moost has become the foremost center of her worship, thanks in large part to the patronage of Dame Parthena Crabbe. Through her generosity, the Moost Conservatory has flourished as a seat of artistic study, while the adjoining Chapel of the Dawnpetal Lyre offers both students and townsfolk a place to venerate the Eternal Rose with song and prayer.
+
+In the countryside, the face of devotion shifts, as is common throughout Glorian’s agrarian heartlands. The people of Meratt have long held Erastil, Old Deadeye, as their guide. His faith is not organized through grand temples or clerical hierarchies, but through the quiet strength of hearth and harvest. Village elders and seasoned hunters serve as the natural custodians of his wisdom, dispensing counsel that blends the practical with the sacred. His worship is expressed in rituals both modest and enduring: the offering of a hare’s heart at the season’s first hunt; the lighting of fires along the boundaries of fields before planting to invite Erastil’s blessing; and the telling of long, moralizing tales by the fireside, wherein each story is as much a prayer as it is instruction. These ceremonies bind families and neighbors in common cause, ensuring the god of the hunt remains woven into the daily rhythm of rural life.
+
+Yet, for all these familiar devotions, Meratt’s deepest spiritual character is shaped by its origins in the Shining Crusade, that great and terrible struggle against the Whispering Tyrant in the 39th century AR. The memories of that war, its glories, its sacrifices, and its profound sorrows continue to echo in the county’s devotion to Thaeodaen, the Inheritor. As Aroden’s chosen herald and later the ascended god of valor and righteous war, he embodies the ideals of honor, courage, and sacrifice that the crusaders once held aloft as their standard. Churches dedicated to him dot Meratt’s towns and villages, and his holy days are marked with processions, knightly tourneys, and prayers that seek to keep his virtues alive in the hearts of the faithful.
+
+Yet here lies one of Meratt’s peculiarities: alongside devotion to Thaeodaen, the county retains an unusual and enduring reverence for Arazni, the Red Crusader, who was Aroden’s herald before her fall. Though never a true goddess, Arazni was called to the mortal battlefield during the Shining Crusade when the Knights of Ozem, driven to desperation, summoned her to lead them. She had long served as their patron and exemplar, and though she was willing to fight freely, the Knights bound her will with mortal sorceries, fearing that without compulsion even a herald might falter before Tar-Baphon’s might. This act planted in her a seed of doubt and bitterness, though still she took up arms against the Tyrant. Her courage did not spare her from tragedy: in 3823 AR, she was struck down and humiliated by the lich, her body hurled broken before her faithful at the Battle of Three Sorrows.
+
+The sorrow of her fall only deepened in the years that followed. After the Whispering Tyrant’s defeat in 3827 AR, the Knights of Ozem interred Arazni with great reverence in their new citadel in the city of Vigil. Yet her rest was short-lived. In 3890 AR, agents of the ghost-king Geb, seeking vengeance against the Knights of Ozem, assaulted Vigil  and carried Arazni’s body into their master’s grasp. Geb, with his perverse arts, dragged her soul back from the Great Beyond, feeding upon the doubt sown by her knights and the despair of her death. Over years, he reshaped her into a lich bereft of her former glory and enthroned her as his Harlot Queen, the unwilling administrator of his grim dominion. Thus was Arazni not only slain by the Tyrant but condemned to a second, joyless existence under the hand of a new master.
+
+It was in the wake of her fall that Thaeodaen, once her devoted paladin, rose to take her place as Aroden’s herald. Where Arazni’s tale is one of betrayal and corruption, Thaeodaen’s ascent offered a counterpoint of faith renewed. In Meratt, the two stories are told together, inseparably entwined. Many here regard Thaeodaen as the triumphant successor but honor Arazni as the martyred forerunner, the one whose suffering cleared the path for Thaeodaen’s glory. Notably, Meratt’s own Marjorine Sandaris, remembered both as a champion of the Shining Crusade and as one of the county’s great ancestral figures, declared herself a Champion of Arazni even after the Red Crusader’s fall. To this day, certain shrines in Meratt preserve her memory not merely as herald, but as saintly martyr, and prayers to Arazni (though never formally sanctioned by any great church) still find whispered voice among those who remember her sacrifice.
+
+Other faiths play only passing roles in Meratt. Pharasma, for example, holds no special place in the county’s history beyond the universal invocation of her rites at funerals. Her priests are respected but not especially influential, called upon to fulfill their sacred duties when the cycle of life meets its inevitable end.
+
+Meratt County’s religious tapestry is one of both tradition and tragedy. Abadar orders its cities, Shelyn inspires its beauty, Erastil guides its fields, and Thaeodaen leads its banners. Yet in the quiet spaces between, one finds remembrance for Arazni, the fallen herald whose story, bitter though it be, remains carved deep in the memory of a land shaped by crusade.
+
+--- File: The Confessions of Marjorine Sandaris.md (last modified: 2025-09-10T20:36:42.433Z) ---
+### The Confessions of Marjorine Sandaris
+
+I, Marjorine, once Knight of Glorian and Baroness of proud House Sandaris, do set mine hand to this woeful chronicle.
+
+In days long fled, a warrior was I of the Shining Crusade, serving beneath the noble banner of Sir Omri Shevath. Yet grievous was the wound I took in the storming of the bloody shore of Von Till, where also fell my brother, my heart’s own twin in arms. Broken in flesh and spirit, I sought return unto my father’s hall in Glorian—but Death, that silent usurper, claimed me ere I might arrive.
+
+Yet mine end was not an end. My breath was stilled, yet my soul lay fettered within a carcass that did rot and reek. I heard all, yet stirred not, imprisoned in decay. On the eve of my funeral, foul horror did o’ertake me: I rose, a famished wretch, with hunger sharp as razors for the flesh of mine own kin. Three I did slay—Osseen, Doreen, and gentle Marjan—ere Lysander, priest and cousin, shone the burning light of Aroden upon me, and smote my visage into ash.
+
+Yet Death, faithless jailor, would not grant me rest.
+
+That Whispering Monster’s baleful fever, seed of his accursèd might, rekindled me beneath the dark of moon, when Elodin veiled her silver face. From tomb unsealed I burst, and once more laid waste to blood of mine own blood, till axe and fire did rend my body to ruin. But still, when next the new moon’s shadow fell, again I rose, a pestilence upon my house. Thrice did Lysander bind me, casting sacred wards and laying me to rest with Godspike, my holy spear. At last was I entombed, soul bound in tortured sleep, a hollow peace bought by holy chains.
+
+But Time, relentless scythe, doth mow e’en stones to dust.
+
+Waters flooding, cruel and heedless, gnawed my bindings, and I awoke once more, a carrion shade upon the haunted moors. My hall lay shattered, kin all scattered; yet still upon the wind I tasted faint the blood of Sandaris, spread through Stachys like a thinning wine, weak in strength yet rich in multitude. With waning will I seized the shreds of mine own humanity, fleeing exile-ward, that I might plague no innocent save those fools that trespass this forsaken ground. Yet ceaseless is the strife betwixt my soul and the unholy hunger that doth govern this wretched form.
+
+When first I clawed forth from the warded crypt, lo—my hand found Godspike once again. Still do I clutch it, though its hallowed fire doth scorch my flesh and drain my marrow, hoping ever that its sanctity may undo the curse. Yet come the new moon’s birth, my sinew waxeth strong, and no holy spear, though blessed of the Red Crusader’s priests, may grant me blessed oblivion.
+
+The ravening lust of flesh is master o’er my will. When meat is nigh, resolve turneth dust, and I become the beast I most abhor. Those that dare assault me, if fortune spare their flight, return anon when fever’s fang hath claimed them, bound to me in hunger’s covenant. To such I whisper the dread litanies of the Red Crusader, and together we do linger in loathing and endless famine. O for true death, to break these bonds, and slip this tyrant’s curse! Yet still his grasp is strong, and I, though far from his dark realm, remain enthralled.
+
+Thus in blood I spill my sorrow, a testament and a plea, in search of understanding though not redemption. Let any who read these lines know the torment of Marjorine Sandaris: warrior once, monster now, ever soul in anguish. Take warning from my tale, and grant mercy unto those poor shades who suffer such a doom.
+
+--- File: the great houses of glorian.md (last modified: 2025-03-30T13:54:13.808Z) ---
+### The Great Houses 
+
+> _The campaign also features a special Human heritage, Noble Human, aimed at integrating players as part of one of the great noble families of The Glorian Empire. While it is not necessary to have the heritage to be part of the family, and some bastard children might have gained such skills despite not having the title, most members take pride in carrying the family legacy._
+> 
+>**Noble** _human heritage_:
+>==The blood of old The Glorian Empire runs in your veins, whether you are in good standing with your family or not. Select one noble family you belong to from the following list: (We will change these names)==
+
+
+---
+
+#### Basri
+==Claimed by Julian==
+
+You come from a long line of ambassadors, diplomats, and travelers, and your family maintains the strongest ties to the elven nations of Kyonin of any Glorian. You speak Celestial, Elven, Gnome or Sylvan as a bonus language, and you have access to all uncommon Elven weapons and items, the Elven Lore and Elven Weapon Familiarity feat, and all feats that require them.
+
+---
+
+#### Clement
+==Claimed by Mark==
+Your Garundi and Mwangi ancestors served The Glorian Empire proudly during the Army of the Sixth Movement and were awarded lands and titles for their service. Your family is known for its keen insights and biting observations. You can use your Wisdom modifier instead of your Charisma modifier for the Diplomacy skill, and always begin a verbal duel with a free Edge. 
+
+---
+
+#### Kastner
+==Claimed by Shannon==
+Your stalwart family defines itself by opposing your devil-worshiping Chelish cousins, a grudge that inspired some of The Glorian Empire’s greatest healers, priests, and negotiators. You have a +1 circumstance bonus to your Medicine checks to treat other living creatures. If you succeed, you gain a +2 circumstance bonus to your Diplomacy checks towards the creatures you treated until the next day. 
+
+---
+
+#### Merosett
+==Claimed by Doug==
+The cunning members of your large family, a longtime fixture in Rosanna’s bureaucracy, specialize in tracking lineages and sidestepping red tape. You never critically fail at Society checks, and you halve the time required to create forgeries, decipher writing, search archives, examine contracts, or otherwise work within complex bureaucracies. 
+
+---
+
+#### Zespire
+==Claimed by Nicholas==
+The family runs charities and lobbies heavily for social reform, leaving them with few friends among their Rosannan peers but heartfelt support from the common folk and lesser nobility. Whenever you succeed at a Diplomacy or Perform checks to influence or verbal duel common citizens and nobles whose titles are limited to Lord, Lady, Knight or Dame, you critically succeed instead. 
+
+---
+
+#### Corcina
+Your family came to prominence during the Army of the Second Movement, and maintains a legacy as explorers and sailors. You treat successes in Survival as critical successes. 
+
+---
+
+#### Karthis
+Yours is a family of distinguished military veterans, charismatic demagogues, and xenophobic zealots. As the rest of the family becomes increasingly Imperialist, you have made no effort to remain in their good graces, but you retain the skills they taught you during a childhood of rigorous training. When using Deception or Diplomacy for Initiative, you treat all opponents as off-guard until the end of your first round. 
+
+---
+
+#### Lotheed
+Your family ranks include the greatest wizards and arcane scholars in The Glorian Empire, and schooling in some of the most comprehensive arcane libraries in the Inner Sea was your birthright. You learn read aura as an arcane cantrip, and you gain a +1 circumstance bonus to all your checks to Learn a Spell and Identify Magic. 
+
+---
+
+#### Stavian
+A close relative of the Grand Prince, yours has been a life of material comfort and indulgence, colored by constant threats and direct influence. If you critically fail at a saving throw against a mental effect that attempts to control your actions or against a poison, you treat it as a regular failure instead. 
+
+---
+
+#### Talbot
+Your starkly conservative family are merchants and entrepreneurs first and aristocrat second, willing to forgo duty if they can pursue profit. They condemn would-be adventurers and readily oust them from the family ranks, leaving you an outcast. You gain the Additional Lore feat related to a trade or profession of your choice. 
+
+---
+
+#### Varima: 
+Your family immigrated to The Glorian Empire from Vudra hundreds of years ago, and thanks to noble roots, extensive trade contacts, and an unparalleled skill in negotiation, soon developed into a steadfast fixture in Rosanna’s social scene. Whenever you roll Diplomacy to influence a crowd, room, or area, you can roll twice and take the better result. 
+
+---
+
+#### Vernisant
+Your family is descended from the great general Arnisant, who commanded Glorian forces during the Shining Crusade - and they will never let anyone forget it! Their fierce Imperialist support and nationalist fervor has left you alienated from your relatives now, but their emphasis on scholarship left a mark nonetheless. When you use the Recall Knowledge action, you never critically fail as long as you are at least Trained. 
+
+---
+
+#### Vinmark
+Newcomers and outsiders, your Ulfen family was exalted to nobility 19 years ago, when Stavian III promoted your family patriarch to Baron of Rosanna as a reward for service in the Ulfen Guard. Established aristocrats consider your family crude, choosing to leave them on the margins of Glorian politics unless a noble thinks they can use you to curry favor with the Grand Prince, but hard-won practicality and newborn cynicism grant you insight most Glorian nobles lack. You gain a +2 conditional bonus to your Perception checks and DC against deceptions and illusions. 
+
+--- File: war for the crown players guide.md (last modified: 2025-03-30T15:00:10.937Z) ---
+
+![[wftc.png]]
+
+
+###### _PATHFINDER SECOND EDITION PLAYER’S GUIDE_
+- First Edition Player’s Guide by Crystal Frasier 
+- Adventure Path 2E Conversion by Archvillain Ediwyr
+- 2E Player’s Guide Format & Update by Chris Nolen
+
+![[players guide dragon.png]]
+
+> [!warning] Content Warning
+> 
+> _The War for the Crown Adventure Path includes themes of ableism, alcohol abuse, blood, character death, child death, classism, death, fire, life changing injury, misogyny, prejudice, sexual context, snakes, spiders, violence, and warfare, among others. Before you take part in this Adventure Path, understand that consent from everyone at the table, including the players and the Game Master, is vital to a fun and safe play experience. You should talk with your group before beginning this Adventure Path, and modify descriptions or events as appropriate._
+
+
+![[players guide throne.png]]
+
+---
+### PLAYER’S GUIDE 
+
+Great nations proceed at the behest of a select few, and those select few are driven in turn by small things: whimsy, greed, fear, disease, love, or the right knife in the right back. The War for the Crown Adventure Path will take players up and down the length of Glorian and beyond, and while they run their blades through monsters and cast fireball against evil cultists, these champions of the Glorian Empire will play the deadliest game of the Glorian arena: politics. They’ll tangle with magical monsters, match wits with senators, and play dirty pool against some of the most skilled spies in the Inner Sea, all to stop the nation of Glorian from collapsing into civil war. If they avert the end of its 6,000 years of history and culture, then maybe, just maybe, they can steer the staunchly traditionalist nation toward the future. 
+
+The Adventure Path’s tone is one of action, espionage, and intrigue. The PCs are dashing rogues who sip exquisite drinks in formal clothes one night, only to crawl through the mud and cut down enemies the next. The ultimate goal is to help Princess Eutropia claim her birthright and ascend to the Phoenix Throne, hopefully without the struggle destroying her good intentions and optimism. The characters themselves start out with little political power. They may be minor nobles, merchants, or even commoners, but their adventures, their associations, and the gratitude of an empress will help them rise to become some of the most important figures in Glorian.
+
+The Adventure Path begins in Rosanna—The Glorian Empire’s glittering capital city—during the Grand Day of Exaltation, an annual celebration that culminates with the Grand Prince elevating an extraordinary commoner to the ranks of nobility. Rosanna is a city of extremes; despite being among the wealthiest settlements in all of Avistan, it hosts the largest population of destitute and homeless residents. While they share a city, each population leads very different lives, separated by wealth and tradition more than stone walls. 
+
+---
+### Coming Together
+In a city of over 100,000 souls, the PCs may be friends, family, schoolmates, or complete strangers. Regardless of the heroes’ connection, the War for the Crown Adventure Path assumes each party member has some investment in The Glorian Empire and its future. They may be resource-strapped gentry trying to look out for their tenants, reformers who hope to make tomorrow better, or selfish schemers who want to climb the social ladder, but regardless of their motivation, they won’t back down once the chaos starts. Many of the campaign backgrounds offer ways to tie a character’s past or future to The Glorian Empire’s government. 
+
+The Grand Day of Exaltation provides a motivation for characters to gather in Rosanna even if they must travel from the far-flung corners of The Glorian Empire or beyond to do so. Minor nobles, ordinary citizens, and even peasants try to make the trip at least once in their lives to see the capital at its most convivial. Some citizens of Andoran, Cheliax, Galt, Isger, and Lastwall—countries The Glorian Empire still regards as wayward colonies—cross their nations’ borders to enjoy the fireworks, parades, feasts, and sporting events that fill the week leading up to Exaltation. Entertainers from across the Inner Sea region journey to The Glorian Empire to capitalize upon the cheap food and generosity the festivities encourage. 
+
+Even residents of nations beyond The Glorian Empire’s former colonies have reason to visit this cosmopolitan trading hub. Tourists and opportunists can find the same appeal in the spectacle of the Exaltation, but the week is business as usual for the year-round flow of trade. Rosanna’s ports see an endless succession of trading ships arriving from and departing toward Absalom, Rahadoum, Druma, Varisia, and even The Glorian Empire’s former enemy Qadira—though Keleshites may find equal parts hostility and hospitality when they disembark. This is a week when important treaties are signed and trade deals negotiated against a background of wine, music, and raucous color. And just as Rosanna attracts politicians and strangers, it attracts schemers and criminals aiming to take advantage of both.
+
+Adding to this year’s excitement are rumors that the Glorian senate will finally vote on the matter of primogeniture: The Glorian Empire’s ancient law that decrees only male heirs may inherit their families’ titles, lands, and the authority that comes with both. Its repeal would be an enormous step forward for all of The Glorian Empire’s women and people of other genders. Regardless of which side of the issue a given citizen supports, nearly every Glorian is passionate about the vote, and waiting for the results with bated breath. 
+
+---
+### Character Tips
+
+What sort of characters work best for War for the Crown? A champion for social reform? A scheming vizier looking to secure her own wealth and power? A dashing lothario looking to woo every pretty face in the empire? A military grunt with a sturdy sword? The answer: any of these ideas and more. While War for the Crown contains a fair amount of clandestine work and social interaction, it still has its fair share of monsters to slay and dungeons to delve. Whatever a character’s motivation is for diving into Glorian politics, there should be opportunities aplenty. 
+
+  
+
+At its core, War for the Crown is a campaign for people who want to fix a broken system, not take it over for their own gain or tear it all down in bloody revolt. This difficult course means learning to blend in among those whose rule you seek to undermine, rather than upturning their world and starting from scratch. It means compromise and subterfuge and keeping up the appearance of loyalty to various despicable sorts even as you work behind the scenes to undermine them. But through all this, as your patron rises in power and prestige, so too do you, and your actions can help shape Eutropia’s rule when—if—she finally reaches the throne.
+
+---
+### Class & Archetype Options 
+
+The challenges in War for the Crown rely as much on calm words and a winning smile as they do a sharp blade, and while combat will present itself, characters who can blend into the social scene or investigate strange events will find more opportunities to shine. Most character classes are suitable for War for the Crown, but those that revolve around rugged wilderness themes or with few options outside of combat may have less to do in many parts of the story. Character classes with diverse abilities—especially the bard, investigator, rogue, and swashbuckler—will find themselves well prepared for the variety of challenges they encounter. Martially inclined players will find more utility playing champions than most fighters or rangers. For spellcasters, those whose arts come from study and control—alchemists, clerics, magi, and wizards—are more readily accepted in high society than those whose magic is a result of often-untraceable ancestry, happenstance, or unknowable forces; oracles, sorcerers, summoners, and witches are typically looked down upon in Glorian society. In much of The Glorian Empire, classes that thrive in the wild world—barbarians, druids, and rangers—will find their skills less useful and their presence less welcome than their urban counterparts. Many Glorians distrust druids in particular, invoking as their reason the centuries of animosity towards the Wildwood Lodge of the Verduran Forest. 
+
+  
+
+As much of War for the Crown focuses on the history, legacies, and zeitgeist of The Glorian Empire, along with conspiracies and strange forces, the various occult classes are especially appropriate for this Adventure Path. The most thematically appropriate archetypes include the celebrity, dandy and vigilante from the Advanced Player’s Guide, and the Lion Blade from Lost Omens: World Guide. The assassin, duelist, and shadowdancer (APG) will also feel at home in War for the Crown,as will the shadowcaster from Secrets of Magic. You might also consider Dark Archive’s alter ego and the captivator from Lost Omens: Grand Bazaar. 
+
+---
+### Origins 
+
+Given the nature of the campaign, characters are most likely - though not necessarily - Glorian natives from middle- or upper-class families. Young or inexperienced aristocrats, apprentice merchants, rising celebrities, students, reformers, guild members, journalists, and aspiring spies all have reasons to invest themselves in Rosanna’s treacherous political stage. Eutropia has also gained the support of the Sovereign Court, a secret society that believes that those entrusted with the power of a title must be bound to use it wisely and respectfully, and so Pathfinder agents from all across Avistan and Garund may find themselves in The Glorian Empire to assist her. 
+
+---
+### Languages
+
+Common is by definition the language of The Glorian Empire, as The Glorian Empire originated the Common tongue. Academics and sophisticates often opt to learn Azlanti, Celestial, or Elven as a status symbol. The nation’s proximity to Qadira
+
+means many merchants, soldiers, and travelers speak Kelish. The Glorian Empire’s historical march over much of Kellid territory means many lower-class citizens, especially those living in and around the Verduran Forest, speak a bit of Hallit. By contrast, The Glorian Empire’s many dwarves and halflings rarely use nonhuman languages outside of their own communities, making experience with Dwarven and Halfling rare outside of those groups. 
+
+Rosanna in particular sees a large variety of languages. Skald is common among soldiers and servants thanks to the presence of the Ulfen Guard, while The Glorian Empire’s trade relationships with Osirion and Jalmeray lead a sizable minority of merchants and accountants to study Osiriani and Vudrani.
+
+---
+
+![[players guide on a horse.png]]
+
+---
+
+### Ancestries 
+
+The Glorian Empire’s history of empire and trade is visible in its people. For centuries, The Glorian Empire conquered every land it could and traded with those it didn’t; modern Glorians, noble and common alike, represent nearly every human ethnicity. The nation also hosts a wide variety of other humanoids. Dwarves native to The Glorian Empire make their homes in Maheto and the Sky Citadel Kravenkus. The Verduran Forest supports a large population of gnomes, centered in and around Wispil. Halfling villages and farmsteads dot the Glorian countryside, while their urban counterparts work as bakers, cooks, entertainers, and servants. Part-humans, from half-elves to geniekin, also number among The Glorian Empire’s citizens. Some rare ancestries call The Glorian Empire home as well; reclusive families of fetchlings dwell in the shadows of great cities, while azarketis can be found all along the western coasts. Beastkin descended from the lycanthropes of the Verduran Forest live in the rural north. Even tengus and vishkanyas have crossed Golarion to come to The Glorian Empire. Non-human visitors are also a regular occurrence, especially dwarves from the Irenkrag Mountains and elves from Kyonin. 
+
+  
+
+Despite this cosmopolitan veneer, The Glorian Empire remains a stubbornly old-fashioned, humanocentric empire with little regard for non-humans. Stigma toward part-humans such as half-orcs, half-elves, and geniekin is especially virulent, with some humans openly labeling such folk “mongrels”or worse. Half-elves descended from noble Glorians generally have the resources to live in comfort, but at the cost of lifelong reclusion. Halflings, gnomes, and half-orcs are considered suitable only for roles as servants. Dwarves and elves experience exceptions to this discrimination, but only because of their perceived benefits to Glorian humans— elves for their beauty and sophistication, and dwarves for their part in The Glorian Empire’s economic bounty. 
+
+  
+
+The notable exception to this backwards attitude is the Glorian acceptance of aasimars. The people of The Glorian Empire believe the angel-blooded stem from their eons-long relationship with the god Aroden, and see them as physical manifestations of The Glorian Empire’s own cultural and moral enlightenment. 
+
+### Skills & Feats 
+
+At many points during War for the Crown, various social and knowledge skills will prove critical for winning allies and uncovering clues. While combat and physical challenges will still present themselves, players may risk feeling left out if their characters don’t have at least one of the following skills: Deception, Diplomacy, or Intimidation. Skills that are less critical but still appear frequently include Performance, Profession, Society, and Stealth. 
+
+  
+
+The most useful Lore options will be History, Nobility and The Glorian Empire Lore. Fashion, Games, Genealogy, Heraldry, and Warfare Lore will also see use. 
+
+Any skill feats for Deception, Diplomacy, Intimidation, Performance, or Society are appropriate, but Bon Mot, Charming Liar, Courtly Graces, Fascinating Performance, Group Impression, and Hobnobber are all on theme. Group Coercion, Impressive Performance, Lie to Me, Schooled in Secrets, and Streetwise are also good choices. 
+
+---
+
+### Glorian at a Glance
+
+The popular image of Glorian being a nation of inbred fops sipping tea as their empire burns isn’t entirely baseless, but reducing the entire nation to only that does a disservice to its citizens and influence. Much of Avistan’s culture and language stems from Glorian, and the empire influenced the history of three continents. But, overseen by rulers with more interest in luxury than the nation’s well-being, Grand Prince Stavian III being only the most recent, the nation now is a shadow of its former self.
+
+
+Glorian is a nation of long histories and deep divisions. Following the Age of Ascension, it rebuilt itself from the ashes of Old Tal’Dorei, allying disparate city-states into an empire. This mythic task, achieved by the legendary Phoenix Empress Gloriana, gave birth not only to a nation but also to a nationalist fervor. Glorian patriotism praised hard work and discipline; the nascent empire channeled these values by mastering cavalry and building roads from Rosanna to the Arcadian Ocean unmatched by the rest of the continent’s scattered city-states. Glorian’s military might created imperial economic power; Glorians saw their conquests as bringing enlightenment to “backwards” people and inferior states, seeing the empire itself as proof they deserved the great wealth that flowed from their mighty colonies.
+
+
+Those days of dominion are long gone. Though Glorians still refer to them as “the colonies,” Andoran, Cheliax, Galt, Isger, and Lastwall are all independent nations, their populations and resources no longer subject to Glorian governance or Glorian use. 
+
+
+While the nation remains a military and economic juggernaut, it has little to show for its past glories beyond an immense but ever-diminishing treasury, an out-of-touch aristocracy, and nationalist nostalgia. Glorian culture still prizes hard work and discipline, but the common folk are the ones practicing those virtues, for little recognition or reward; the nobility, like their imperial predecessors, profess national pride for its own sake, sure that their continued wealth shows they must be doing something right. All the while, Glorian’s once-legendary infrastructure of aqueducts, bridges, canals, and highways crumbles, leaving pockets of the population completely cut off from the nation and areas rendered uninhabitable as rural farming collapses. A corrupt, labyrinthine bureaucracy stymies those nobles who do want to improve the system—or even just maintain their lands.
+
+
+Intense traditionalism means Glorian culture is still steeped in sexism and racism that many other nations have spent decades gradually shedding. While any Glorian can own property or hold a title via promotion, marriage, or appointment, the law of primogeniture dictates that only men can inherit, both demonstrating and perpetuating Glorian’s inequalities. While many reformers are trying to reverse these attitudes—the emperor’s own daughter, Princess Eutropia, included— Glorian as a whole resists change, even for the better, as a matter of principle. The old ways forged an empire and conquered a hostile world, after all. Why shouldn’t they work now? 
+
+---
+
+### Glorian Geography
+
+Glorian stretches around the eastern coastline of the Inner Sea, extending from the temperate Verdigris Expanse in the north to the warm plains surrounding the Aesctun River in the south, and reaching east to the Empire’s Edge Mountains and the rolling savanna beyond. Its domain encompasses foothills, primeval forest, broad rocky plains, verdant fields, swamps, and desert, divvied up by an immense network of roads and canals. The bulk of Glorian’s population hugs the coastline of the Inner Sea and the banks of the mighty Orseolo River, but large settlements exist in the Empire’s Edge Mountains and the contested southlands as well.
+
+Glorian is made up of 12 prefectures and several dozen small, largely uninhabited provinces, with each prefecture divided into smaller duchies, duchies divided into counties, and counties finally divided into baronies. The nation owes much of its continued prosperity to the sheer diversity of local products it can export: the Empire’s Edge Mountains produce rich, deep veins of iron, gold, silver, copper, and tin; the coastline offers a wealth of fish, shellfish, and strong winds to power local mills; the Verdigris Expanse produces abundant timber and a variety of valuable plants, including healing herbs, fruit, and unique spices. The abundance of volcanoes along the nation’s eastern and northern borders results in rich soil that produces a huge variety of apples, figs, grains, grapes, pears, pomegranates, rice, and olives, all of which find their way into Glorian cooking.
+
+Thanks to centuries of neglect, civil engineering marvels that were once the envy of the world now slowly crumble, producing striking tableaus of abandonment: canals clogged with mud and reeds, tumbledown aqueducts creating beautiful waterfalls in the middle of fields, and roads that simply end for several miles before resuming. Despite this, Glorian still boasts one of the highest standards of living in Avistan for its rural community, and even in lean years, few farmers need worry where their next meal will come from. 
+
+---
+
+### Glorian Government
+
+Glorian is a hereditary monarchy, with a large senate that shapes imperial decrees into functional law and votes on necessary matters that don’t attract the crown’s attention. A sprawling bureaucracy manages the day-to- day challenges of governance. Grand Prince Stavian III sits on the throne, but is an aging, indifferent emperor, enjoying the excesses of wealth and rarely appearing in public. The nation’s 222 senators have likewise taken a light-handed approach to governance, letting much of the nation’s government run on inertia. While the imperial bureaucracy remains functional—managing crops, news, and disaster relief, as well as collecting taxes and settling legal disputes—bureaucrats’ diligence and effort is set back by the millennia of cobbled-together offices that often leave departments underfunded, redundant, or entirely unstaffed and existing on paper only.
+
+Much of the nation’s rule falls onto regional nobles, so quality of life varies widely depending on the local lord’s whim. While all Glorians have the legal right to move freely, in reality moving to a new domain is often too expensive to be feasible, and some nobles even hold their tenants hostage despite the law.
+
+While Glorian holds tight to its traditions, enough senators, nobles, and regular citizens have grown sick of the status quo to form the beginning of a reform movement. They call themselves Loyalists, and declare their allegiance to the history, great deeds, and people of Glorian, and the vision of their lost Phoenix Empress, rather than any individual—even the emperor. While she is not a Loyalist, Princess Eutropia also works to reform many of Glorian’s ancient customs and broken systems, with a particular focus toward poverty and gender inequality, and many within the Loyalist movement support her efforts to repeal primogeniture and allow any person to inherit family lands and titles. 
+
+In opposition to the Loyalists stand a growing movement of Imperialists, who consider the Primogen Crown the one true authority in Glorian, with the senate and nobility existing only to carry out the emperor’s will. This disparate group shares the firm belief that Glorian’s greatness was rooted in its oldest traditions—and that embracing new ideas was what cost Glorian its imperial might. Their most extreme members insist that no middle ground can exist: either Glorian must reconquer former colonies like Galt and Andoran, or else the empire is doomed to crumble away into nothing.
+
+While not every Glorian belongs to a faction, the increasing polarization of Glorian society is raising tensions across the nation. Other conflicts—growing political instability in Thuvia, rumors that the Seven Houses are undermining Andoran’s government, the squashed rebellion in Cheliax, and the secession of Ravounel—serve only to intensify the turmoil. Secret societies and fraternities, a longtime staple of the Glorian aristocracy that until recently amounted to little more than private clubs, have begun maneuvering to gain power or hoard wealth now, with the expectation that Grand Prince Stavian III’s passing will lead to a painful and protracted succession conflict.
+

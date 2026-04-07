@@ -1,2 +1,2 @@
 Devil Fascist Empire
-They enslave halfings
+They enslave halflings

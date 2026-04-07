@@ -1,8 +1,6 @@
 
 
 
-
-
 ### Chainmail
 https://2e.aonprd.com/Armor.aspx?ID=46
 **Source** [_Player Core pg. 273_](https://2e.aonprd.com/Sources.aspx?ID=216) [2.0](https://2e.aonprd.com/Sources.aspx?ID=216)  

@@ -149,7 +149,7 @@ Madeira’s Dragon Slaying Soundtrack
 
 ---
 
--Arturo Basri has noticed something odd in his Uncle Gregario’s library. An unusual smell wafts faintly through the air, like perfume, but not his aunt’s. Arturo follows the smell to the most boring part of the library. ![[child_adventure_arturo_1.png]]
+-Arturo Basri has noticed something odd in his Uncle Gregario’s library. An unusual smell wafts faintly through the air, like perfume, but not his aunt’s. Arturo follows the smell to the most boring part of the library. ![[arturo_basri_child_portrait.png]]
 
   
 > I hate this section, Arturo mused. Not an almanac in sight…

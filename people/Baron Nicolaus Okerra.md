@@ -3,10 +3,25 @@
 
 ![[OkerraJoustin.png]]
 
-### Baron Nicolaus Okerra
+# Baron Nicolaus Okerra
+
+---
+
+# Current attitude towards our party:  `Helpful`
 
 
-- The Baron gives heartfelt condolences to [[Caritas Zespire]] for the loss of his father so many years ago, and admits that while he didn’t know the man personally, many of his colleagues have had many kind things to say about him. He shares his concerns about the vote to overturn primogeniture with Caritas - he is worried about the instability it would cause, especially because his young daughter Selli wants to become a knight, and he feels it’s his responsibility to give her as safe a world as possible. Caritas continues working to sway the Baron to Eutropia’s side. 
+---
+# May be influenced by
+
+	- any profession lore
+	- lore riding
+	- nature
+	- diplomacy
+
+---
+
+
+- The Baron gives heartfelt condolences to [[Caritas Zespire]] for the loss of his father so many years ago, and admits that while he didn’t know the man personally, many of his colleagues have had many kind things to say about him. He shares his concerns about the vote to overturn primogeniture with Caritas - he is worried about the instability it would cause, especially because his young daughter Selly wants to become a knight, and he feels it’s his responsibility to give her as safe a world as possible. Caritas continues working to sway the Baron to Eutropia’s side. 
 
 ---
 #### Family
@@ -22,16 +37,7 @@
 - 27 = critical success on perception on learning his influences (Thanks [[Arturo Basri]]!))
 
 ---
+# Weaknesses
 
-Influences: 
-	- any profession lore
-	- lore riding
-	- athletics
-	- nature
-	- diplomacy
-
-Weaknesses
 - sympathetic to having conversations about having moral doubts about having blind obedience
-
-Current attitude towards our party:  `Friendly`
 

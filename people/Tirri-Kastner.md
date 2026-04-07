@@ -18,7 +18,7 @@
 #### Family
 - [[Lord Remilliard Kastner]] (Uncle)
 - [[Viscount Talvin Caellio]] (husband)
-- [[Wanderer Gayland Thorn]] Patron ?
+- [[Wanderer Gayland Thorn aka Vaelisse]] Patron ?
 ---
 
 ![[tirri_as_a_child.png | 300]]

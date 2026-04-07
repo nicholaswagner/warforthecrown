@@ -1,0 +1,1 @@
+![[sir_meir_dratavis.png]]
