@@ -23,7 +23,7 @@ Eutropia following the Exaltation Day Massacre.
 
 - [[Onora Piscum]] — Sheriff and Honorary Tribune. Straight talker, owns the 
   alehouse. Hates [[Count Bartleby Lotheed]] quietly. Currently **Helpful**.
-- [[Gemma Kinsey]] — Household cook at Swanmere. Married to [[Brant Kinsey]].
+- [[Gemma Kinsey]] — Household cook at Swanmere. Married to [[Brant Kinsey]]
 - [[Pace Kinsey]] — Gemma's son. Works at Swanmere.
 - [[Mayron Delrose]] — Swanmere household manager. Supervises staff, 
   plans events.

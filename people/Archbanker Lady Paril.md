@@ -2,6 +2,9 @@ First name:  "Lana"
 
 ![[archbanker-lady-paril.png]]
 
+# Disposition towards the party: `Friendly`
+- Will now offer the party a 10% discount on healing
+
 Description:
 (Michelle Yeoh in a pope outfit with a large bronze key charm around her neck)
 
@@ -16,6 +19,7 @@ Weaknesses:
 - interested in unity and law across the empire
 - she likes order and stability
 - any pro war talk will not go well with her
+
 
 
 

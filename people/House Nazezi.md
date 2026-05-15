@@ -1,0 +1,1 @@
+A house aligned with [[General High Stratagos Maxillar Pythareus]] 
