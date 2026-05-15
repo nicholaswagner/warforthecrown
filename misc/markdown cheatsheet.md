@@ -95,7 +95,7 @@ Yo Dawg, I hear you like markdown, so we embedded markdown in your markdown so y
 
 ```
 
-![[Party Boons]]
+![[party boons]]
 
 
 ---
