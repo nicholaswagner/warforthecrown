@@ -16,7 +16,7 @@ Campaign notes, session logs, and reference material for our weekly Pathfinder 2
 |---|---|---|---|
 | Allister Hound | Mark | Human | Bard |
 | Arturo Basri | Julian | Human | Investigator |
-| Caritas Zespire | Nick | Human | Fighter |
+| Caritas Zespire | Nicholas | Human | Fighter |
 | Rhenquist Merosett | Doug | Human | Rogue (Mastermind) |
 | Tirri Kastner | Shannon | Changeling | Cleric |
 | Zarissa Nocturne | Alex | Nephilim (Hellspawn) | Witch |
@@ -26,20 +26,19 @@ Campaign notes, session logs, and reference material for our weekly Pathfinder 2
 ## Repo Structure
 
 ```
-warforthecrown/
-├── knightly-notes/     # Session notes, one file per session (YYYY_MM_DD.md)
-├── people/             # NPC and PC reference sheets
-├── places/             # Location notes
-├── items/              # Item and treasure tracking
-├── factions/           # Faction notes and relationships
-├── gods/               # Deity reference
-├── pathfinder2e/       # System reference material
-├── dm-handouts/        # In-world documents and letters
-├── writeups/           # Long-form narrative writeups and recaps
-├── canvases/           # Obsidian canvas files
-├── data/               # Structured data files
-├── images/             # Portraits and artwork
-└── party boons.md      # Current party boons and rewards
+.
+├── Images
+├── Narrative                 # Session notes and Writeups
+│   ├── Act 0 - The Children 's Adventure
+│   ├── Act 1 - Crownfall
+│   └── Knightly Notes
+└── Reference
+    ├── Documents             # In-world documents and letters
+    ├── Factions              # Faction notes and relationships
+    ├── Items                 # Item and treasure tracking
+    ├── People                # NPC and PC reference sheets
+    ├── Places                # Location notes
+    └── rules    
 ```
 
 ---
