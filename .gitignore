@@ -1,8 +1,8 @@
 .DS_Store
 .obsidian
-desktop.ini
-pathfinder2e
 Untitled.base
-canvases
 .*
 !.gitignore
+assets
+canvases
+pathfinder2e
