@@ -1,3 +1,3 @@
-![[Tuck Grosse.png]]
+![[TuckGrosse.png]]
 
 Has a dog named [[Tomothy]] who can deliver letters
