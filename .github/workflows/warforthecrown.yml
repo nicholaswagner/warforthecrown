@@ -1,0 +1,76 @@
+name: Build and Deploy wftc
+description: Build the wftc site against this content and publish it to this repo's Pages.
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. This repo (warforthecrown) — the vault content.
+      - name: Checkout warforthecrown (content)
+        uses: actions/checkout@v4
+        with:
+          path: warforthecrown
+
+      # 2. The wftc renderer.
+      - name: Checkout wftc (renderer)
+        uses: actions/checkout@v4
+        with:
+          repository: nicholaswagner/wftc
+          path: wftc
+
+      # 3. Place vault content where wftc's sync script expects it.
+      - name: Stage vault inside wftc
+        run: |
+          mkdir -p wftc/submodules
+          rm -rf wftc/submodules/warforthecrown
+          mv warforthecrown wftc/submodules/warforthecrown
+
+      # 4. Build wftc against this content.
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install wftc dependencies
+        working-directory: wftc
+        run: bun install --frozen-lockfile
+
+      - name: Build wftc
+        working-directory: wftc
+        env:
+          BASE_PATH: /warforthecrown/
+        run: bun run build
+
+      # 5. Deploy to *this* repo's GitHub Pages.
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: wftc/build/client
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

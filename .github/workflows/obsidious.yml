@@ -1,85 +1,85 @@
-name: Index and Build Obsidious
-description: Index the repository, clone `nicholaswagner/obsidious`, and build
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-on:
-  push:
-    branches:
-      - main
+# name: Index and Build Obsidious
+# description: Index the repository, clone `nicholaswagner/obsidious`, and build
+# permissions:
+#   contents: read
+#   pages: write
+#   id-token: write
+# on:
+#   push:
+#     branches:
+#       - main
 
-jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
+# jobs:
+#   build-and-deploy:
+#     runs-on: ubuntu-latest
 
-    steps:
-      # Checkout the current repository which has markdown files / images etc
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          path: main
+#     steps:
+#       # Checkout the current repository which has markdown files / images etc
+#       - name: Checkout repository
+#         uses: actions/checkout@v4
+#         with:
+#           path: main
 
-      # Checkout the obsidious repository
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          repository: nicholaswagner/obsidious
-          path: obsidious
+#       # Checkout the obsidious repository
+#       - name: Checkout repository
+#         uses: actions/checkout@v4
+#         with:
+#           repository: nicholaswagner/obsidious
+#           path: obsidious
 
-      # Run the indexer in your current repository
-      - name: Run Obsidious Indexer
-        working-directory: ${{ github.workspace }}
-        run: npm exec remark-obsidious@latest --yes -- --in ${{github.workspace}}/main --out ${{github.workspace}}/main
+#       # Run the indexer in your current repository
+#       - name: Run Obsidious Indexer
+#         working-directory: ${{ github.workspace }}
+#         run: npm exec remark-obsidious@latest --yes -- --in ${{github.workspace}}/main --out ${{github.workspace}}/main
 
-        # Install dependencies for obsidious
-      - name: Install dependencies for obsidious
-        working-directory: ${{ github.workspace }}/obsidious
-        run: npm ci
+#         # Install dependencies for obsidious
+#       - name: Install dependencies for obsidious
+#         working-directory: ${{ github.workspace }}/obsidious
+#         run: npm ci
 
-        # Build the obsidious app
-      - name: Build Obsidious app
-        env:
-          VITE_BASE_URL: /warforthecrown/
-          VITE_FILEPATH_PREFIX:
-          VITE_INITIAL_VAULT_FILE_LABEL_SLUG: readme
-          VITE_OBSIDIOUS_FILE_URL: "/warforthecrown/obsidious-index.json"
-          VITE_EDIT_FILE_URL_PREFIX: "https://github.com/nicholaswagner/warforthecrown/blob/main"
+#         # Build the obsidious app
+#       - name: Build Obsidious app
+#         env:
+#           VITE_BASE_URL: /warforthecrown/
+#           VITE_FILEPATH_PREFIX:
+#           VITE_INITIAL_VAULT_FILE_LABEL_SLUG: readme
+#           VITE_OBSIDIOUS_FILE_URL: "/warforthecrown/obsidious-index.json"
+#           VITE_EDIT_FILE_URL_PREFIX: "https://github.com/nicholaswagner/warforthecrown/blob/main"
 
-        working-directory: ${{ github.workspace }}/obsidious
-        run: npm run build
+#         working-directory: ${{ github.workspace }}/obsidious
+#         run: npm run build
 
-      # Copy built files to the main repository
-      - name: Copy built site to workspace root
-        working-directory: ${{ github.workspace }}
-        run: cp -r ${{ github.workspace }}/obsidious/dist/* ${{ github.workspace }}/main
+#       # Copy built files to the main repository
+#       - name: Copy built site to workspace root
+#         working-directory: ${{ github.workspace }}
+#         run: cp -r ${{ github.workspace }}/obsidious/dist/* ${{ github.workspace }}/main
 
-      # disable jekyll
-      - name: Disable Jekyll on GitHub Pages
-        working-directory: ${{ github.workspace }}/main/
-        run: touch .nojekyll
+#       # disable jekyll
+#       - name: Disable Jekyll on GitHub Pages
+#         working-directory: ${{ github.workspace }}/main/
+#         run: touch .nojekyll
 
-      # Configure GitHub Pages
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
+#       # Configure GitHub Pages
+#       - name: Setup Pages
+#         uses: actions/configure-pages@v5
 
-      # Check if directory exists before uploading artifact
-      - name: Check directory exists
-        run: |
-          if [ -d "${{ github.workspace }}/main" ]; then
-            echo "Directory exists"
-          else
-            echo "Directory does not exist"
-            exit 1
-          fi
+#       # Check if directory exists before uploading artifact
+#       - name: Check directory exists
+#         run: |
+#           if [ -d "${{ github.workspace }}/main" ]; then
+#             echo "Directory exists"
+#           else
+#             echo "Directory does not exist"
+#             exit 1
+#           fi
 
-      # Upload the built site as an artifact for GitHub Pages
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ${{ github.workspace }}/main # Path to your built site
+#       # Upload the built site as an artifact for GitHub Pages
+#       - name: Upload artifact
+#         uses: actions/upload-pages-artifact@v3
+#         with:
+#           path: ${{ github.workspace }}/main # Path to your built site
 
-      # Deploy to GitHub Pages
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+#       # Deploy to GitHub Pages
+#       - name: Deploy to GitHub Pages
+#         id: deployment
+#         uses: actions/deploy-pages@v4
