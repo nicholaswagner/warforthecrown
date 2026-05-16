@@ -1,5 +1,3 @@
-# War for the Crown
-
 ### A Pathfinder 2e Campaign
 
 Campaign notes, session logs, and reference material for our weekly Pathfinder 2e game, running the *War for the Crown* adventure path set in the Glorian Empire.
