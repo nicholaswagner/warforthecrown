@@ -1,0 +1,1 @@
+The Caster Mansion grounds — where Allister Hound and Tirri-Kastner spent the afternoon drinking and overlooking the green while Allister helped Tirri write a letter to Dame Trant about her public scandal.

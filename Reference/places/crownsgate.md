@@ -1,0 +1,1 @@
+An industrial district with a crumbling filthy wooden footbridge. Industrial buildings and warehouses — anything of value was stripped from here ages ago, even the cobblestones were stolen for other parts of the city.

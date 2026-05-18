@@ -1,0 +1,1 @@
+A tavern in the city where Zarissa Nocturne met Beatrix-Poiroux, who threatened to expose her sister Velki's writing for the Wilted Rose. The tavern's doors feature a carving of a cute dragon gone belly up with a transparent snot bubble that inflates as you approach.

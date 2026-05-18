@@ -1,0 +1,1 @@
+A guarded warehouse in Crownsgate where Martella-Lotheed was being held captive. Six guards were posted, and the party infiltrated through a side door. Inside: piles of crates, a metal office overlook, and narrow pathways through 40ft high ceilings.

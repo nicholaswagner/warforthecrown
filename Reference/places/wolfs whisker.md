@@ -1,1 +1,1 @@
-- the local drinking establishment in Stachys which is located in the home of [[Onora Piscum]]
+Wolfs Whisker — the Wolf's Whisker Public House located in Stachys, operated by Onora Piscum.

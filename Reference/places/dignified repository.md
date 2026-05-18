@@ -1,0 +1,1 @@
+Also known as the Repository of the Dignified. A vast, otherworldly library and archive maintained by Viscountess Octavia Nicodemus. Contains hidden passages, a preserved garden room, a wax gallery, and a reading room accessed via a mysterious circle door trap.
