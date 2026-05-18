@@ -1,0 +1,1 @@
+The Dower House — an unused Heskillar family property where the Nocturne family was invited to stay after being dismissed from the Stavian house's service and unable to find a position for several years.

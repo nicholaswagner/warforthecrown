@@ -1,0 +1,1 @@
+The Zespire home/farms — the Zespire family estate where [[Madeira Zespire]] was arrested by palace guards and later stripped of his property. The home was later vandalized by the government after his execution. Home of [[Caritas Zespire]], [[Count Orlundo Zespire]], [[Museta Zespire]], and [[Madeira Zespire]].
