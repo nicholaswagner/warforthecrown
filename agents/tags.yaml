@@ -1,0 +1,90 @@
+# Master tag list for War for the Crown session notes
+# Generated from content analysis of first 8 sessions
+# Grow organically as new themes emerge in later sessions
+
+tags:
+  # --- Session Types ---
+  - tag: "social-event"
+    description: "Grand balls, feasts, formal gatherings, ceremonies"
+    type: "session-type"
+
+  - tag: "politics"
+    description: "Senate votes, blackmail, diplomacy, faction maneuvering"
+    type: "theme"
+
+  - tag: "combat"
+    description: "Fights, duels, massacres, combat encounters"
+    type: "theme"
+
+  - tag: "investigation"
+    description: "Sneaking, spying, gathering intel, eavesdropping"
+    type: "theme"
+
+  - tag: "downtime"
+    description: "Rest periods, casual interactions, free time"
+    type: "theme"
+
+  - tag: "character-development"
+    description: "Deep character moments, backstory reveals, emotional beats"
+    type: "theme"
+
+  - tag: "plot-twist"
+    description: "Major revelations, surprises, turning points"
+    type: "theme"
+
+  - tag: "mystery"
+    description: "Unsolved questions, hidden plots, unknown antagonists"
+    type: "theme"
+
+  - tag: "world-building"
+    description: "Lore drops, history lessons, cultural details"
+    type: "theme"
+
+  - tag: "npc-introduction"
+    description: "First appearances of notable NPCs"
+    type: "theme"
+
+  - tag: "puzzle"
+    description: "Magic items, riddles, mechanical challenges"
+    type: "theme"
+
+  - tag: "relationship"
+    description: "Bonding, romance, friendship, family dynamics"
+    type: "theme"
+
+  - tag: "travel"
+    description: "Transitions between locations, journeys"
+    type: "theme"
+
+  - tag: "downtime"
+    description: "Rest periods, casual interactions, free time, crafting, training, hobbies"
+    type: "theme"
+
+  - tag: "recurring-event"
+    description: "Events that repeat or build across sessions"
+    type: "theme"
+
+  # --- Location tags ---
+  - tag: "palace-of-birdsong"
+    description: "The Stavian palace in Rosanna"
+    type: "location"
+
+  - tag: "rosanna"
+    description: "The canal city, seat of the Imperial Senate"
+    type: "location"
+
+  - tag: "imperial-archives"
+    description: "Hidden archive and library"
+    type: "location"
+
+  - tag: "arcade-of-triumphs"
+    description: "Artifact gallery and exhibition space"
+    type: "location"
+
+  - tag: "rysher"
+    description: "Caritas's homeland, Rysherian culture"
+    type: "location"
+
+  - tag: "glorian-empire"
+    description: "The Glorian Empire, broader setting"
+    type: "location"
