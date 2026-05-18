@@ -1,4 +1,6 @@
-### A Pathfinder 2e Campaign
+# War for the Crown
+
+## A Pathfinder 2e Campaign
 
 Campaign notes, session logs, and reference material for our weekly Pathfinder 2e game, running the *War for the Crown* adventure path set in the Glorian Empire.
 
@@ -11,19 +13,19 @@ Campaign notes, session logs, and reference material for our weekly Pathfinder 2
 ## The Party
 
 | Portrait | Character | Player | Ancestry | Class |
-|---|---|---|---|---|
-| <img src="Images/allister-hound-sitting.jpg" width="80"> | [Allister Hound](Reference/People/Allister%20Hound.md) | Mark | Human | Bard |
-| <img src="Images/arturo_portrait.png" width="80"> | [Arturo Basri](Reference/People/Arturo%20Basri.md) | Julian | Human | Investigator |
-| <img src="Images/caritas-zespire-front.jpg" width="80"> | [Caritas Zespire](Reference/People/Caritas%20Zespire.md) | Nicholas | Human | Fighter |
-| <img src="Images/Rhenquist_Merosett.png" width="80"> | [Rhenquist Merosett](Reference/People/Rhenquist-Merosett.md) | Doug | Human | Rogue (Mastermind) |
-| <img src="Images/Tirri_Kastner.png" width="80"> | [Tirri Kastner](Reference/People/Tirri-Kastner.md) | Shannon | Changeling | Cleric |
-| <img src="Images/ZarissaNocturne.jpeg" width="80"> | [Zarissa Nocturne](Reference/People/Zarissa%20Nocturne.md) | Alex | Nephilim (Hellspawn) | Witch |
+| --- | --- | --- | --- | --- |
+| <img src="Images/allister-hound-sitting.jpg" width="80" alt="Allister Hound portrait"> | [Allister Hound](Reference/People/Allister%20Hound.md) | Mark | Human | Bard |
+| <img src="Images/arturo_portrait.png" width="80" alt="Arturo Basri portrait"> | [Arturo Basri](Reference/People/Arturo%20Basri.md) | Julian | Human | Investigator |
+| <img src="Images/caritas-zespire-front.jpg" width="80" alt="Caritas Zespire portrait"> | [Caritas Zespire](Reference/People/Caritas%20Zespire.md) | Nicholas | Human | Fighter |
+| <img src="Images/Rhenquist_Merosett.png" width="80" alt="Rhenquist Merosett portrait"> | [Rhenquist Merosett](Reference/People/Rhenquist-Merosett.md) | Doug | Human | Rogue (Mastermind) |
+| <img src="Images/Tirri_Kastner.png" width="80" alt="Tirri Kastner portrait"> | [Tirri Kastner](Reference/People/Tirri-Kastner.md) | Shannon | Changeling | Cleric |
+| <img src="Images/ZarissaNocturne.jpeg" width="80" alt="Zarissa Nocturne portrait"> | [Zarissa Nocturne](Reference/People/Zarissa%20Nocturne.md) | Alex | Nephilim (Hellspawn) | Witch |
 
 ---
 
 ## Repo Structure
 
-```
+```text
 .
 ├── Images
 ├── Narrative                 # Session notes and Writeups
