@@ -14,12 +14,12 @@ Campaign notes, session logs, and reference material for our weekly Pathfinder 2
 
 | Portrait | Character | Player | Ancestry | Class |
 | --- | --- | --- | --- | --- |
-| ![Allister Hound portrait](images/allister-hound-sitting.jpg) | [Allister Hound](Reference/People/Allister%20Hound.md) | Mark | Human | Bard |
-| ![Arturo Basri portrait](images/arturo_portrait.png) | [Arturo Basri](Reference/People/Arturo%20Basri.md) | Julian | Human | Investigator |
-| ![Caritas Zespire portrait](images/caritas-zespire-front.jpg) | [Caritas Zespire](Reference/People/Caritas%20Zespire.md) | Nicholas | Human | Fighter |
-| ![Rhenquist Merosett portrait](images/Rhenquist_Merosett.png) | [Rhenquist Merosett](Reference/People/Rhenquist-Merosett.md) | Doug | Human | Rogue (Mastermind) |
-| ![Tirri Kastner portrait](images/Tirri_Kastner.png) | [Tirri Kastner](Reference/People/Tirri-Kastner.md) | Shannon | Changeling | Cleric |
-| ![Zarissa Nocturne portrai](images/ZarissaNocturne.jpeg) | [Zarissa Nocturne](Reference/People/Zarissa%20Nocturne.md) | Alex | Nephilim (Hellspawn) | Witch |
+| ![[allister-hound-sitting.jpg]] | [Allister Hound](Allister%20Hound.md) | Mark | Human | Bard |
+| ![[arturo_portrait.png]] | [Arturo Basri](Reference/People/Arturo%20Basri.md) | Julian | Human | Investigator |
+| ![[caritas-zespire-side.png]] | [Caritas Zespire](Caritas%20Zespire.md) | Nicholas | Human | Fighter |
+| ![[Rhenquist_Merosett.png]] | [Rhenquist Merosett](Rhenquist-Merosett.md) | Doug | Human | Rogue (Mastermind) |
+| ![[images/Tirri_Kastner.png]] | [Tirri Kastner](Reference/People/Tirri-Kastner.md) | Shannon | Changeling | Cleric |
+| ![[images/ZarissaNocturne.jpeg]] | [Zarissa Nocturne](Reference/People/Zarissa%20Nocturne.md) | Alex | Nephilim (Hellspawn) | Witch |
 
 ---
 
