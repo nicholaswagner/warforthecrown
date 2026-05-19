@@ -10,6 +10,8 @@ Campaign notes, session logs, and reference material for our weekly Pathfinder 2
 
 ---
 
+<CampaignGraph />
+
 ## The Party
 
 | Portrait | Character | Player | Ancestry | Class |
