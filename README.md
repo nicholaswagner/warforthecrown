@@ -12,16 +12,18 @@ Campaign notes, session logs, and reference material for our weekly Pathfinder 2
 
 <CampaignGraph />
 
+---
+
 ## The Party
 
-| Portrait | Character | Player | Ancestry | Class |
-| --- | --- | --- | --- | --- |
-| ![[allister-hound-sitting.jpg]] | [Allister Hound](Allister%20Hound.md) | Mark | Human | Bard |
-| ![[arturo_portrait.png]] | [Arturo Basri](Reference/People/Arturo%20Basri.md) | Julian | Human | Investigator |
-| ![[caritas-zespire-side.png]] | [Caritas Zespire](Caritas%20Zespire.md) | Nicholas | Human | Fighter |
-| ![[Rhenquist_Merosett.png]] | [Rhenquist Merosett](Rhenquist-Merosett.md) | Doug | Human | Rogue (Mastermind) |
-| ![[Tirri_Kastner.png]] | [Tirri Kastner](Reference/People/Tirri-Kastner.md) | Shannon | Changeling | Cleric |
-| ![[ZarissaNocturne.jpeg]] | [Zarissa Nocturne](Reference/People/Zarissa%20Nocturne.md) | Alex | Nephilim (Hellspawn) | Witch |
+| Portrait                        | Character              | Player   | Ancestry             | Class              |
+| ------------------------------- | ---------------------- | -------- | -------------------- | ------------------ |
+| ![[allister-hound-sitting.jpg]] | [[Allister Hound]]     | Mark     | Human                | Bard               |
+| ![[arturo_portrait.png]]        | [[Arturo Basri]]       | Julian   | Human                | Investigator       |
+| ![[caritas-zespire-side.png]]   | [[Caritas Zespire]]    | Nicholas | Human                | Fighter            |
+| ![[Rhenquist_Merosett.png]]     | [[Rhenquist-Merosett]] | Doug     | Human                | Rogue (Mastermind) |
+| ![[Tirri_Kastner.png]]          | [[Tirri-Kastner]]      | Shannon  | Changeling           | Cleric             |
+| ![[ZarissaNocturne.jpeg]]       | [[Zarissa Nocturne]]   | Alex     | Nephilim (Hellspawn) | Witch              |
 
 ---
 
