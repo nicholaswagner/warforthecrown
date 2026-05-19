@@ -14,12 +14,12 @@ Campaign notes, session logs, and reference material for our weekly Pathfinder 2
 
 | Portrait | Character | Player | Ancestry | Class |
 | --- | --- | --- | --- | --- |
-| <img src="images/allister-hound-sitting.jpg" width="80" alt="Allister Hound portrait"/> | [Allister Hound](Reference/People/Allister%20Hound.md) | Mark | Human | Bard |
-| <img src="images/arturo_portrait.png" width="80" alt="Arturo Basri portrait"/> | [Arturo Basri](Reference/People/Arturo%20Basri.md) | Julian | Human | Investigator |
-| <img src="images/caritas-zespire-front.jpg" width="80" alt="Caritas Zespire portrait"/> | [Caritas Zespire](Reference/People/Caritas%20Zespire.md) | Nicholas | Human | Fighter |
-| <img src="images/Rhenquist_Merosett.png" width="80" alt="Rhenquist Merosett portrait"/> | [Rhenquist Merosett](Reference/People/Rhenquist-Merosett.md) | Doug | Human | Rogue (Mastermind) |
-| <img src="images/Tirri_Kastner.png" width="80" alt="Tirri Kastner portrait"/> | [Tirri Kastner](Reference/People/Tirri-Kastner.md) | Shannon | Changeling | Cleric |
-| <img src="images/ZarissaNocturne.jpeg" width="80" alt="Zarissa Nocturne portrait"/> | [Zarissa Nocturne](Reference/People/Zarissa%20Nocturne.md) | Alex | Nephilim (Hellspawn) | Witch |
+| ![Allister Hound portrait](images/allister-hound-sitting.jpg) | [Allister Hound](Reference/People/Allister%20Hound.md) | Mark | Human | Bard |
+| ![Arturo Basri portrait](images/arturo_portrait.png) | [Arturo Basri](Reference/People/Arturo%20Basri.md) | Julian | Human | Investigator |
+| ![Caritas Zespire portrait](images/caritas-zespire-front.jpg) | [Caritas Zespire](Reference/People/Caritas%20Zespire.md) | Nicholas | Human | Fighter |
+| ![Rhenquist Merosett portrait](images/Rhenquist_Merosett.png) | [Rhenquist Merosett](Reference/People/Rhenquist-Merosett.md) | Doug | Human | Rogue (Mastermind) |
+| ![Tirri Kastner portrait](images/Tirri_Kastner.png) | [Tirri Kastner](Reference/People/Tirri-Kastner.md) | Shannon | Changeling | Cleric |
+| ![Zarissa Nocturne portrai](images/ZarissaNocturne.jpeg) | [Zarissa Nocturne](Reference/People/Zarissa%20Nocturne.md) | Alex | Nephilim (Hellspawn) | Witch |
 
 ---
 
