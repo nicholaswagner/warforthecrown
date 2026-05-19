@@ -18,8 +18,8 @@ Campaign notes, session logs, and reference material for our weekly Pathfinder 2
 | ![[arturo_portrait.png]] | [Arturo Basri](Reference/People/Arturo%20Basri.md) | Julian | Human | Investigator |
 | ![[caritas-zespire-side.png]] | [Caritas Zespire](Caritas%20Zespire.md) | Nicholas | Human | Fighter |
 | ![[Rhenquist_Merosett.png]] | [Rhenquist Merosett](Rhenquist-Merosett.md) | Doug | Human | Rogue (Mastermind) |
-| ![[images/Tirri_Kastner.png]] | [Tirri Kastner](Reference/People/Tirri-Kastner.md) | Shannon | Changeling | Cleric |
-| ![[images/ZarissaNocturne.jpeg]] | [Zarissa Nocturne](Reference/People/Zarissa%20Nocturne.md) | Alex | Nephilim (Hellspawn) | Witch |
+| ![[Tirri_Kastner.png]] | [Tirri Kastner](Reference/People/Tirri-Kastner.md) | Shannon | Changeling | Cleric |
+| ![[ZarissaNocturne.jpeg]] | [Zarissa Nocturne](Reference/People/Zarissa%20Nocturne.md) | Alex | Nephilim (Hellspawn) | Witch |
 
 ---
 
