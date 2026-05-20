@@ -1,12 +1,8 @@
-> [!tip] Arturo Basri 
-> _Disgraced Noble_ / _Investigator_
-> 
-> ![[arturo_portrait.png]]
-> 
-> ![[campaign backgrounds#Disgraced Noble]]
+_Disgraced Noble_ / _Investigator_
 
+![[arturo_portrait.png]]
 
----
+![[campaign backgrounds#Disgraced Noble]]
 
 #### Adolescence
 

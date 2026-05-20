@@ -1,12 +1,8 @@
-> [!gem] Rhenquist Merosett
-> 
-> _Glorian Patriot_ / Mastermind Rogue
-> 
-> ![[Rhenquist_Merosett.png]]
-> 
-> ![[campaign backgrounds#Glorian Patriot]]
+ _Glorian Patriot_ / Mastermind Rogue
 
----
+![[Rhenquist_Merosett.png]]
+
+![[campaign backgrounds#Glorian Patriot]]
 
 An **Anchor** for the Merosett family, Rhenquist is forbidden to practice the arcane arts. In exchange for this sacrifice he is given a life of luxury.
 

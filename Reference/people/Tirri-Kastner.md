@@ -1,14 +1,8 @@
-> [!star] Tirri Kastner
->  _Rising Star_ / _Cleric_
->   
->  ![[Tirri_Kastner.png]]
->   
->  ![[campaign backgrounds#Rising Star]]
+_Rising Star_ / _Cleric_
 
-- 
+![[Tirri_Kastner.png]]
 
-
----
+![[campaign backgrounds#Rising Star]]
 
 #### Notable details
 - A ViceCountess

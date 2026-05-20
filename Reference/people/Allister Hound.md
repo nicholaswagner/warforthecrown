@@ -1,11 +1,5 @@
-> [!gem] Allister Hound
-> _Child of Rosanna_ / _Bard_
->  
-> ![[allister-hound-sitting.jpg]]
->  
-> ![[campaign backgrounds#Child of Rosanna]]
-
----
+_Child of Rosanna_ / _Bard_
+ ![[allister-hound-sitting.jpg]] ![[campaign backgrounds#Child of Rosanna]]
 
 #### Notes
 - Adopted son of [[Dutchess Clament]]

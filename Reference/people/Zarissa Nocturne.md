@@ -1,8 +1,10 @@
-> [!magic] Zarissa Nocturne
-> _Servant_ / _Witch_ of _The Resentment_ / Knight of Summer
+_Servant_ / _Witch_ of _The Resentment_ / Knight of Summer
+
 ![[ZarissaNocturne.jpeg]]
-> #### Background
-> House Servant .. or something... I need to follow up with Alex on that.
+
+#### Background
+
+- previously a house servant to [[Grand Duke Avernathus]] and [[Grand Duchess Liomtraud Heskillar]]
 
 ---
 
