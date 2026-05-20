@@ -1,1 +1,5 @@
-Where [[Count Bartleby Lotheed]] resides
+Lothidar — described as "perfection" with manicured lawns, surrounded by an impressive wall of dark gray stone with 13 crenelated towers. The gate tower is equipped with siege weaponry including a large ballista.
+
+## Notes
+
+- Where [[Count Bartleby Lotheed]] resides

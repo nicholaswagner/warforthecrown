@@ -1,1 +1,0 @@
-Abadar's Pillar — an enormous tower and the Grand Headquarters of the Glorian military. The balcony overlooks the site where Madeira Zespire's public execution took place, witnessed by his son Caritas and others including Pythagorus.

@@ -1,1 +1,0 @@
-The Grand Duke's Mansion — home of Grand Duke Borund Heskillar in Aroden's View. A happy, peaceful, but lonely-feeling place where Zarissa Nocturne showed him Princess Eutropia's crown for his wife's resurrection.

@@ -1,1 +1,0 @@
-A large chamber within the Repository of the Dignified, holding display cases filled with suits of armor, banners, and standards. Contains the "Museum of Conquests" with a security alarm system that activates animated armor.

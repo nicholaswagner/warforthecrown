@@ -3,6 +3,8 @@ Gossip Girl / Widowed Mother of [[Sepsinia Crabbe]]
 
 ![[dame_crabbe.png]]
 
+## Notes
+
 - her home is called Bellavora.
 - desperately desires to see either herself or her daughter married (or both) 
 - not a huge fan of "hunting"
@@ -13,3 +15,6 @@ Gossip Girl / Widowed Mother of [[Sepsinia Crabbe]]
 	- advocates to other nobles to provide patronage for other scholarships that she does not personally fund
 - husband died of an illness
 
+---
+
+![[dame_crabbe_gives_no_trucs.png]]

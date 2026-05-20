@@ -19,3 +19,9 @@ Outgoing crates of wine, incoming crates of glassware.
 
 ![[Baroness Adella Voinum.png | 100]]
 
+## Voinaris locations of interest
+
+### Voinaris Countryside
+
+The countryside surrounding Voinaris. Referenced as a location in the Knightly Notes.
+

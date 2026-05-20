@@ -1,5 +1,32 @@
-### Rysher
+# Geography
 
+A consolidated reference for countries and regions of the world.
+
+## Andoran
+Notable characters from here:
+- [[Allister Hound]]
+- "post revolutionary america vibe... they have the eagle as their birb / etc"
+- Fashion is heavily inspired by military garb of revolution
+
+## Cheliax
+Devil Fascist Empire
+They enslave halflings
+
+## Qadira
+a Satrapy on the southern tip of Gloria.
+
+Vibe: Persian government ( a Sartrapy ) and make cigaretts which [[Rhenquist-Merosett]] smokes.
+
+## Ulfen
+Land of the linon kings
+
+## Tar-baphon
+The whispering tyrant.
+
+## Broken Lands
+A region containing the nation of Rysher.
+
+### Rysher
 - Rysher is small nation in the Broken Lands.
 - Vibe: _Arthurian Camelot meets Fairy Tales_
 - Their people are proud and preternaturally optimistic, very likable / great people.

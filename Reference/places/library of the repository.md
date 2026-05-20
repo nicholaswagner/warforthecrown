@@ -1,1 +1,0 @@
-The Repository of the Dignified — a vast, otherworldly library and archive maintained by Viscountess Octavia Nicodemus. Accessed via a circular door trap with a whiskey smell, past a preserved garden room with garden oozes.

@@ -55,3 +55,13 @@ Eutropia following the Exaltation Day Massacre.
 - [[Voinaris]] — Baroness Voinum extended goodwill; writ of introduction given
 - [[Moost]] — Dame Crabbe contributed 125gp to improvements
 - [[Lothidar]] — Count Lotheed's seat; complicated relationship
+
+## Stachys Grounds
+
+### Wolf's Whisker
+
+Wolfs Whisker — the Wolf's Whisker Public House located in Stachys, operated by Onora Piscum.
+
+### Stachys Swamps
+
+The Stachys Swamps — a swampy area near Stachys where the party encountered the Sheriff capturing an ARCH druid.

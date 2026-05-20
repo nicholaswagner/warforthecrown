@@ -23,3 +23,9 @@ An **Anchor** for the Merosett family, Rhenquist is forbidden to practice the ar
 ---
 
 ![[RhenquistMerosetteChild.png]]
+
+---
+
+## Dream Realm
+
+Rhen's Dream — the dream realm where Rhenquist experiences visions and encounters the Archcountess.
