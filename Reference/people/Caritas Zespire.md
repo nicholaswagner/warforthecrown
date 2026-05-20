@@ -50,3 +50,4 @@
 		- She took an active role in planning senatorial stuff.  schedules and seating charts.  
 		- discovers several spell scrolls tucked into the back.  "blur", ~~"confetti cloud"~~ (given to [[Count Bartleby Lotheed]] later on), "charital urge", "haste", and "marvelous mount" which he later gives to [[Zarissa Nocturne]]
 - Owner of [[Provenance]]
+- [[Raiment Chainmail Amor]]
