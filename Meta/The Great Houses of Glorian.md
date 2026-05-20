@@ -3,38 +3,38 @@
 > _The campaign also features a special Human heritage, Noble Human, aimed at integrating players as part of one of the great noble families of The Glorian Empire. While it is not necessary to have the heritage to be part of the family, and some bastard children might have gained such skills despite not having the title, most members take pride in carrying the family legacy._
 > 
 >**Noble** _human heritage_:
->==The blood of old The Glorian Empire runs in your veins, whether you are in good standing with your family or not. Select one noble family you belong to from the following list: (We will change these names)==
+> <mark>The blood of old The Glorian Empire runs in your veins, whether you are in good standing with your family or not. Select one noble family you belong to from the following list: (We will change these names)</mark>
 
 
 ---
 
 #### Basri
-==Claimed by Julian==
+<mark>Claimed by Julian</mark>
 
 You come from a long line of ambassadors, diplomats, and travelers, and your family maintains the strongest ties to the elven nations of Kyonin of any Glorian. You speak Celestial, Elven, Gnome or Sylvan as a bonus language, and you have access to all uncommon Elven weapons and items, the Elven Lore and Elven Weapon Familiarity feat, and all feats that require them.
 
 ---
 
 #### Clement
-==Claimed by Mark==
+<mark>Claimed by Mark</mark>
 Your Garundi and Mwangi ancestors served The Glorian Empire proudly during the Army of the Sixth Movement and were awarded lands and titles for their service. Your family is known for its keen insights and biting observations. You can use your Wisdom modifier instead of your Charisma modifier for the Diplomacy skill, and always begin a verbal duel with a free Edge. 
 
 ---
 
 #### Kastner
-==Claimed by Shannon==
+<mark>Claimed by Shannon</mark>
 Your stalwart family defines itself by opposing your devil-worshiping Chelish cousins, a grudge that inspired some of The Glorian Empire’s greatest healers, priests, and negotiators. You have a +1 circumstance bonus to your Medicine checks to treat other living creatures. If you succeed, you gain a +2 circumstance bonus to your Diplomacy checks towards the creatures you treated until the next day. 
 
 ---
 
 #### Merosett
-==Claimed by Doug==
+<mark>Claimed by Doug</mark>
 The cunning members of your large family, a longtime fixture in Rosanna’s bureaucracy, specialize in tracking lineages and sidestepping red tape. You never critically fail at Society checks, and you halve the time required to create forgeries, decipher writing, search archives, examine contracts, or otherwise work within complex bureaucracies. 
 
 ---
 
 #### Zespire
-==Claimed by Nicholas==
+<mark>Claimed by Nicholas</mark>
 The family runs charities and lobbies heavily for social reform, leaving them with few friends among their Rosannan peers but heartfelt support from the common folk and lesser nobility. Whenever you succeed at a Diplomacy or Perform checks to influence or verbal duel common citizens and nobles whose titles are limited to Lord, Lady, Knight or Dame, you critically succeed instead. 
 
 ---
